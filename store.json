@@ -1,5 +1,5 @@
 {
-  "appCount": 1,
+  "appCount": 3,
   "updatedAt": "2026-08-29",
   "apps": [
     {
@@ -25,6 +25,54 @@
       },
       "license": "MIT",
       "zipUrl": "/apps/markdown-notes-1.0.7.zip",
+      "stars": 0,
+      "updatedAt": "2026-08-29"
+    },
+    {
+      "id": "pomodoro-timer",
+      "name": {
+        "en": "Pomodoro Timer",
+        "zh-CN": "番茄钟"
+      },
+      "description": {
+        "en": "A simple Pomodoro Technique timer",
+        "zh-CN": "番茄工作法计时器"
+      },
+      "version": "1.0.0",
+      "icon": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmY3YTZiIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2Q5MzAyNSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibGVhZiIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiM1OGI4NjgiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMmY4ZjQyIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KCiAgPCEtLSDog4zmma8gLS0+CiAgPHJlY3Qgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHJ4PSIxMTIiIGZpbGw9InVybCgjYmcpIi8+CgogIDwhLS0g5Y+25a2QIC0tPgogIDxwYXRoIGQ9Ik0yNTYgMTE4Yy0xNi0zMC01Mi00Mi04NC0zMCAxMCAzMCA0MiA0OCA3NiA0MnoiIGZpbGw9InVybCgjbGVhZikiLz4KICA8cGF0aCBkPSJNMjU2IDExOGMxNi0zMCA1Mi00MiA4NC0zMC0xMCAzMC00MiA0OC03NiA0MnoiIGZpbGw9IiM3YWM5NDMiLz4KICA8cmVjdCB4PSIyNDQiIHk9IjEwOCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjUyIiByeD0iMTIiIGZpbGw9IiMyZjhmNDIiLz4KCiAgPCEtLSDpq5jlhYkgLS0+CiAgPGVsbGlwc2UgY3g9IjE4MCIgY3k9IjE1MCIgcng9IjE1MCIgcnk9IjgwIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIuMTAiLz4KCiAgPCEtLSDpkp/pnaIgLS0+CiAgPGNpcmNsZSBjeD0iMjU2IiBjeT0iMzA4IiByPSIxMzIiIGZpbGw9IiNmZmZmZmYiLz4KICA8Y2lyY2xlIGN4PSIyNTYiIGN5PSIzMDgiIHI9IjEzMiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYjMyMjFhIiBzdHJva2Utd2lkdGg9IjEwIiBvcGFjaXR5PSIuMTUiLz4KCiAgPCEtLSDliLvluqYgLS0+CiAgPGxpbmUgeDE9IjI1NiIgeTE9IjE5NiIgeDI9IjI1NiIgeTI9IjIyMiIgc3Ryb2tlPSIjZDkzMDI1IiBzdHJva2Utd2lkdGg9IjE0IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8bGluZSB4MT0iMzY4IiB5MT0iMzA4IiB4Mj0iMzQyIiB5Mj0iMzA4IiBzdHJva2U9IiNkOTMwMjUiIHN0cm9rZS13aWR0aD0iMTQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxsaW5lIHgxPSIyNTYiIHkxPSI0MjAiIHgyPSIyNTYiIHkyPSIzOTQiIHN0cm9rZT0iI2Q5MzAyNSIgc3Ryb2tlLXdpZHRoPSIxNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPGxpbmUgeDE9IjE0NCIgeTE9IjMwOCIgeDI9IjE3MCIgeTI9IjMwOCIgc3Ryb2tlPSIjZDkzMDI1IiBzdHJva2Utd2lkdGg9IjE0IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KCiAgPCEtLSDmjIfpkoggLS0+CiAgPGxpbmUgeDE9IjI1NiIgeTE9IjMwOCIgeDI9IjI1NiIgeTI9IjIzNCIgc3Ryb2tlPSIjZDkzMDI1IiBzdHJva2Utd2lkdGg9IjIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8bGluZSB4MT0iMjU2IiB5MT0iMzA4IiB4Mj0iMzMwIiB5Mj0iMzA4IiBzdHJva2U9IiNkOTMwMjUiIHN0cm9rZS13aWR0aD0iMjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxjaXJjbGUgY3g9IjI1NiIgY3k9IjMwOCIgcj0iMjIiIGZpbGw9IiNkOTMwMjUiLz4KICA8Y2lyY2xlIGN4PSIyNTYiIGN5PSIzMDgiIHI9IjkiIGZpbGw9IiNmZmZmZmYiLz4KPC9zdmc+Cg==",
+      "category": "productivity",
+      "tags": [
+        "timer",
+        "focus"
+      ],
+      "author": {
+        "name": "ygr99"
+      },
+      "zipUrl": "/apps/pomodoro-timer-1.0.0.zip",
+      "stars": 0,
+      "updatedAt": "2026-08-29"
+    },
+    {
+      "id": "quick-clips",
+      "name": {
+        "en": "Quick Clips",
+        "zh-CN": "备忘快帖"
+      },
+      "description": {
+        "en": "Quickly save text, code, and images",
+        "zh-CN": "快速收藏常用文本、代码、图片"
+      },
+      "version": "1.0.0",
+      "icon": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjOGI1Y2Y2Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzViMjFiNiIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CgogIDwhLS0g6IOM5pmvIC0tPgogIDxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiByeD0iMTEyIiBmaWxsPSJ1cmwoI2JnKSIvPgoKICA8IS0tIOmrmOWFiSAtLT4KICA8ZWxsaXBzZSBjeD0iMTcwIiBjeT0iMTQwIiByeD0iMTYwIiByeT0iOTAiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9Ii4xMCIvPgoKICA8IS0tIOWJqui0tOadv+adv+i6qyAtLT4KICA8cmVjdCB4PSIxNDYiIHk9IjEyMCIgd2lkdGg9IjIyMCIgaGVpZ2h0PSIyOTYiIHJ4PSIyOCIgZmlsbD0iI2ZmZmZmZiIvPgogIDwhLS0g5p2/5aS5IC0tPgogIDxyZWN0IHg9IjIwNiIgeT0iOTQiIHdpZHRoPSIxMDAiIGhlaWdodD0iNTYiIHJ4PSIxNiIgZmlsbD0iI2RkZDZmZSIvPgogIDxyZWN0IHg9IjIwNiIgeT0iOTQiIHdpZHRoPSIxMDAiIGhlaWdodD0iNTYiIHJ4PSIxNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNWIyMWI2IiBzdHJva2Utd2lkdGg9IjEwIiBvcGFjaXR5PSIuMjUiLz4KCiAgPCEtLSDkvr/nrb7mnaEgLS0+CiAgPHJlY3QgeD0iMTc2IiB5PSIxOTYiIHdpZHRoPSIxNjAiIGhlaWdodD0iMjAiIHJ4PSIxMCIgZmlsbD0iI2M0YjVmZCIvPgogIDxyZWN0IHg9IjE3NiIgeT0iMjQ4IiB3aWR0aD0iMTYwIiBoZWlnaHQ9IjIwIiByeD0iMTAiIGZpbGw9IiNjNGI1ZmQiLz4KICA8cmVjdCB4PSIxNzYiIHk9IjMwMCIgd2lkdGg9IjEwNCIgaGVpZ2h0PSIyMCIgcng9IjEwIiBmaWxsPSIjZmJiZjI0Ii8+CgogIDwhLS0g5Zue5b2i6ZKI54K557yAIC0tPgogIDxwYXRoIGQ9Ik0zMzAgMTIwIGw0MCAwIDAgMTgwIGMwIDIyIC0xOCA0MCAtNDAgNDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZiYmYyNCIgc3Ryb2tlLXdpZHRoPSIxOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+Cjwvc3ZnPgo=",
+      "category": "productivity",
+      "tags": [
+        "clipboard",
+        "notes"
+      ],
+      "author": {
+        "name": "ygr99"
+      },
+      "zipUrl": "/apps/quick-clips-1.0.0.zip",
       "stars": 0,
       "updatedAt": "2026-08-29"
     }
