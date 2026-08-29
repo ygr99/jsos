@@ -30091,6 +30091,18 @@ function ZO(e, n = {}) {
       console.warn("Failed to load builtin registry:", U);
       return;
     }
+    const __jsosZipCache = {};
+    await Promise.all(I.map(async (U2) => {
+      try {
+        const installed = await qM(U2.id);
+        if (installed !== U2.version) {
+          const resp = await fetch(U2.zipUrl);
+          __jsosZipCache[U2.zipUrl] = resp.ok ? await resp.arrayBuffer() : null;
+        }
+      } catch (e22) {
+        __jsosZipCache[U2.zipUrl] = null;
+      }
+    }));
     const j = [];
     for (const U of I) {
       try {
@@ -30109,8 +30121,8 @@ function ZO(e, n = {}) {
                 description: P
               });
             }
-            const V = await fetch(U.zipUrl);
-            if (!V.ok) {
+            const Z = __jsosZipCache[U.zipUrl];
+            if (!Z) {
               if (($ = f.current) != null) {
                 $.call(f, {
                   type: "update-error",
@@ -30122,7 +30134,6 @@ function ZO(e, n = {}) {
               }
               continue;
             }
-            const Z = await V.arrayBuffer();
             const J = await nu.loadAsync(Z);
             const ne = await Xw(J);
             if (ne) {
@@ -30168,8 +30179,8 @@ function ZO(e, n = {}) {
               description: P
             });
           }
-          const V = await fetch(U.zipUrl);
-          if (!V.ok) {
+          const Z = __jsosZipCache[U.zipUrl];
+          if (!Z) {
             if ((z = f.current) != null) {
               z.call(f, {
                 type: "install-error",
@@ -30180,7 +30191,6 @@ function ZO(e, n = {}) {
             }
             continue;
           }
-          const Z = await V.arrayBuffer();
           const J = await nu.loadAsync(Z);
           const ne = await Xw(J);
           if (ne) {

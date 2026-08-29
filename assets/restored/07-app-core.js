@@ -1509,6 +1509,19 @@ function ZO(e, n = {}) {
       console.warn("Failed to load builtin registry:", U);
       return;
     }
+    // 优化：并行预取需要安装/更新的内置应用 zip（下方安装流程仍保持串行，跳过已安装逻辑不变）
+    const __jsosZipCache = {};
+    await Promise.all(I.map(async (U2) => {
+      try {
+        const installed = await qM(U2.id);
+        if (installed !== U2.version) {
+          const resp = await fetch(U2.zipUrl);
+          __jsosZipCache[U2.zipUrl] = resp.ok ? await resp.arrayBuffer() : null;
+        }
+      } catch (e2) {
+        __jsosZipCache[U2.zipUrl] = null;
+      }
+    }));
     const j = [];
     for (const U of I) {
       try {
@@ -1527,8 +1540,8 @@ function ZO(e, n = {}) {
                 description: P
               });
             }
-            const V = await fetch(U.zipUrl);
-            if (!V.ok) {
+            const Z = __jsosZipCache[U.zipUrl];
+            if (!Z) {
               if (($ = f.current) != null) {
                 $.call(f, {
                   type: "update-error",
@@ -1540,7 +1553,6 @@ function ZO(e, n = {}) {
               }
               continue;
             }
-            const Z = await V.arrayBuffer();
             const J = await nu.loadAsync(Z);
             const ne = await Xw(J);
             if (ne) {
@@ -1585,8 +1597,8 @@ function ZO(e, n = {}) {
               description: P
             });
           }
-          const V = await fetch(U.zipUrl);
-          if (!V.ok) {
+          const Z = __jsosZipCache[U.zipUrl];
+          if (!Z) {
             if ((z = f.current) != null) {
               z.call(f, {
                 type: "install-error",
@@ -1597,7 +1609,6 @@ function ZO(e, n = {}) {
             }
             continue;
           }
-          const Z = await V.arrayBuffer();
           const J = await nu.loadAsync(Z);
           const ne = await Xw(J);
           if (ne) {
