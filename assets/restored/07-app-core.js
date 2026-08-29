@@ -3237,7 +3237,7 @@ function pD(e, n, r) {
 }
 const mD = {
   desktop: {
-    installApp: "安装应用",
+    installApp: "获取应用",
     addWidget: "添加挂件",
     wallpaper: "壁纸设置",
     enterFullscreen: "进入全屏",
@@ -3445,7 +3445,7 @@ const mD = {
 };
 const iv = {
   desktop: {
-    installApp: "Install App",
+    installApp: "Get Apps",
     addWidget: "Add Widget",
     wallpaper: "Wallpaper Settings",
     enterFullscreen: "Enter Fullscreen",
