@@ -76,5 +76,18 @@
     },
     "version": "1.2.6",
     "zipUrl": "/apps/dev.jsos.docs-1.2.6.zip"
+  },
+  {
+    "id": "dev.jsos.datetime-display",
+    "name": {
+      "en": "Date & Time",
+      "zh-CN": "日期时间"
+    },
+    "description": {
+      "en": "Display current date and time",
+      "zh-CN": "显示当前日期和时间"
+    },
+    "version": "1.0.0",
+    "zipUrl": "/apps/dev.jsos.datetime-display-1.0.0.zip"
   }
 ]
