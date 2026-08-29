@@ -31,4 +31,4 @@ assets/index-restored.js 是把 12 个分片按序拼回、经 esbuild 以 `--js
 
 原版启动时在 for 循环里串行 `await fetch` 逐个下载 6 个内置应用 zip（约 2.3MB，A/B 实测首包时间跨度 419ms，真实网络需 6 次串行往返）；修改为按"已安装版本比对"先并行预取，安装流程仍保持串行、跳过逻辑与事件不变。A/B 同条件实测：原版跨度 419ms → 优化版 3ms，6 个应用全部安装成功并持久化，桌面渲染无差异。
 
-重建：`node tools/rebuild.mjs`（拼接 12 分片 → esbuild JSX 编译 → assets/index-restored.js）
+重建：`node tools/rebuild.mjs`（拼接 12 分片 → esbuild JSX 编译 + minify 压缩 → assets/index-restored.js，gzip 后约 447KB）

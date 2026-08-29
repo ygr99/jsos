@@ -17,6 +17,7 @@ const out = transformSync(combined, {
   loader: 'jsx',
   jsxFactory: 'At.createElement',
   jsxFragment: 'At.Fragment',
+  minify: true,
   sourcemap: false,
 }).code;
 
