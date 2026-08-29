@@ -7716,42 +7716,7 @@ function aB(e) {
   return n[Math.abs(r) % n.length];
 }
 const px = [0.25, 0.5, 0.75];
-const __TermMoonNode = [["path", {
-  d: "M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z",
-  key: "1termmoon"
-}]];
-const __TermMoonIcon = Ht("moon", __TermMoonNode);
-const __TermSunNode = [["circle", {
-  cx: "12",
-  cy: "12",
-  r: "4",
-  key: "1termsun0"
-}], ["path", {
-  d: "M12 2v2",
-  key: "1termsun1"
-}], ["path", {
-  d: "M12 20v2",
-  key: "1termsun2"
-}], ["path", {
-  d: "m4.93 4.93 1.41 1.41",
-  key: "1termsun3"
-}], ["path", {
-  d: "m17.66 17.66 1.41 1.41",
-  key: "1termsun4"
-}], ["path", {
-  d: "M2 12h2",
-  key: "1termsun5"
-}], ["path", {
-  d: "M20 12h2",
-  key: "1termsun6"
-}], ["path", {
-  d: "m6.34 17.66-1.41 1.41",
-  key: "1termsun7"
-}], ["path", {
-  d: "m19.07 4.93-1.41 1.41",
-  key: "1termsun8"
-}]];
-const __TermSunIcon = Ht("sun", __TermSunNode);
+
 function _Component105({
   window: e,
   title: n,
@@ -8237,7 +8202,7 @@ function _Component105({
             flex: 1,
             minHeight: 0,
             overflow: "hidden"
-          }} /></div></B.Fragment>}</div>{!P && <div className="relative h-7 overflow-hidden shrink-0 border-t border-border bg-card"><div className={`absolute inset-0 flex items-center gap-1 px-2 text-[11px] transition-opacity duration-200 ${D ? "opacity-0 pointer-events-none" : "opacity-100"}`}><div className={`w-2 h-2 rounded-full ${e.status === "ready" ? "bg-success" : e.status === "error" ? "bg-destructive" : "bg-warning"}`} /><span className="flex-1 truncate text-muted-foreground">{e.statusText}</span><_Component25><An render={<Jn variant="ghost" size="icon-xs" aria-label={f("window.addressBar")} className={D ? "bg-accent text-accent-foreground" : undefined} onClick={() => $(te => !te)} />}><_Component30 size={13} /></An><Mn side="top">{f("window.addressBar")}</Mn></_Component25><_Component25><An render={<Jn variant="ghost" size="icon-xs" aria-label={f("window.darkMode")} onClick={() => { rx({ dark: !(ti && ti.dark) }); }} />}>{U.dark ? <__TermSunIcon size={13} /> : <__TermMoonIcon size={13} />}</An><Mn side="top">{f("window.darkMode")}</Mn></_Component25><_Component25><An render={<Jn variant="ghost" size="icon-xs" aria-label={f("window.logs")} className={m ? "bg-accent text-accent-foreground" : undefined} onClick={() => v(te => !te)} />}><Tf size={12} /></An><Mn side="top">{f("window.logs")}</Mn></_Component25></div><div className={`absolute inset-0 flex items-center gap-1 px-2 text-[11px] transition-opacity duration-200 ${D ? "opacity-100" : "opacity-0 pointer-events-none"}`}><_Component25><An render={<Jn variant="ghost" size="icon-xs" aria-label={f("window.back")} disabled={j <= 0} onClick={re} />}><XI size={14} /></An><Mn side="top">{f("window.back")}</Mn></_Component25><_Component25><An render={<Jn variant="ghost" size="icon-xs" aria-label={f("window.forward")} disabled={j >= R.length - 1} onClick={ce} />}><_Component18 size={14} /></An><Mn side="top">{f("window.forward")}</Mn></_Component25><_Component25><An render={<Jn variant="ghost" size="icon-xs" aria-label={f("window.home")} onClick={ge} />}><_Component31 size={14} /></An><Mn side="top">{f("window.home")}</Mn></_Component25><_Component25><An render={<Jn variant="ghost" size="icon-xs" aria-label={f("window.refresh")} onClick={de} />}><_Component27 size={14} /></An><Mn side="top">{f("window.refresh")}</Mn></_Component25><div className="flex-1 min-w-0"><Sb type="text" size="sm" value={pe} readOnly={true} className="h-5 px-1.5 bg-muted/30 border-border/50 [&>input]:text-[10px]" style={{
+          }} /></div></B.Fragment>}</div>{!P && <div className="relative h-7 overflow-hidden shrink-0 border-t border-border bg-card"><div className={`absolute inset-0 flex items-center gap-1 px-2 text-[11px] transition-opacity duration-200 ${D ? "opacity-0 pointer-events-none" : "opacity-100"}`}><div className={`w-2 h-2 rounded-full ${e.status === "ready" ? "bg-success" : e.status === "error" ? "bg-destructive" : "bg-warning"}`} /><span className="flex-1 truncate text-muted-foreground">{e.statusText}</span><_Component25><An render={<Jn variant="ghost" size="icon-xs" aria-label={f("window.addressBar")} className={D ? "bg-accent text-accent-foreground" : undefined} onClick={() => $(te => !te)} />}><_Component30 size={13} /></An><Mn side="top">{f("window.addressBar")}</Mn></_Component25><_Component25><An render={<Jn variant="ghost" size="icon-xs" aria-label={f("window.logs")} className={m ? "bg-accent text-accent-foreground" : undefined} onClick={() => v(te => !te)} />}><Tf size={12} /></An><Mn side="top">{f("window.logs")}</Mn></_Component25></div><div className={`absolute inset-0 flex items-center gap-1 px-2 text-[11px] transition-opacity duration-200 ${D ? "opacity-100" : "opacity-0 pointer-events-none"}`}><_Component25><An render={<Jn variant="ghost" size="icon-xs" aria-label={f("window.back")} disabled={j <= 0} onClick={re} />}><XI size={14} /></An><Mn side="top">{f("window.back")}</Mn></_Component25><_Component25><An render={<Jn variant="ghost" size="icon-xs" aria-label={f("window.forward")} disabled={j >= R.length - 1} onClick={ce} />}><_Component18 size={14} /></An><Mn side="top">{f("window.forward")}</Mn></_Component25><_Component25><An render={<Jn variant="ghost" size="icon-xs" aria-label={f("window.home")} onClick={ge} />}><_Component31 size={14} /></An><Mn side="top">{f("window.home")}</Mn></_Component25><_Component25><An render={<Jn variant="ghost" size="icon-xs" aria-label={f("window.refresh")} onClick={de} />}><_Component27 size={14} /></An><Mn side="top">{f("window.refresh")}</Mn></_Component25><div className="flex-1 min-w-0"><Sb type="text" size="sm" value={pe} readOnly={true} className="h-5 px-1.5 bg-muted/30 border-border/50 [&>input]:text-[10px]" style={{
             height: "1.25rem",
             lineHeight: "1.25rem"
           }} aria-label={f("window.addressBar")} nativeInput={true} /></div><_Component25><An render={<Jn variant="ghost" size="icon-xs" aria-label={f("window.addressBar")} className={D ? "bg-accent text-accent-foreground" : undefined} onClick={() => $(te => !te)} />}><_Component30 size={13} /></An><Mn side="top">{f("window.addressBar")}</Mn></_Component25><_Component25><An render={<Jn variant="ghost" size="icon-xs" aria-label={f("window.logs")} className={m ? "bg-accent text-accent-foreground" : undefined} onClick={() => v(te => !te)} />}><Tf size={12} /></An><Mn side="top">{f("window.logs")}</Mn></_Component25></div></div>}{!e.maximized && <div className="absolute bottom-0 right-0 w-4 h-4 cursor-nwse-resize" style={{
