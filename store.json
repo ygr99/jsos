@@ -13,9 +13,13 @@
         "zh-CN": "极佳的 Markdown 编辑体验，实时预览、存储"
       },
       "version": "1.0.1",
-      "icon": "/apps/markdown-notes-icon.svg",
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIwIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzFlMWUyZSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMxMTExMWIiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHg9IjEwIiB5PSI2IiB3aWR0aD0iNDQiIGhlaWdodD0iNTIiIHJ4PSI4IiBmaWxsPSJ1cmwoI2JnKSIgc3Ryb2tlPSIjODliNGZhIiBzdHJva2Utd2lkdGg9IjMiLz4KICA8dGV4dCB4PSIzMiIgeT0iMzAiIGZvbnQtZmFtaWx5PSJtb25vc3BhY2UiIGZvbnQtc2l6ZT0iMTciIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjY2RkNmY0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5NPC90ZXh0PgogIDxwYXRoIGQ9Ik0gMjIgMzQgTCAyMiA0OCBNIDIyIDQ4IEwgMjEgNDQgTSAyMiA0OCBMIDI0IDQ0IiBzdHJva2U9IiM4OWI0ZmEiIHN0cm9rZS13aWR0aD0iMi41IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KICA8dGV4dCB4PSIzNCIgeT0iNDgiIGZvbnQtZmFtaWx5PSJtb25vc3BhY2UiIGZvbnQtc2l6ZT0iMTciIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjODliNGZhIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj7ihpM8L3RleHQ+CiAgPGxpbmUgeDE9IjIwIiB5MT0iMTQiIHgyPSI0NCIgeTI9IjE0IiBzdHJva2U9IiM4OWI0ZmEiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIuNSIvPgo8L3N2Zz4K",
       "category": "productivity",
-      "tags": ["markdown", "notes", "editor"],
+      "tags": [
+        "markdown",
+        "notes",
+        "editor"
+      ],
       "author": {
         "name": "ygr99"
       },
