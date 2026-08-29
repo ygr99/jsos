@@ -135,7 +135,7 @@
         "en": "Pi coding agent in your terminal — minimal, hackable, multi-provider",
         "zh-CN": "终端里的 AI 编程助手 Pi，极简可定制，支持多家模型供应商"
       },
-      "version": "1.0.0",
+      "version": "1.0.1",
       "icon": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMWUyOTNiIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzBmMTcyYSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CgogIDwhLS0g57uI56uv5bqV6ImyIC0tPgogIDxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiByeD0iMTEyIiBmaWxsPSJ1cmwoI2JnKSIvPgogIDxyZWN0IHg9IjI0IiB5PSIyNCIgd2lkdGg9IjQ2NCIgaGVpZ2h0PSI0NjQiIHJ4PSI5NiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMzM0MTU1IiBzdHJva2Utd2lkdGg9IjYiIG9wYWNpdHk9Ii42Ii8+CgogIDwhLS0gQUkg54Gr6IqxIC0tPgogIDxwYXRoIGQ9Ik0zODggOTZsMTYgNDQgNDQgMTYtNDQgMTYtMTYgNDQtMTYtNDQtNDQtMTYgNDQtMTZ6IiBmaWxsPSIjZmJiZjI0Ii8+CiAgPHBhdGggZD0iTTQzMCAyMTBsOCAyMiAyMiA4LTIyIDgtOCAyMi04LTIyLTIyLTggMjItOHoiIGZpbGw9IiNmYmJmMjQiIG9wYWNpdHk9Ii43Ii8+CgogIDwhLS0g57uI56uv5o+Q56S656ymID4gLS0+CiAgPHBhdGggZD0iTTEyOCAxODZsOTYgNzYtOTYgNzYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzRhZGU4MCIgc3Ryb2tlLXdpZHRoPSIzOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CiAgPCEtLSDlhYnmoIfkuIvliJLnur8gLS0+CiAgPGxpbmUgeDE9IjI2MiIgeTE9IjMzOCIgeDI9IjM4NiIgeTI9IjMzOCIgc3Ryb2tlPSIjNGFkZTgwIiBzdHJva2Utd2lkdGg9IjMwIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+Cg==",
       "category": "developer-tools",
       "tags": [
@@ -146,7 +146,7 @@
       "author": {
         "name": "ygr99"
       },
-      "zipUrl": "/apps/dev.jsos.pi-agent-1.0.0.zip",
+      "zipUrl": "/apps/dev.jsos.pi-agent-1.0.1.zip",
       "stars": 0,
       "updatedAt": "2026-08-29"
     }
