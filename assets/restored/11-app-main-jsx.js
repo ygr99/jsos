@@ -7839,6 +7839,20 @@ function _Component105({
     document.addEventListener("pointerdown", te);
     return () => document.removeEventListener("pointerdown", te);
   }, [A]);
+  E.useEffect(() => {
+    // [wm-focus-fix] 窗口获得焦点时自动聚焦 iframe 并放行指针事件，
+    // 使滚轮/键盘立即作用于应用，无需先点击一次（修复从桌面打开/切换应用后无法滚动）
+    if (r) {
+      if (!P && z && ee.current) {
+        try {
+          ee.current.contentWindow.focus();
+        } catch {}
+      }
+      M(true);
+    } else {
+      M(false);
+    }
+  }, [r, P, z]);
   const re = E.useCallback(() => {
     if (j > 0) {
       const te = j - 1;
