@@ -23024,7 +23024,7 @@ function _Component113() {
         Te(null);
       }
     }} onInstall={() => hn("dev.jsos.appmanager", {
-      route: "/install"
+      route: "/store"
     })} onAddWidget={Zo} onWallpaper={Xi} onToggleFullscreen={Yi} onAbout={fi} /><_Component108 open={!!Re} x={(Re == null ? undefined : Re.x) || 0} y={(Re == null ? undefined : Re.y) || 0} position={Wt.position} autoHide={!!Wt.autoHide} onOpenChange={fe => {
       if (!fe) {
         ze(null);
