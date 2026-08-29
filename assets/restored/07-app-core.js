@@ -668,6 +668,19 @@ const TO = `
       return sendRequest({ type: 'uninstallApp', payload: { appId, deleteData } })
     },
 
+    /**
+     * 获取主站上的静态资源（供 WebContainer 内应用读取本地商店目录/应用包）
+     * WebContainer 预览 SW 会把应用内发出的 localhost 请求路由进容器导致必然失败，
+     * 因此由主页面代为 fetch，再以 base64 返回
+     * @param {Object} options
+     * @param {string} options.url - 主站内绝对路径（以 / 开头，如 /store.json、/apps/xxx.zip）
+     * @returns {Promise<{base64: string}>}
+     */
+    async fetchAppAsset({ url } = {}) {
+      if (!url) throw new Error('url is required')
+      return sendRequest({ type: 'fetchAppAsset', payload: { url } })
+    },
+
     // ==================== 小组件 ====================
     /**
      * 添加小组件到桌面

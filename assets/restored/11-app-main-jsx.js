@@ -17286,6 +17286,8 @@ async function Bx(e, n) {
       return await oj(e.payload, n);
     case "uninstallApp":
       return await aj(e.payload, n);
+    case "fetchAppAsset":
+      return await jsFetchAppAsset(e.payload);
     case "addWidget":
       return await lj(e.payload, n);
     case "getProxyConfig":
@@ -18180,6 +18182,39 @@ async function oj(e, n) {
         success: false,
         error: d.message
       }
+    };
+  }
+}
+// [jsos-local-store] 主站静态资源代理：WebContainer 内应用无法 fetch 主站 localhost（被预览 SW 路由进容器），
+// 由主页面代为 fetch 同源资源后以 base64 回传
+async function jsFetchAppAsset(e) {
+  const url = e && e.url;
+  if (typeof url !== "string" || !url.startsWith("/") || url.includes("..")) {
+    return {
+      error: "invalid url"
+    };
+  }
+  try {
+    const r = await fetch(url);
+    if (!r.ok) {
+      return {
+        error: "HTTP " + r.status
+      };
+    }
+    const i = new Uint8Array(await r.arrayBuffer());
+    let s = "";
+    const chunkSize = 32768;
+    for (let c = 0; c < i.length; c += chunkSize) {
+      s += String.fromCharCode.apply(null, i.subarray(c, c + chunkSize));
+    }
+    return {
+      result: {
+        base64: btoa(s)
+      }
+    };
+  } catch (u) {
+    return {
+      error: u.message
     };
   }
 }
