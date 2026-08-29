@@ -12,7 +12,7 @@
         "en": "Great Markdown editing experience with live preview and storage",
         "zh-CN": "极佳的 Markdown 编辑体验，实时预览、存储"
       },
-      "version": "1.0.0",
+      "version": "1.0.1",
       "icon": "/apps/markdown-notes-icon.svg",
       "category": "productivity",
       "tags": ["markdown", "notes", "editor"],
@@ -20,7 +20,7 @@
         "name": "ygr99"
       },
       "license": "MIT",
-      "zipUrl": "/apps/markdown-notes-1.0.0.zip",
+      "zipUrl": "/apps/markdown-notes-1.0.1.zip",
       "stars": 0,
       "updatedAt": "2026-08-29"
     }
