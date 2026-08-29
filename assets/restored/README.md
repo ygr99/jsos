@@ -14,3 +14,13 @@
 - 09-ui-components: shadcn 风格 UI 组件
 - 10-use-sync-external-store: use-sync-external-store shim
 - 11-app-main-jsx: 主应用代码（webcrack 已还原为 JSX）
+
+## 可运行版
+
+assets/index-restored.js 是把 12 个分片按序拼回、经 esbuild 以 `--jsx-factory=At.createElement --jsx-fragment=At.Fragment` 编译后的可运行版本，已在本地 serve + 浏览器实测：桌面、图标、兼容性检测对话框均正常渲染。
+
+复现：
+1. 按序拼接 12 个分片（去掉文件头注释行）
+2. esbuild 编译 JSX（工厂函数为 bundle 内的 React 命名空间 At）
+3. 临时把 index.html 的 script src 指向 /assets/index-restored.js
+4. `npx serve -l 4173 .`（serve.json 提供 WebContainer 所需 COOP/COEP 头）
