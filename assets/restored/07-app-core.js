@@ -466,6 +466,23 @@ const TO = `
       return sendRequest({ type: 'openAppWithArgs', payload: { appId, ...options } })
     },
 
+    // ==================== 终端 ====================
+    terminal: {
+      /**
+       * 在系统终端窗口中执行命令（供开发助手等应用调用）
+       * @param {Object} options
+       * @param {string} options.command - 命令（必填，如 'node'）
+       * @param {string[]} [options.args] - 命令参数
+       * @param {boolean} [options.show=true] - 是否显示终端窗口
+       * @param {string} [options.cwd] - WebContainer 内的工作目录
+       * @returns {Promise<{success: boolean, windowId?: string, error?: string}>}
+       */
+      async spawn({ command, args = [], show = true, cwd } = {}) {
+        if (!command) throw new Error('command is required')
+        return sendRequest({ type: 'terminal.spawn', payload: { command, args, show, cwd } })
+      }
+    },
+
     // ==================== 工作区设置 ====================
     /**
      * 获取工作区列表

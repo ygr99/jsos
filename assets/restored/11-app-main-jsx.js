@@ -17277,6 +17277,8 @@ async function Bx(e, n) {
       return zN(e.payload, n);
     case "openAppWithArgs":
       return await NN(e.payload, n);
+    case "terminal.spawn":
+      return await jsTerminalSpawn(e.payload, n);
     case "getWorkspaces":
       return jN(n);
     case "getCurrentWorkspace":
@@ -17668,6 +17670,43 @@ async function NN(e, n) {
       result: {
         success: false,
         error: a.message
+      }
+    };
+  }
+}
+// [jsos-local-terminal-spawn] 支持 window.JSOS.terminal.spawn：在系统终端窗口中执行命令
+async function jsTerminalSpawn(e, n) {
+  const { command: r, args: i = [], cwd: u } = e || {};
+  if (!r) {
+    return {
+      error: "command is required"
+    };
+  }
+  const { installedApps: h, launchApp: a } = n;
+  const c = "dev.jsos.terminal";
+  if (!h || !h.has(c)) {
+    return {
+      error: "Terminal app not installed"
+    };
+  }
+  try {
+    let f = u ? `cd '${String(u).replace(/'/g, "'\\''")}' && ${r}` : r;
+    if (i && i.length > 0) {
+      f += ` ${i.join(" ")}`;
+    }
+    return {
+      result: {
+        success: true,
+        windowId: await a(c, {
+          startCommand: f
+        })
+      }
+    };
+  } catch (o) {
+    return {
+      result: {
+        success: false,
+        error: o.message
       }
     };
   }
