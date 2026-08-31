@@ -22627,9 +22627,15 @@ function _Component113() {
     if (Ce.args && Ce.args.length > 0) {
       Ne += ` ${Ce.args.join(" ")}`;
     }
-    Te.write(`\x1B[1;36m$ ${Ne}\x1B[0m\r\n`);
+    // 分配端口并注入（模板 server.js 会 console.log(process.env.PORT)，不注入则输出 undefined）
+    const JsPort = String(40000 + Math.floor(Math.random() * 20000));
+    Te.write(`\x1B[1;36m$ ${Ne}\x1B[0m\x1B[2m  [PORT=${JsPort}]\x1B[0m\r\n`);
     try {
-      const Ue = await Ie.spawn("sh", ["-c", Ne]);
+      const Ue = await Ie.spawn("sh", ["-c", Ne], {
+        env: {
+          PORT: JsPort
+        }
+      });
       jsSpawnProcesses.set(be, Ue);
       Ue.output.pipeTo(new WritableStream({
         write: Le => Te.write(Le)
