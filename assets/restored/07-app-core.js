@@ -878,6 +878,20 @@ const TO = `
     }
   }, 1000)
   window.parent.postMessage({ type: 'url-update', href: location.href }, '*')
+
+  // 页面就绪通知：文档与资源加载完成后告知桌面，桌面据此撤掉 loading 覆盖（避免白屏空窗）
+  function notifyPageReady() {
+    if (window._jsosPageReadyNotified) return
+    window._jsosPageReadyNotified = true
+    window.parent.postMessage({ type: 'page-ready' }, '*')
+  }
+  if (document.readyState === 'complete') {
+    notifyPageReady()
+  } else {
+    window.addEventListener('load', notifyPageReady)
+  }
+  // 备用：若 load 事件未触发（边缘情况），5 秒后强制通知，防止桌面 loading 永不消失
+  setTimeout(notifyPageReady, 5000)
 })()
 `;
 let pg = null;
@@ -1040,7 +1054,9 @@ function AO() {
       terminal: null,
       status: "initializing",
       statusText: "Initializing...",
-      serverUrl: null
+      serverUrl: null,
+      // [jsos-page-ready] iframe 内应用发 page-ready 后置 true，期间保持 loading 覆盖防白屏
+      pageReady: false
     };
     n(A => {
       const M = new Map(A);

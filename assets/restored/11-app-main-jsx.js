@@ -7896,6 +7896,16 @@ function _Component105({
     W(Te.length - 1);
     N(e.pendingNavUrl);
   }, [e.pendingNavUrl]);
+  // [jsos-page-ready] 兜底：若 iframe 内注入脚本意外未发出 page-ready（或加载过久），8 秒后也强制显示，防止永久停留在 loading
+  const [jsFrameRevealFallback, jsSetRevealFallback] = E.useState(false);
+  E.useEffect(() => {
+    if (!z || e.pageReady) {
+      jsSetRevealFallback(false);
+      return;
+    }
+    const te = setTimeout(() => jsSetRevealFallback(true), 8000);
+    return () => clearTimeout(te);
+  }, [z, e.pageReady]);
   const P = ((Se = e.app) == null ? undefined : Se.type) === "cli";
   const V = E.useRef(false);
   E.useEffect(() => {
@@ -8245,7 +8255,7 @@ function _Component105({
               if (o != null) {
                 o(e.id);
               }
-            }} />}><_Component23 size={12} /></An><Mn side="top">{f("window.close")}</Mn></_Component25></div>}</B.Fragment> : <B.Fragment>{z ? <B.Fragment><iframe ref={Y} src={z} data-window-id={e.id} className="absolute inset-0 w-full h-full border-none bg-background" key={G} /><div className="absolute inset-0 z-10" style={{
+            }} />}><_Component23 size={12} /></An><Mn side="top">{f("window.close")}</Mn></_Component25></div>}</B.Fragment> : <B.Fragment>{z ? <B.Fragment><div className="absolute inset-0">{/* [jsos-page-ready] iframe 常驻加载；就绪前由 loading 覆盖层遮挡（应用内注入脚本发 page-ready 后撤除） */}<iframe ref={Y} src={z} data-window-id={e.id} key={G} className="absolute inset-0 w-full h-full border-none bg-background" />{!e.pageReady && !jsFrameRevealFallback && <div className="absolute inset-0 z-10"><_Component26 app={e.app} statusText={e.statusText} /></div>}</div><div className="absolute inset-0 z-10" style={{
             pointerEvents: A ? "none" : "auto"
           }} onPointerDown={() => {
             if (i != null) {
@@ -22441,18 +22451,28 @@ function _Component113() {
   E.useEffect(() => {
     const fe = Ce => {
       var Ve;
-      if (((Ve = Ce.data) == null ? undefined : Ve.type) !== "url-update") {
+      if (Ce.data == null) {
         return;
       }
+      Ve = Ce.data;
       const Ie = document.querySelectorAll("iframe[data-window-id]");
       for (const ct of Ie) {
-        if (ct.contentWindow === Ce.source) {
-          _(ct.dataset.windowId, {
-            displayUrl: Ce.data.href,
-            pendingNavUrl: Ce.data.href
-          });
-          break;
+        if (ct.contentWindow !== Ce.source) {
+          continue;
         }
+        if (((Ve = Ce.data) == null ? undefined : Ve.type) === "page-ready") {
+          // [jsos-page-ready] 应用资源加载完成 → 撤掉 loading 覆盖，直接显示内容
+          _(ct.dataset.windowId, {
+            pageReady: true
+          });
+        } else if (((Ve = Ce.data) == null ? undefined : Ve.type) === "url-update") {
+          // [jsos-frame-loaded] 仅同步地址栏显示（displayUrl）；iframe 内部 SPA 导航自身已生效，
+          // 若回写 pendingNavUrl 会使窗口 effect 更新 iframe src，导致整个 iframe 重载 → 出现第二次 loading/白屏
+          _(ct.dataset.windowId, {
+            displayUrl: Ce.data.href
+          });
+        }
+        break;
       }
     };
     window.addEventListener("message", fe);
