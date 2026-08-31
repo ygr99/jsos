@@ -7716,6 +7716,66 @@ function aB(e) {
   return n[Math.abs(r) % n.length];
 }
 const px = [0.25, 0.5, 0.75];
+// [jsos-local-terminal-spawn] 面板「终端 N」tab 的独立 xterm 容器
+function jsSpawnTabView({ tabId: e, visible: n, onReady: r }) {
+  const i = E.useRef(null);
+  const o = E.useRef(null);
+  const u = E.useRef(null);
+  E.useEffect(() => {
+    if (!i.current || o.current) {
+      return;
+    }
+    const h = new P1.FitAddon();
+    const a = new L1.Terminal({
+      cursorBlink: true,
+      convertEol: true,
+      fontSize: 13,
+      fontFamily: "'SF Mono', Monaco, 'Cascadia Code', monospace",
+      theme: hx()
+    });
+    a.loadAddon(h);
+    a.open(i.current);
+    o.current = a;
+    u.current = h;
+    if (r) {
+      r(a, h);
+    }
+    requestAnimationFrame(() => {
+      try {
+        h.fit();
+      } catch {}
+    });
+    const c = d => {
+      if (o.current) {
+        o.current.options.theme = hx();
+      }
+    };
+    window.addEventListener("theme-changed", c);
+    window.addEventListener("terminal-bg-changed", c);
+    return () => {
+      window.removeEventListener("theme-changed", c);
+      window.removeEventListener("terminal-bg-changed", c);
+      a.dispose();
+      o.current = null;
+    };
+  }, []);
+  E.useEffect(() => {
+    if (n && u.current) {
+      const h = setTimeout(() => {
+        try {
+          u.current.fit();
+        } catch {}
+      }, 60);
+      return () => clearTimeout(h);
+    }
+  }, [n]);
+  return <div ref={i} className="xterm-transparent-bg" style={{
+    flex: 1,
+    minHeight: 0,
+    overflow: "hidden",
+    display: n ? "block" : "none"
+  }} />;
+}
 
 function _Component105({
   window: e,
@@ -7745,6 +7805,10 @@ function _Component105({
   const g = E.useRef(null);
   const b = E.useRef(null);
   const [m, v] = E.useState(false);
+  // [jsos-local-terminal-spawn] 面板终端 tab 状态
+  const [jsSpawnTabs, jsSetSpawnTabs] = E.useState([]);
+  const [jsActiveTab, jsSetActiveTab] = E.useState("logs");
+  const jsSpawnSeq = E.useRef(0);
   const [C, T] = E.useState(1);
   const [A, M] = E.useState(false);
   const [R, I] = E.useState([]);
@@ -7768,6 +7832,34 @@ function _Component105({
     window.addEventListener("terminal-bg-changed", te);
     return () => window.removeEventListener("terminal-bg-changed", te);
   }, []);
+  E.useEffect(() => {
+    const te = be => {
+      const ve = be.detail || {};
+      if (ve.windowId !== e.id) {
+        return;
+      }
+      jsSpawnSeq.current += 1;
+      const Ce = `spawn${Date.now()}_${jsSpawnSeq.current}`;
+      jsSetSpawnTabs(Te => [...Te, {
+        tabId: Ce,
+        title: `${f("window.terminalTab")} ${jsSpawnSeq.current}`
+      }]);
+      jsSetActiveTab(Ce);
+      v(true);
+    };
+    window.addEventListener("jsos-terminal-spawn", te);
+    return () => window.removeEventListener("jsos-terminal-spawn", te);
+  }, [e.id, f]);
+  E.useEffect(() => {
+    if (jsActiveTab === "logs" && g.current) {
+      const te = setTimeout(() => {
+        try {
+          g.current.fit();
+        } catch {}
+      }, 60);
+      return () => clearTimeout(te);
+    }
+  }, [jsActiveTab]);
   E.useEffect(() => {
     F.current = {
       navHistory: R,
@@ -8181,11 +8273,43 @@ function _Component105({
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
+            gap: 8,
             padding: "0 8px",
             borderBottom: "1px solid var(--color-border)",
             flexShrink: 0
-          }}><Tf size={12} style={{
-              color: "var(--color-muted-foreground)"
+          }}><div style={{
+            display: "flex",
+            alignItems: "center",
+            gap: 4,
+            flex: 1,
+            overflow: "hidden"
+          }}><button onClick={() => jsSetActiveTab("logs")} style={{
+              display: "flex",
+              alignItems: "center",
+              gap: 4,
+              padding: "2px 8px",
+              fontSize: 11,
+              borderRadius: 6,
+              border: "none",
+              cursor: "pointer",
+              flexShrink: 0,
+              background: jsActiveTab === "logs" ? "var(--color-accent)" : "transparent",
+              color: jsActiveTab === "logs" ? "var(--color-accent-foreground)" : "var(--color-muted-foreground)"
+            }}>{f("window.logs")}</button>{jsSpawnTabs.map(jsTe => <button key={jsTe.tabId} onClick={() => jsSetActiveTab(jsTe.tabId)} style={{
+              display: "flex",
+              alignItems: "center",
+              gap: 4,
+              padding: "2px 8px",
+              fontSize: 11,
+              borderRadius: 6,
+              border: "none",
+              cursor: "pointer",
+              flexShrink: 0,
+              background: jsActiveTab === jsTe.tabId ? "var(--color-accent)" : "transparent",
+              color: jsActiveTab === jsTe.tabId ? "var(--color-accent-foreground)" : "var(--color-muted-foreground)"
+            }}>{jsTe.title}</button>)}</div><Tf size={12} style={{
+              color: "var(--color-muted-foreground)",
+              flexShrink: 0
             }} /><_Component25><An render={<button style={{
                 display: "flex",
                 alignItems: "center",
@@ -8201,8 +8325,20 @@ function _Component105({
               }} onClick={() => T(te => (te + 1) % px.length)} onPointerDown={te => te.stopPropagation()}>{C < 2 ? <_Component28 size={12} /> : <_Component29 size={12} />}</button>}>{C === 0 ? "25%" : C === 1 ? "50%" : "75%"}</An><Mn side="top">{f(C === 0 ? "window.terminalSize50" : C === 1 ? "window.terminalSize75" : "window.terminalSize25")}</Mn></_Component25></div><div ref={x} className="xterm-transparent-bg" style={{
             flex: 1,
             minHeight: 0,
-            overflow: "hidden"
-          }} /></div></B.Fragment>}</div>{!P && <div className="relative h-7 overflow-hidden shrink-0 border-t border-border bg-card"><div className={`absolute inset-0 flex items-center gap-1 px-2 text-[11px] transition-opacity duration-200 ${D ? "opacity-0 pointer-events-none" : "opacity-100"}`}><div className={`w-2 h-2 rounded-full ${e.status === "ready" ? "bg-success" : e.status === "error" ? "bg-destructive" : "bg-warning"}`} /><span className="flex-1 truncate text-muted-foreground">{e.statusText}</span><_Component25><An render={<Jn variant="ghost" size="icon-xs" aria-label={f("window.addressBar")} className={D ? "bg-accent text-accent-foreground" : undefined} onClick={() => $(te => !te)} />}><_Component30 size={13} /></An><Mn side="top">{f("window.addressBar")}</Mn></_Component25><_Component25><An render={<Jn variant="ghost" size="icon-xs" aria-label={f("window.logs")} className={m ? "bg-accent text-accent-foreground" : undefined} onClick={() => v(te => !te)} />}><Tf size={12} /></An><Mn side="top">{f("window.logs")}</Mn></_Component25></div><div className={`absolute inset-0 flex items-center gap-1 px-2 text-[11px] transition-opacity duration-200 ${D ? "opacity-100" : "opacity-0 pointer-events-none"}`}><_Component25><An render={<Jn variant="ghost" size="icon-xs" aria-label={f("window.back")} disabled={j <= 0} onClick={re} />}><XI size={14} /></An><Mn side="top">{f("window.back")}</Mn></_Component25><_Component25><An render={<Jn variant="ghost" size="icon-xs" aria-label={f("window.forward")} disabled={j >= R.length - 1} onClick={ce} />}><_Component18 size={14} /></An><Mn side="top">{f("window.forward")}</Mn></_Component25><_Component25><An render={<Jn variant="ghost" size="icon-xs" aria-label={f("window.home")} onClick={ge} />}><_Component31 size={14} /></An><Mn side="top">{f("window.home")}</Mn></_Component25><_Component25><An render={<Jn variant="ghost" size="icon-xs" aria-label={f("window.refresh")} onClick={de} />}><_Component27 size={14} /></An><Mn side="top">{f("window.refresh")}</Mn></_Component25><div className="flex-1 min-w-0"><Sb type="text" size="sm" value={pe} readOnly={true} className="h-5 px-1.5 bg-muted/30 border-border/50 [&>input]:text-[10px]" style={{
+            overflow: "hidden",
+            display: jsActiveTab === "logs" ? "block" : "none"
+          }} />{jsSpawnTabs.map(jsTe => <jsSpawnTabView key={jsTe.tabId} tabId={jsTe.tabId} visible={jsActiveTab === jsTe.tabId} onReady={(jsTerm, jsFit) => {
+            if (p) {
+              p.set(`${e.id}::${jsTe.tabId}`, jsTerm);
+            }
+            window.dispatchEvent(new CustomEvent("jsos-terminal-tab-ready", {
+              detail: {
+                windowId: e.id,
+                tabId: jsTe.tabId,
+                key: `${e.id}::${jsTe.tabId}`
+              }
+            }));
+          }} />)}</div></B.Fragment>}</div>{!P && <div className="relative h-7 overflow-hidden shrink-0 border-t border-border bg-card"><div className={`absolute inset-0 flex items-center gap-1 px-2 text-[11px] transition-opacity duration-200 ${D ? "opacity-0 pointer-events-none" : "opacity-100"}`}><div className={`w-2 h-2 rounded-full ${e.status === "ready" ? "bg-success" : e.status === "error" ? "bg-destructive" : "bg-warning"}`} /><span className="flex-1 truncate text-muted-foreground">{e.statusText}</span><_Component25><An render={<Jn variant="ghost" size="icon-xs" aria-label={f("window.addressBar")} className={D ? "bg-accent text-accent-foreground" : undefined} onClick={() => $(te => !te)} />}><_Component30 size={13} /></An><Mn side="top">{f("window.addressBar")}</Mn></_Component25><_Component25><An render={<Jn variant="ghost" size="icon-xs" aria-label={f("window.logs")} className={m ? "bg-accent text-accent-foreground" : undefined} onClick={() => v(te => !te)} />}><Tf size={12} /></An><Mn side="top">{f("window.logs")}</Mn></_Component25></div><div className={`absolute inset-0 flex items-center gap-1 px-2 text-[11px] transition-opacity duration-200 ${D ? "opacity-100" : "opacity-0 pointer-events-none"}`}><_Component25><An render={<Jn variant="ghost" size="icon-xs" aria-label={f("window.back")} disabled={j <= 0} onClick={re} />}><XI size={14} /></An><Mn side="top">{f("window.back")}</Mn></_Component25><_Component25><An render={<Jn variant="ghost" size="icon-xs" aria-label={f("window.forward")} disabled={j >= R.length - 1} onClick={ce} />}><_Component18 size={14} /></An><Mn side="top">{f("window.forward")}</Mn></_Component25><_Component25><An render={<Jn variant="ghost" size="icon-xs" aria-label={f("window.home")} onClick={ge} />}><_Component31 size={14} /></An><Mn side="top">{f("window.home")}</Mn></_Component25><_Component25><An render={<Jn variant="ghost" size="icon-xs" aria-label={f("window.refresh")} onClick={de} />}><_Component27 size={14} /></An><Mn side="top">{f("window.refresh")}</Mn></_Component25><div className="flex-1 min-w-0"><Sb type="text" size="sm" value={pe} readOnly={true} className="h-5 px-1.5 bg-muted/30 border-border/50 [&>input]:text-[10px]" style={{
             height: "1.25rem",
             lineHeight: "1.25rem"
           }} aria-label={f("window.addressBar")} nativeInput={true} /></div><_Component25><An render={<Jn variant="ghost" size="icon-xs" aria-label={f("window.addressBar")} className={D ? "bg-accent text-accent-foreground" : undefined} onClick={() => $(te => !te)} />}><_Component30 size={13} /></An><Mn side="top">{f("window.addressBar")}</Mn></_Component25><_Component25><An render={<Jn variant="ghost" size="icon-xs" aria-label={f("window.logs")} className={m ? "bg-accent text-accent-foreground" : undefined} onClick={() => v(te => !te)} />}><Tf size={12} /></An><Mn side="top">{f("window.logs")}</Mn></_Component25></div></div>}{!e.maximized && <div className="absolute bottom-0 right-0 w-4 h-4 cursor-nwse-resize" style={{
@@ -17674,7 +17810,7 @@ async function NN(e, n) {
     };
   }
 }
-// [jsos-local-terminal-spawn] 支持 window.JSOS.terminal.spawn：在系统终端窗口中执行命令
+// [jsos-local-terminal-spawn] 支持 window.JSOS.terminal.spawn：优先在调用者窗口自带的终端面板中执行命令
 async function jsTerminalSpawn(e, n) {
   const { command: r, args: i = [], cwd: u } = e || {};
   if (!r) {
@@ -17682,6 +17818,19 @@ async function jsTerminalSpawn(e, n) {
       error: "command is required"
     };
   }
+  // 优先：写入调用者窗口自带的终端面板（抽屉 xterm）
+  const o = n.callingWindowId;
+  if (o && n.jsSpawnInPanel) {
+    const h = await n.jsSpawnInPanel(o, {
+      command: r,
+      args: i,
+      cwd: u
+    });
+    if (h && !h.error) {
+      return h;
+    }
+  }
+  // 降级：打开系统终端应用窗口执行
   const { installedApps: h, launchApp: a } = n;
   const c = "dev.jsos.terminal";
   if (!h || !h.has(c)) {
@@ -22248,7 +22397,8 @@ function _Component113() {
           } else {
             return Ct.appId;
           }
-        }
+        },
+        jsSpawnInPanel: jsSpawnInPanel
       };
       let ct = Ce.source;
       if (!ct) {
@@ -22425,6 +22575,73 @@ function _Component113() {
   }, [hn]);
   _e.current = hn;
   Se.current = n;
+  // [jsos-local-terminal-spawn] 在指定窗口自带的终端面板（xterm）中执行命令：新建「终端 N」tab 运行
+  const jsSpawnInPanel = E.useCallback(async (fe, Ce) => {
+    const Ie = Se.current;
+    if (!Ie) {
+      return {
+        error: "WebContainer not ready"
+      };
+    }
+    // 通知窗口组件新建终端 tab，并等待其 xterm 就绪
+    const be = await new Promise(Ue => {
+      const Le = setTimeout(() => {
+        window.removeEventListener("jsos-terminal-tab-ready", Ne);
+        Ue(null);
+      }, 5000);
+      const Ne = Ue2 => {
+        if (Ue2.detail && Ue2.detail.windowId === fe) {
+          clearTimeout(Le);
+          window.removeEventListener("jsos-terminal-tab-ready", Ne);
+          Ue(Ue2.detail.key);
+        }
+      };
+      window.addEventListener("jsos-terminal-tab-ready", Ne);
+      window.dispatchEvent(new CustomEvent("jsos-terminal-spawn", {
+        detail: {
+          windowId: fe
+        }
+      }));
+    });
+    if (!be) {
+      return {
+        error: "terminal panel not available"
+      };
+    }
+    const Te = te.current.get(be);
+    if (!Te) {
+      return {
+        error: "terminal panel not available"
+      };
+    }
+    let Ne = Ce.cwd ? `cd '${String(Ce.cwd).replace(/'/g, "'\\''")}' && ${Ce.command}` : Ce.command;
+    if (Ce.args && Ce.args.length > 0) {
+      Ne += ` ${Ce.args.join(" ")}`;
+    }
+    Te.write(`\x1B[1;36m$ ${Ne}\x1B[0m\r\n`);
+    try {
+      const Ue = await Ie.spawn("sh", ["-c", Ne]);
+      Ue.output.pipeTo(new WritableStream({
+        write: Le => Te.write(Le)
+      }));
+      Ue.exit.then(Le => {
+        Te.write(`\r\n\x1B[1;33m[进程已退出 code ${Le}]\x1B[0m\r\n`);
+      });
+      return {
+        result: {
+          success: true
+        }
+      };
+    } catch (Ue) {
+      Te.write(`\r\n\x1B[1;31mError: ${Ue.message}\x1B[0m\r\n`);
+      return {
+        result: {
+          success: false,
+          error: Ue.message
+        }
+      };
+    }
+  }, []);
   const Yo = E.useCallback(async (fe, Ce = false) => {
     var Ie;
     var Ve;
