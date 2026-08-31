@@ -67,14 +67,20 @@ if (require.main === module) {
       const p = path2.join(OUT, rel, name);
       if (val && val.f) {
         const c = val.f.c;
-        if (!Buffer.isBuffer(c) && typeof c !== 'string') { skipped.push(path2.join(rel, name)); continue; }
+        let buf = null;
+        if (Buffer.isBuffer(c)) {
+          // 官方导出的缺陷：二进制文件（b===true）被当作 latin1 字符串再存成 UTF-8，
+          // 需要逆变换：utf8 解码成 latin1 字符 → 逐字节写回；文本文件按原样写入
+          buf = val.f.b === true ? Buffer.from(c.toString('utf8'), 'latin1') : c;
+        } else if (typeof c === 'string') {
+          buf = val.f.b === true ? Buffer.from(Buffer.from(c, 'utf8').toString('latin1'), 'latin1') : Buffer.from(c, 'utf8');
+        } else if (c && c.type === 'Buffer' && Array.isArray(c.data)) {
+          // 新格式：内容是 {type:'Buffer', data:[字节]} 的 map，直接还原字节
+          buf = Buffer.from(c.data);
+        }
+        if (buf === null) { skipped.push(path2.join(rel, name)); continue; }
         files++;
         fs2.mkdirSync(path2.dirname(p), { recursive: true });
-        // 官方导出的缺陷：二进制文件（b===true）被当作 latin1 字符串再存成 UTF-8，
-        // 需要逆变换：utf8 解码成 latin1 字符 → 逐字节写回；文本文件按原样写入
-        const buf = val.f.b === true
-          ? Buffer.from(Buffer.from(c).toString('utf8'), 'latin1')
-          : Buffer.from(c);
         fs2.writeFileSync(p, buf);
       } else if (val && val.d) {
         dirs++;
