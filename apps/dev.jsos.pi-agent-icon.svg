@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#1e293b"/>
-      <stop offset="1" stop-color="#0f172a"/>
-    </linearGradient>
-  </defs>
-
-  <!-- 终端底色 -->
-  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
-  <rect x="24" y="24" width="464" height="464" rx="96" fill="none" stroke="#334155" stroke-width="6" opacity=".6"/>
-
-  <!-- AI 火花 -->
-  <path d="M388 96l16 44 44 16-44 16-16 44-16-44-44-16 44-16z" fill="#fbbf24"/>
-  <path d="M430 210l8 22 22 8-22 8-8 22-8-22-22-8 22-8z" fill="#fbbf24" opacity=".7"/>
-
-  <!-- 终端提示符 > -->
-  <path d="M128 186l96 76-96 76" fill="none" stroke="#4ade80" stroke-width="38" stroke-linecap="round" stroke-linejoin="round"/>
-  <!-- 光标下划线 -->
-  <line x1="262" y1="338" x2="386" y2="338" stroke="#4ade80" stroke-width="30" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <rect width="800" height="800" rx="120" fill="#09090b"/>
+  <path fill="#fff" fill-rule="evenodd" d="
+    M165.29 165.29
+    H517.36
+    V400
+    H400
+    V517.36
+    H282.65
+    V634.72
+    H165.29
+    Z
+    M282.65 282.65
+    V400
+    H400
+    V282.65
+    Z
+  "/>
+  <path fill="#fff" d="M517.36 400 H634.72 V634.72 H517.36 Z"/>
 </svg>
