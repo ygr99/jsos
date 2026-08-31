@@ -7809,8 +7809,6 @@ function _Component105({
   const [jsSpawnTabs, jsSetSpawnTabs] = E.useState([]);
   const [jsActiveTab, jsSetActiveTab] = E.useState("logs");
   const jsSpawnSeq = E.useRef(0);
-  // [jsos-local-terminal-spawn] iframe 加载完成（含缓冲）前保持 loading 层，消除白屏空窗
-  const [jsIframeReady, jsSetIframeReady] = E.useState(false);
   const [C, T] = E.useState(1);
   const [A, M] = E.useState(false);
   const [R, I] = E.useState([]);
@@ -7862,9 +7860,6 @@ function _Component105({
       return () => clearTimeout(te);
     }
   }, [jsActiveTab]);
-  E.useEffect(() => {
-    jsSetIframeReady(false);
-  }, [z, G]);
   E.useEffect(() => {
     F.current = {
       navHistory: R,
@@ -8250,14 +8245,7 @@ function _Component105({
               if (o != null) {
                 o(e.id);
               }
-            }} />}><_Component23 size={12} /></An><Mn side="top">{f("window.close")}</Mn></_Component25></div>}</B.Fragment> : <B.Fragment>{z ? <B.Fragment><iframe ref={Y} src={z} data-window-id={e.id} className="absolute inset-0 w-full h-full border-none bg-background" key={G} onLoad={() => {
-            // 缓冲 450ms：覆盖应用文档加载完成后 React 首帧渲染的时间，避免 loading 撤掉后闪白屏
-            setTimeout(() => jsSetIframeReady(true), 450);
-          }} /><div className="absolute inset-0 z-[5] bg-background flex items-center justify-center" style={{
-            pointerEvents: jsIframeReady ? "none" : "auto",
-            opacity: jsIframeReady ? 0 : 1,
-            transition: "opacity 250ms ease"
-          }}><_Component26 app={e.app} statusText={e.statusText} /></div><div className="absolute inset-0 z-10" style={{
+            }} />}><_Component23 size={12} /></An><Mn side="top">{f("window.close")}</Mn></_Component25></div>}</B.Fragment> : <B.Fragment>{z ? <B.Fragment><iframe ref={Y} src={z} data-window-id={e.id} className="absolute inset-0 w-full h-full border-none bg-background" key={G} /><div className="absolute inset-0 z-10" style={{
             pointerEvents: A ? "none" : "auto"
           }} onPointerDown={() => {
             if (i != null) {
