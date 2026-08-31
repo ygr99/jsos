@@ -17839,7 +17839,7 @@ async function NN(e, n) {
     };
   }
 }
-// [jsos-local-terminal-spawn] 支持 window.JSOS.terminal.spawn：优先在调用者窗口自带的终端面板中执行命令
+// [jsos-local-terminal-spawn] 支持 window.JSOS.terminal.spawn：在调用者窗口自带的终端面板中执行命令
 const jsSpawnProcesses = new Map(); // 面板 tab key -> WebContainer 进程（关闭 tab 时终止）
 async function jsTerminalSpawn(e, n) {
   const { command: r, args: i = [], cwd: u } = e || {};
@@ -17848,47 +17848,20 @@ async function jsTerminalSpawn(e, n) {
       error: "command is required"
     };
   }
-  // 优先：写入调用者窗口自带的终端面板（抽屉 xterm）
   const o = n.callingWindowId;
-  if (o && n.jsSpawnInPanel) {
-    const h = await n.jsSpawnInPanel(o, {
-      command: r,
-      args: i,
-      cwd: u
-    });
-    if (h && !h.error) {
-      return h;
-    }
-  }
-  // 降级：打开系统终端应用窗口执行
-  const { installedApps: h, launchApp: a } = n;
-  const c = "dev.jsos.terminal";
-  if (!h || !h.has(c)) {
-    return {
-      error: "Terminal app not installed"
-    };
-  }
-  try {
-    let f = u ? `cd '${String(u).replace(/'/g, "'\\''")}' && ${r}` : r;
-    if (i && i.length > 0) {
-      f += ` ${i.join(" ")}`;
-    }
-    return {
-      result: {
-        success: true,
-        windowId: await a(c, {
-          startCommand: f
-        })
-      }
-    };
-  } catch (o) {
+  if (!o || !n.jsSpawnInPanel) {
     return {
       result: {
         success: false,
-        error: o.message
+        error: "calling window not found"
       }
     };
   }
+  return await n.jsSpawnInPanel(o, {
+    command: r,
+    args: i,
+    cwd: u
+  });
 }
 function jN(e) {
   const {
@@ -22610,38 +22583,51 @@ function _Component113() {
     const Ie = Se.current;
     if (!Ie) {
       return {
-        error: "WebContainer not ready"
+        result: {
+          success: false,
+          error: "WebContainer not ready"
+        }
       };
     }
-    // 通知窗口组件新建终端 tab，并等待其 xterm 就绪
-    const be = await new Promise(Ue => {
-      const Le = setTimeout(() => {
-        window.removeEventListener("jsos-terminal-tab-ready", Ne);
-        Ue(null);
-      }, 5000);
-      const Ne = Ue2 => {
-        if (Ue2.detail && Ue2.detail.windowId === fe) {
-          clearTimeout(Le);
-          window.removeEventListener("jsos-terminal-tab-ready", Ne);
-          Ue(Ue2.detail.key);
+    // 记录已有的 spawn tab key，通知窗口组件新建 tab，然后轮询等待新 xterm 注册
+    const Ue = fe + "::spawn";
+    const Le = new Set();
+    for (const Ne of te.current.keys()) {
+      if (Ne.startsWith(Ue)) {
+        Le.add(Ne);
+      }
+    }
+    window.dispatchEvent(new CustomEvent("jsos-terminal-spawn", {
+      detail: {
+        windowId: fe
+      }
+    }));
+    let be = null;
+    for (let Ne = 0; Ne < 80 && !be; Ne++) {
+      await new Promise(Ue2 => setTimeout(Ue2, 100));
+      for (const Le2 of te.current.keys()) {
+        if (Le2.startsWith(Ue) && !Le.has(Le2)) {
+          be = Le2;
+          break;
         }
-      };
-      window.addEventListener("jsos-terminal-tab-ready", Ne);
-      window.dispatchEvent(new CustomEvent("jsos-terminal-spawn", {
-        detail: {
-          windowId: fe
-        }
-      }));
-    });
+      }
+    }
     if (!be) {
+      console.warn("[jsos-terminal-spawn] 面板 tab 未就绪，当前 xterm 注册表:", Array.from(te.current.keys()));
       return {
-        error: "terminal panel not available"
+        result: {
+          success: false,
+          error: "terminal panel not available"
+        }
       };
     }
     const Te = te.current.get(be);
     if (!Te) {
       return {
-        error: "terminal panel not available"
+        result: {
+          success: false,
+          error: "terminal panel not available"
+        }
       };
     }
     let Ne = Ce.cwd ? `cd '${String(Ce.cwd).replace(/'/g, "'\\''")}' && ${Ce.command}` : Ce.command;
