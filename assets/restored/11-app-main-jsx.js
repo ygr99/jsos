@@ -22623,13 +22623,20 @@ function _Component113() {
         }
       };
     }
-    let Ne = Ce.cwd ? `cd '${String(Ce.cwd).replace(/'/g, "'\\''")}' && ${Ce.command}` : Ce.command;
+    // 组合命令：按需安装依赖 → 按需构建 → 启动（仅在有 cwd 的项目场景包装）
+    let Ne = Ce.command;
     if (Ce.args && Ce.args.length > 0) {
       Ne += ` ${Ce.args.join(" ")}`;
     }
     // 分配端口并注入（模板 server.js 会 console.log(process.env.PORT)，不注入则输出 undefined）
     const JsPort = String(40000 + Math.floor(Math.random() * 20000));
-    Te.write(`\x1B[1;36m$ ${Ne}\x1B[0m\x1B[2m  [PORT=${JsPort}]\x1B[0m\r\n`);
+    if (Ce.cwd) {
+      const jsStart = Ne.replaceAll("'", "'\\''");
+      Ne = `{ cd '${String(Ce.cwd).replace(/'/g, "'\\''")}' && { [ -d node_modules ] || { echo '[JSOS] node_modules 不存在，安装依赖中（首次较慢）...' && npm install; }; } && { [ -f dist/index.html ] || { node -e 'const s=require("./package.json").scripts||{};process.exit(s.build?1:0)' || { echo '[JSOS] dist 不存在，构建中...' && npm run build; }; }; } && ${jsStart}; }`;
+      Te.write(`\x1B[1;36m$ ${Ne}\x1B[0m\x1B[2m  [PORT=${JsPort}]\x1B[0m\r\n`);
+    } else {
+      Te.write(`\x1B[1;36m$ ${Ne}\x1B[0m\x1B[2m  [PORT=${JsPort}]\x1B[0m\r\n`);
+    }
     try {
       const Ue = await Ie.spawn("sh", ["-c", Ne], {
         env: {
