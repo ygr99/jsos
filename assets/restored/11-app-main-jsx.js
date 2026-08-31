@@ -7716,8 +7716,8 @@ function aB(e) {
   return n[Math.abs(r) % n.length];
 }
 const px = [0.25, 0.5, 0.75];
-// [jsos-local-terminal-spawn] 面板「终端 N」tab 的独立 xterm 容器
-function jsSpawnTabView({ tabId: e, visible: n, onReady: r }) {
+// [jsos-local-terminal-spawn] 面板「终端 N」tab 的独立 xterm 容器（组件名必须大写开头，否则 JSX 会被当作字符串标签）
+function JsSpawnTabView({ tabId: e, visible: n, onReady: r }) {
   const i = E.useRef(null);
   const o = E.useRef(null);
   const u = E.useRef(null);
@@ -8356,17 +8356,10 @@ function _Component105({
             minHeight: 0,
             overflow: "hidden",
             display: jsActiveTab === "logs" ? "block" : "none"
-          }} />{jsSpawnTabs.map(jsTe => <jsSpawnTabView key={jsTe.tabId} tabId={jsTe.tabId} visible={jsActiveTab === jsTe.tabId} onReady={(jsTerm, jsFit) => {
+          }} />{jsSpawnTabs.map(jsTe => <JsSpawnTabView key={jsTe.tabId} tabId={jsTe.tabId} visible={jsActiveTab === jsTe.tabId} onReady={(jsTerm, jsFit) => {
             if (p) {
               p.set(`${e.id}::${jsTe.tabId}`, jsTerm);
             }
-            window.dispatchEvent(new CustomEvent("jsos-terminal-tab-ready", {
-              detail: {
-                windowId: e.id,
-                tabId: jsTe.tabId,
-                key: `${e.id}::${jsTe.tabId}`
-              }
-            }));
           }} />)}</div></B.Fragment>}</div>{!P && <div className="relative h-7 overflow-hidden shrink-0 border-t border-border bg-card"><div className={`absolute inset-0 flex items-center gap-1 px-2 text-[11px] transition-opacity duration-200 ${D ? "opacity-0 pointer-events-none" : "opacity-100"}`}><div className={`w-2 h-2 rounded-full ${e.status === "ready" ? "bg-success" : e.status === "error" ? "bg-destructive" : "bg-warning"}`} /><span className="flex-1 truncate text-muted-foreground">{e.statusText}</span><_Component25><An render={<Jn variant="ghost" size="icon-xs" aria-label={f("window.addressBar")} className={D ? "bg-accent text-accent-foreground" : undefined} onClick={() => $(te => !te)} />}><_Component30 size={13} /></An><Mn side="top">{f("window.addressBar")}</Mn></_Component25><_Component25><An render={<Jn variant="ghost" size="icon-xs" aria-label={f("window.logs")} className={m ? "bg-accent text-accent-foreground" : undefined} onClick={() => v(te => !te)} />}><Tf size={12} /></An><Mn side="top">{f("window.logs")}</Mn></_Component25></div><div className={`absolute inset-0 flex items-center gap-1 px-2 text-[11px] transition-opacity duration-200 ${D ? "opacity-100" : "opacity-0 pointer-events-none"}`}><_Component25><An render={<Jn variant="ghost" size="icon-xs" aria-label={f("window.back")} disabled={j <= 0} onClick={re} />}><XI size={14} /></An><Mn side="top">{f("window.back")}</Mn></_Component25><_Component25><An render={<Jn variant="ghost" size="icon-xs" aria-label={f("window.forward")} disabled={j >= R.length - 1} onClick={ce} />}><_Component18 size={14} /></An><Mn side="top">{f("window.forward")}</Mn></_Component25><_Component25><An render={<Jn variant="ghost" size="icon-xs" aria-label={f("window.home")} onClick={ge} />}><_Component31 size={14} /></An><Mn side="top">{f("window.home")}</Mn></_Component25><_Component25><An render={<Jn variant="ghost" size="icon-xs" aria-label={f("window.refresh")} onClick={de} />}><_Component27 size={14} /></An><Mn side="top">{f("window.refresh")}</Mn></_Component25><div className="flex-1 min-w-0"><Sb type="text" size="sm" value={pe} readOnly={true} className="h-5 px-1.5 bg-muted/30 border-border/50 [&>input]:text-[10px]" style={{
             height: "1.25rem",
             lineHeight: "1.25rem"
