@@ -8245,7 +8245,7 @@ function _Component105({
               if (o != null) {
                 o(e.id);
               }
-            }} />}><_Component23 size={12} /></An><Mn side="top">{f("window.close")}</Mn></_Component25></div>}</B.Fragment> : <B.Fragment>{z ? <B.Fragment><div className="absolute inset-0 bg-background" /><iframe ref={Y} src={z} data-window-id={e.id} className="absolute inset-0 w-full h-full border-none bg-background" key={G} /><div className="absolute inset-0 z-10" style={{
+            }} />}><_Component23 size={12} /></An><Mn side="top">{f("window.close")}</Mn></_Component25></div>}</B.Fragment> : <B.Fragment>{z ? <B.Fragment><iframe ref={Y} src={z} data-window-id={e.id} className="absolute inset-0 w-full h-full border-none bg-background" key={G} /><div className="absolute inset-0 z-10" style={{
             pointerEvents: A ? "none" : "auto"
           }} onPointerDown={() => {
             if (i != null) {
