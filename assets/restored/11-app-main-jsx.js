@@ -8295,7 +8295,7 @@ function _Component105({
               flexShrink: 0,
               background: jsActiveTab === "logs" ? "var(--color-accent)" : "transparent",
               color: jsActiveTab === "logs" ? "var(--color-accent-foreground)" : "var(--color-muted-foreground)"
-            }}>{f("window.logs")}</button>{jsSpawnTabs.map(jsTe => <button key={jsTe.tabId} onClick={() => jsSetActiveTab(jsTe.tabId)} style={{
+            }}>{f("window.logs")}</button>{jsSpawnTabs.map(jsTe => <div key={jsTe.tabId} onClick={() => jsSetActiveTab(jsTe.tabId)} style={{
               display: "flex",
               alignItems: "center",
               gap: 4,
@@ -8305,9 +8305,38 @@ function _Component105({
               border: "none",
               cursor: "pointer",
               flexShrink: 0,
+              whiteSpace: "nowrap",
               background: jsActiveTab === jsTe.tabId ? "var(--color-accent)" : "transparent",
               color: jsActiveTab === jsTe.tabId ? "var(--color-accent-foreground)" : "var(--color-muted-foreground)"
-            }}>{jsTe.title}</button>)}</div><Tf size={12} style={{
+            }}><span>{jsTe.title}</span><button onClick={jsEv => {
+              jsEv.stopPropagation();
+              const jsKey = `${e.id}::${jsTe.tabId}`;
+              const jsProc = jsSpawnProcesses.get(jsKey);
+              if (jsProc) {
+                try {
+                  jsProc.kill();
+                } catch {}
+                jsSpawnProcesses.delete(jsKey);
+              }
+              jsSetSpawnTabs(jsTs => jsTs.filter(jsT2 => jsT2.tabId !== jsTe.tabId));
+              if (p) {
+                p.delete(jsKey);
+              }
+              jsSetActiveTab(jsCur => jsCur === jsTe.tabId ? "logs" : jsCur);
+            }} style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              width: 14,
+              height: 14,
+              borderRadius: 2,
+              border: "none",
+              background: "transparent",
+              color: "inherit",
+              cursor: "pointer",
+              padding: 0,
+              opacity: .6
+            }}><svg xmlns="http://www.w3.org/2000/svg" width={10} height={10} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button></div>)}</div><Tf size={12} style={{
               color: "var(--color-muted-foreground)",
               flexShrink: 0
             }} /><_Component25><An render={<button style={{
@@ -17811,6 +17840,7 @@ async function NN(e, n) {
   }
 }
 // [jsos-local-terminal-spawn] 支持 window.JSOS.terminal.spawn：优先在调用者窗口自带的终端面板中执行命令
+const jsSpawnProcesses = new Map(); // 面板 tab key -> WebContainer 进程（关闭 tab 时终止）
 async function jsTerminalSpawn(e, n) {
   const { command: r, args: i = [], cwd: u } = e || {};
   if (!r) {
@@ -22621,10 +22651,12 @@ function _Component113() {
     Te.write(`\x1B[1;36m$ ${Ne}\x1B[0m\r\n`);
     try {
       const Ue = await Ie.spawn("sh", ["-c", Ne]);
+      jsSpawnProcesses.set(be, Ue);
       Ue.output.pipeTo(new WritableStream({
         write: Le => Te.write(Le)
       }));
       Ue.exit.then(Le => {
+        jsSpawnProcesses.delete(be);
         Te.write(`\r\n\x1B[1;33m[进程已退出 code ${Le}]\x1B[0m\r\n`);
       });
       return {
