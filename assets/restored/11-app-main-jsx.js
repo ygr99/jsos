@@ -22623,7 +22623,8 @@ function _Component113() {
         }
       };
     }
-    // 组合命令：按需安装依赖 → 按需构建 → 启动（仅在有 cwd 的项目场景包装）
+    // 组合命令：按需安装依赖 → 按需构建 → 启动。WebContainer 的 sh 是精简版 jsh（不支持 {} 分组），
+    // 因此引导逻辑用 node -e + base64 执行，绕开 shell 语法限制
     let Ne = Ce.command;
     if (Ce.args && Ce.args.length > 0) {
       Ne += ` ${Ce.args.join(" ")}`;
@@ -22631,8 +22632,9 @@ function _Component113() {
     // 分配端口并注入（模板 server.js 会 console.log(process.env.PORT)，不注入则输出 undefined）
     const JsPort = String(40000 + Math.floor(Math.random() * 20000));
     if (Ce.cwd) {
+      const jsBoot = "const fs=require('fs'),cp=require('child_process');if(!fs.existsSync('node_modules')){console.log('[JSOS] Installing dependencies (first run may take a while)...');cp.execSync('npm install',{stdio:'inherit'})}if(!fs.existsSync('dist/index.html')){const s=(JSON.parse(fs.readFileSync('package.json','utf8')).scripts)||{};if(s.build){console.log('[JSOS] dist not found, building...');cp.execSync('npm run build',{stdio:'inherit'})}}";
       const jsStart = Ne.replaceAll("'", "'\\''");
-      Ne = `{ cd '${String(Ce.cwd).replace(/'/g, "'\\''")}' && { [ -d node_modules ] || { echo '[JSOS] node_modules 不存在，安装依赖中（首次较慢）...' && npm install; }; } && { [ -f dist/index.html ] || { node -e 'const s=require("./package.json").scripts||{};process.exit(s.build?1:0)' || { echo '[JSOS] dist 不存在，构建中...' && npm run build; }; }; } && ${jsStart}; }`;
+      Ne = `cd '${String(Ce.cwd).replace(/'/g, "'\\''")}' && node -e "eval(Buffer.from('${btoa(jsBoot)}','base64').toString())" && ${jsStart}`;
       Te.write(`\x1B[1;36m$ ${Ne}\x1B[0m\x1B[2m  [PORT=${JsPort}]\x1B[0m\r\n`);
     } else {
       Te.write(`\x1B[1;36m$ ${Ne}\x1B[0m\x1B[2m  [PORT=${JsPort}]\x1B[0m\r\n`);
