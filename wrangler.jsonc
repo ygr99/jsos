@@ -1,0 +1,19 @@
+// Cloudflare Workers 部署配置
+// CI 中 wrangler deploy 会先执行 build.command 收集静态文件到 dist/，再上传 dist/ 作为站点资产。
+// 注意：assets.directory 不能指向仓库根目录 "."，否则 .git（>25MiB）会被当作资产导致部署失败。
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "jsos",
+  "compatibility_date": "2026-08-28",
+  "observability": {
+    "enabled": true
+  },
+  "build": {
+    "command": "node tools/prepare-dist.mjs"
+  },
+  "assets": {
+    "directory": "./dist",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "single-page-application"
+  }
+}

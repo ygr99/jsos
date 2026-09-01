@@ -1,3 +1,5 @@
 node_modules/
 *.beauty.js
 *.beauty.css
+dist/
+.wrangler/
