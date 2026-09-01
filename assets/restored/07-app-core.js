@@ -3443,9 +3443,14 @@ const mD = {
     noApps: "暂无已安装的应用",
     navigate: "导航",
     select: "打开",
+    tabMode: "切换搜索模式",
     close: "关闭",
     running: "运行中",
-    installed: "已安装"
+    installed: "已安装",
+    webSearch: "搜索网页...",
+    doSearch: "搜索",
+    toWeb: "切换到网页搜索",
+    toApps: "切换到应用搜索"
   },
   compat: {
     title: "浏览器/设备不兼容",
@@ -3653,9 +3658,14 @@ const iv = {
     noApps: "No apps installed",
     navigate: "Navigate",
     select: "Open",
+    tabMode: "Switch search mode",
     close: "Close",
     running: "Running",
-    installed: "Installed"
+    installed: "Installed",
+    webSearch: "Search the web...",
+    doSearch: "Search",
+    toWeb: "Switch to web search",
+    toApps: "Switch to app search"
   },
   compat: {
     title: "Browser / Device Incompatible",

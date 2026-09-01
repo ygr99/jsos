@@ -12354,13 +12354,6 @@ function _Component55({
 }) {
   return <_Component46 autoHighlight={e} inline={true} keepHighlight={n} open={true} {...r} />;
 }
-function H6({
-  className: e,
-  placeholder: n = undefined,
-  ...r
-}) {
-  return <div className="px-2.5 py-1.5"><C6 autoFocus={true} className={pt("border-transparent! bg-transparent! shadow-none before:hidden has-focus-visible:ring-0", e)} placeholder={n} size="lg" startAddon={<_Component47 />} {...r} /></div>;
-}
 function F6({
   className: e,
   ...n
@@ -12378,12 +12371,6 @@ function V6({
   ...n
 }) {
   return <T6 className={e} data-slot="command-group" {...n} />;
-}
-function W6({
-  className: e,
-  ...n
-}) {
-  return <_Component48 className={e} data-slot="command-group-label" {...n} />;
 }
 function $6({
   ...e
@@ -12508,6 +12495,31 @@ function K6({
     locale: x
   } = Lr();
   const [w, g] = E.useState(Sx);
+  const [jsosWebMode, jsosSetWebMode] = E.useState(() => {
+    try {
+      return localStorage.getItem("jsos-launcher-mode") === "web";
+    } catch {
+      return false;
+    }
+  });
+  const [jsosKw, jsosSetKw] = E.useState("");
+  const [jsosHiIdx, jsosSetHiIdx] = E.useState(0);
+  E.useEffect(() => {
+    document.querySelector('[data-slot="command-dialog-popup"] [data-web-engine][data-highlighted]')?.scrollIntoView({
+      block: "nearest"
+    });
+  }, [jsosHiIdx, jsosKw, jsosWebMode]);
+  const jsosSwitchMode = jsosNext => {
+    jsosSetWebMode(jsosNext);
+    try {
+      localStorage.setItem("jsos-launcher-mode", jsosNext ? "web" : "apps");
+    } catch {}
+  };
+  E.useEffect(() => {
+    if (!o) {
+      jsosSetKw("");
+    }
+  }, [o]);
   const b = E.useMemo(() => {
     const R = new Set();
     for (const I of n.values()) {
@@ -12593,7 +12605,94 @@ function K6({
     g(Sx);
   }, []);
   const A = typeof navigator !== "undefined" && ((M = navigator.platform) == null ? undefined : M.includes("Mac")) ? "⌘" : "Ctrl+";
-  return <B.Fragment><_Component25><An render={<button onClick={() => u == null ? undefined : u(true)} className="h-8 w-8 rounded-lg flex items-center justify-center hover:bg-accent transition-colors shrink-0 text-foreground/80" />}>{S === "ready" ? <_Component47 size={18} /> : <_C className="size-[18px]" />}</An><Mn side={f}>{_("launcher.title")}</Mn></_Component25><L6 open={o} onOpenChange={u}><N6><_Component55 items={m} filter={(R, I) => R.searchText.includes(I.toLowerCase())}><H6 placeholder={_("launcher.search")} /><div className="min-h-0" onContextMenu={R => R.stopPropagation()}><U6>{_("launcher.noResults")}</U6><F6>{(R, I) => <E.Fragment key={R.value}><V6 items={R.items}><W6>{R.label}</W6><$6>{j => <_Component54 value={j.value} className="gap-2.5" onClick={() => v(j.value)} onContextMenu={W => {
+  const jsosEngines = [{
+    name: "GitHub",
+    url: "https://github.com/search?q=%s",
+    home: "https://github.com",
+    icon: "/icons/github.png"
+  }, {
+    name: "知乎",
+    url: "https://www.zhihu.com/search?q=%s",
+    home: "https://www.zhihu.com",
+    icon: "/icons/zhihu.png"
+  }, {
+    name: "百度百科",
+    url: "https://baike.baidu.com/search?word=%s",
+    home: "https://baike.baidu.com",
+    icon: "/icons/baike.png"
+  }, {
+    name: "掘金",
+    url: "https://juejin.cn/search?query=%s",
+    home: "https://juejin.cn",
+    icon: "/icons/juejin.png"
+  }, {
+    name: "MDN",
+    url: "https://developer.mozilla.org/zh-CN/search?q=%s",
+    home: "https://developer.mozilla.org",
+    icon: "/icons/mdn.png"
+  }, {
+    name: "B站",
+    url: "https://search.bilibili.com/all?keyword=%s",
+    home: "https://www.bilibili.com",
+    icon: "/icons/bilibili.png"
+  }, {
+    name: "豆瓣",
+    url: "https://www.douban.com/search?q=%s",
+    home: "https://www.douban.com",
+    icon: "/icons/douban.png"
+  }, {
+    name: "必应",
+    url: "https://www.bing.com/search?q=%s",
+    home: "https://www.bing.com",
+    icon: "/icons/bing.png"
+  }, {
+    name: "Google",
+    url: "https://www.google.com/search?q=%s",
+    home: "https://www.google.com",
+    icon: "/icons/google.png"
+  }, {
+    name: "百度",
+    url: "https://www.baidu.com/s?wd=%s",
+    home: "https://www.baidu.com",
+    icon: "/icons/baidu.png"
+  }];
+  const jsosSearch = jsosEng => {
+    const jsosKwTrim = jsosKw.trim();
+    window.open(jsosKwTrim ? jsosEng.url.replace("%s", encodeURIComponent(jsosKwTrim)) : jsosEng.home, "_blank", "noopener");
+  };
+  const jsosWebGo = () => {
+    const jsosEng = jsosEngines[Math.min(jsosHiIdx, jsosEngines.length - 1)];
+    if (jsosEng) {
+      jsosSearch(jsosEng);
+    }
+  };
+  const jsosAppsGo = () => {
+    document.querySelector('[data-slot="command-dialog-popup"] [data-slot="autocomplete-item"][data-highlighted]')?.click();
+  };
+  const jsosModeBtn = jsosMode => <button type="button" title={_(jsosMode === "apps" ? "launcher.toWeb" : "launcher.toApps")} onClick={() => jsosSwitchMode(jsosMode === "apps")} className="h-8 w-8 rounded-lg flex items-center justify-center hover:bg-accent text-foreground/70 transition-colors shrink-0 cursor-pointer">{jsosMode === "apps" ? <_Component57 size={18} /> : <_Component30 size={18} className="scale-[1.2]" />}</button>;
+  const jsosSearchRow = jsosInput => <div className="px-2.5 py-1.5"><div className="flex items-center gap-1 border-input h-10 pl-1.5 pr-1.5 rounded-xl border">{jsosModeBtn(jsosWebMode ? "web" : "apps")}<div className="flex-1 min-w-0">{jsosInput}</div><button type="button" title={_("launcher.doSearch")} onClick={jsosWebMode ? jsosWebGo : jsosAppsGo} className="h-8 w-8 rounded-lg flex items-center justify-center hover:bg-accent text-foreground/70 transition-colors shrink-0 cursor-pointer"><_Component47 size={17} /></button></div></div>;
+  return <B.Fragment><_Component25><An render={<button onClick={() => u == null ? undefined : u(true)} className="h-8 w-8 rounded-lg flex items-center justify-center hover:bg-accent transition-colors shrink-0 text-foreground/80" />}>{S === "ready" ? <_Component47 size={18} /> : <_C className="size-[18px]" />}</An><Mn side={f}>{_("launcher.title")}</Mn></_Component25><L6 open={o} onOpenChange={u}><N6 className="h-105">{jsosWebMode ? <E.Fragment>{jsosSearchRow(<input value={jsosKw} onChange={jsosEv => {
+              jsosSetKw(jsosEv.target.value);
+              jsosSetHiIdx(0);
+            }} onKeyDown={jsosEv => {
+              if (jsosEv.key === "Tab") {
+                jsosEv.preventDefault();
+                jsosSwitchMode(!jsosWebMode);
+              } else if (jsosEv.key === "ArrowDown") {
+                jsosEv.preventDefault();
+                jsosSetHiIdx(jsosPrev => Math.min(jsosPrev + 1, jsosEngines.length - 1));
+              } else if (jsosEv.key === "ArrowUp") {
+                jsosEv.preventDefault();
+                jsosSetHiIdx(jsosPrev => Math.max(jsosPrev - 1, 0));
+              } else if (jsosEv.key === "Enter") {
+                jsosWebGo();
+              }
+            }} placeholder={_("launcher.webSearch")} autoFocus className="w-full bg-transparent text-base outline-none placeholder:text-muted-foreground ps-[calc(--spacing(3)-1px)] pe-[calc(--spacing(3)-1px)]" />)}<div className="min-h-0 flex-1"><VR scrollbarGutter={true} scrollFade={true}><_6 className="p-2 in-data-has-overflow-y:pe-3">{jsosEngines.map((jsosEng, jsosIdx) => <div key={jsosEng.name} data-web-engine="" data-highlighted={jsosIdx === jsosHiIdx ? "" : undefined} onClick={() => jsosSearch(jsosEng)} onMouseEnter={() => jsosSetHiIdx(jsosIdx)} className="flex min-h-8 cursor-default select-none items-center gap-2.5 rounded-sm px-2 py-1.5 text-base outline-none data-highlighted:bg-accent data-highlighted:text-accent-foreground sm:min-h-7 sm:text-sm"><div className="w-7 h-7 rounded-md overflow-hidden shrink-0 shadow-sm"><img src={jsosEng.icon} alt="" className="w-full h-full object-cover" draggable={false} /></div><span className="flex-1 min-w-0 truncate">{jsosEng.name}</span></div>)}</_6></VR></div></E.Fragment> : <E.Fragment><_Component55 items={m} filter={(R, I) => R.searchText.includes(I.toLowerCase())}>{jsosSearchRow(<C6 autoFocus onKeyDown={jsosEv => {
+              if (jsosEv.key === "Tab") {
+                jsosEv.preventDefault();
+                jsosSwitchMode(!jsosWebMode);
+              }
+            }} className="border-transparent! bg-transparent! shadow-none before:hidden has-focus-visible:ring-0" placeholder={_("launcher.search")} size="lg" />)}<div className="min-h-0 flex-1" onContextMenu={R => R.stopPropagation()}><U6>{_("launcher.noResults")}</U6><F6>{(R, I) => <E.Fragment key={R.value}><V6 items={R.items}><$6>{j => <_Component54 value={j.value} className="gap-2.5" onClick={() => v(j.value)} onContextMenu={W => {
                       W.preventDefault();
                       W.stopPropagation();
                       g({
@@ -12606,7 +12705,7 @@ function K6({
                       });
                     }} key={j.value}><div className="w-7 h-7 rounded-md overflow-hidden shrink-0 shadow-sm">{j.icon ? <img src={j.icon} alt="" className="w-full h-full object-cover" draggable={false} /> : <div className="w-full h-full flex items-center justify-center text-xs font-bold text-white" style={{
                           background: X6(j.value)
-                        }}>{j.label.charAt(0)}</div>}</div><span className="flex-1 min-w-0 truncate">{j.label}</span>{j.isRunning && <span className="w-1.5 h-1.5 rounded-full bg-green-400 shrink-0" />}</_Component54>}</$6></V6>{I < m.length - 1 && <G6 />}</E.Fragment>}</F6></div></_Component55><Y6><span>↑↓ {_("launcher.navigate")}</span><span>↵ {_("launcher.select")}</span><span>{A}P {_("launcher.close")}</span></Y6></N6></L6><WR open={w.open} x={w.x} y={w.y} appId={w.appId} workspaces={h} currentWorkspaceId={a} appWorkspaceId={w.appWorkspaceId} isSystem={w.isSystem} onOpenChange={R => {
+                        }}>{j.label.charAt(0)}</div>}</div><span className="flex-1 min-w-0 truncate">{j.label}</span>{j.isRunning && <span className="w-1.5 h-1.5 rounded-full bg-green-400 shrink-0" />}</_Component54>}</$6></V6>{I < m.length - 1 && <G6 />}</E.Fragment>}</F6></div></_Component55></E.Fragment>}<Y6><span>Tab {_("launcher.tabMode")}</span><span>↑↓ {_("launcher.navigate")}</span><span>↵ {jsosWebMode ? _("launcher.doSearch") : _("launcher.select")}</span><span>{A}P {_("launcher.close")}</span></Y6></N6></L6><WR open={w.open} x={w.x} y={w.y} appId={w.appId} workspaces={h} currentWorkspaceId={a} appWorkspaceId={w.appWorkspaceId} isSystem={w.isSystem} onOpenChange={R => {
       if (!R) {
         C();
       }
