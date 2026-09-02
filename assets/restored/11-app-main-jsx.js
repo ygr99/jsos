@@ -8255,7 +8255,7 @@ function _Component105({
               if (o != null) {
                 o(e.id);
               }
-            }} />}><_Component23 size={12} /></An><Mn side="top">{f("window.close")}</Mn></_Component25></div>}</B.Fragment> : <B.Fragment>{z ? <B.Fragment><div className="absolute inset-0">{/* [jsos-page-ready] iframe 常驻加载；就绪前由 loading 覆盖层遮挡（应用内注入脚本发 page-ready 后撤除） */}<iframe ref={Y} src={z} data-window-id={e.id} key={G} className="absolute inset-0 w-full h-full border-none bg-background" />{!e.pageReady && !jsFrameRevealFallback && <div className="absolute inset-0 z-10"><_Component26 app={e.app} statusText={e.statusText} /></div>}</div><div className="absolute inset-0 z-10" style={{
+            }} />}><_Component23 size={12} /></An><Mn side="top">{f("window.close")}</Mn></_Component25></div>}</B.Fragment> : <B.Fragment>{z ? <B.Fragment><div className="absolute inset-0">{/* [jsos-page-ready] iframe 常驻加载；就绪前由 loading 覆盖层遮挡（应用内注入脚本发 page-ready 后撤除） */}<iframe ref={Y} src={z} data-window-id={e.id} key={G} allow="fullscreen; screen-wake-lock" allowFullScreen={true} className="absolute inset-0 w-full h-full border-none bg-background" />{!e.pageReady && !jsFrameRevealFallback && <div className="absolute inset-0 z-10"><_Component26 app={e.app} statusText={e.statusText} /></div>}</div><div className="absolute inset-0 z-10" style={{
             pointerEvents: A ? "none" : "auto"
           }} onPointerDown={() => {
             if (i != null) {
