@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="base" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EDFBF3"/>
+      <stop offset="1" stop-color="#CFF1DE"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="1" r="0.72">
+      <stop offset="0" stop-color="#07C160" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#07C160" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="cardClip">
+      <rect x="136" y="150" width="244" height="204" rx="28"/>
+    </clipPath>
+  </defs>
+
+  <!-- 底座 + 底部光晕 -->
+  <rect width="512" height="512" rx="112" fill="url(#base)"/>
+  <ellipse cx="256" cy="512" rx="240" ry="205" fill="url(#glow)"/>
+
+  <!-- 后方照片（叠放感） -->
+  <g transform="rotate(-10 256 260)">
+    <rect x="150" y="126" width="222" height="186" rx="26" fill="#07C160" opacity="0.34"/>
+  </g>
+
+  <!-- 前方照片 -->
+  <g transform="rotate(5 256 260)">
+    <rect x="136" y="150" width="244" height="204" rx="28" fill="#FFFFFF"/>
+    <g clip-path="url(#cardClip)">
+      <circle cx="198" cy="206" r="27" fill="#07C160" opacity="0.9"/>
+      <path d="M126 322 L206 228 L262 296 L308 244 L390 322 L390 360 L126 360 Z" fill="#07C160"/>
+    </g>
+  </g>
+
+  <!-- 点赞徽标 -->
+  <circle cx="368" cy="322" r="50" fill="#07C160"/>
+  <circle cx="368" cy="322" r="50" fill="none" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="5"/>
+  <path transform="translate(368 320) scale(2.55) translate(-12 -12.2)"
+        d="M12 21s-7.5-4.9-9.6-9.2C.6 8.3 2.4 4.5 6 4.5c2 0 3.4 1 4.5 2.5C11.6 5.5 13 4.5 15 4.5c3.6 0 5.4 3.8 3.6 7.3C19.5 16.1 12 21 12 21z"
+        fill="#FFFFFF"/>
+</svg>
