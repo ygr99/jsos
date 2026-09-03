@@ -12606,6 +12606,11 @@ function K6({
   }, []);
   const A = typeof navigator !== "undefined" && ((M = navigator.platform) == null ? undefined : M.includes("Mac")) ? "⌘" : "Ctrl+";
   const jsosEngines = [{
+    name: "必应",
+    url: "https://www.bing.com/search?q=%s",
+    home: "https://www.bing.com",
+    icon: "/icons/bing.png"
+  }, {
     name: "GitHub",
     url: "https://github.com/search?q=%s",
     home: "https://github.com",
@@ -12641,11 +12646,6 @@ function K6({
     home: "https://www.douban.com",
     icon: "/icons/douban.png"
   }, {
-    name: "必应",
-    url: "https://www.bing.com/search?q=%s",
-    home: "https://www.bing.com",
-    icon: "/icons/bing.png"
-  }, {
     name: "Google",
     url: "https://www.google.com/search?q=%s",
     home: "https://www.google.com",
@@ -12669,7 +12669,7 @@ function K6({
   const jsosAppsGo = () => {
     document.querySelector('[data-slot="command-dialog-popup"] [data-slot="autocomplete-item"][data-highlighted]')?.click();
   };
-  const jsosModeBtn = jsosMode => <button type="button" title={_(jsosMode === "apps" ? "launcher.toWeb" : "launcher.toApps")} onClick={() => jsosSwitchMode(jsosMode === "apps")} className="h-8 w-8 rounded-lg flex items-center justify-center hover:bg-accent text-foreground/70 transition-colors shrink-0 cursor-pointer">{jsosMode === "apps" ? <_Component57 size={18} /> : <_Component30 size={18} className="scale-[1.2]" />}</button>;
+  const jsosModeBtn = jsosMode => <button type="button" title={_(jsosMode === "apps" ? "launcher.toWeb" : "launcher.toApps")} onClick={() => jsosSwitchMode(jsosMode === "apps")} className="h-8 w-8 rounded-lg flex items-center justify-center hover:bg-accent text-foreground/70 transition-colors shrink-0 cursor-pointer" style={{gap:1}}>{jsosMode === "apps" ? <_Component57 size={15} /> : <_Component30 size={15} />}<span style={{lineHeight:0,opacity:0.7}}><_Component29 size={9} strokeWidth={2.5} /></span></button>;
   const jsosSearchRow = jsosInput => <div className="px-2.5 py-1.5"><div className="flex items-center gap-1 border-input h-10 pl-1.5 pr-1.5 rounded-xl border">{jsosModeBtn(jsosWebMode ? "web" : "apps")}<div className="flex-1 min-w-0">{jsosInput}</div><button type="button" title={_("launcher.doSearch")} onClick={jsosWebMode ? jsosWebGo : jsosAppsGo} className="h-8 w-8 rounded-lg flex items-center justify-center hover:bg-accent text-foreground/70 transition-colors shrink-0 cursor-pointer"><_Component47 size={17} /></button></div></div>;
   return <B.Fragment><_Component25><An render={<button onClick={() => u == null ? undefined : u(true)} className="h-8 w-8 rounded-lg flex items-center justify-center hover:bg-accent transition-colors shrink-0 text-foreground/80" />}>{S === "ready" ? <_Component47 size={18} /> : <_C className="size-[18px]" />}</An><Mn side={f}>{_("launcher.title")}</Mn></_Component25><L6 open={o} onOpenChange={u}><N6 className="h-105">{jsosWebMode ? <E.Fragment>{jsosSearchRow(<input value={jsosKw} onChange={jsosEv => {
               jsosSetKw(jsosEv.target.value);
