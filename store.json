@@ -1,35 +1,7 @@
 {
-  "appCount": 19,
+  "appCount": 18,
   "updatedAt": "2026-09-04",
   "apps": [
-    {
-      "id": "daily-cost",
-      "name": {
-        "en": "Daily Cost",
-        "zh-CN": "每日成本"
-      },
-      "description": {
-        "en": "See what your stuff really costs per day — daily cost, payback progress and cost per use.",
-        "zh-CN": "记录买过的物品，自动计算日均成本、回本进度与单次使用成本，让消费更理性透明。"
-      },
-      "version": "1.0.0",
-      "icon": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8ZGVmcz4KICAgIDxyYWRpYWxHcmFkaWVudCBpZD0iZGMtZ2xvdyIgY3g9IjI1NiIgY3k9IjUxMiIgcj0iMjQwIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI0Y1OUUwQiIgc3RvcC1vcGFjaXR5PSIuNTUiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjRjU5RTBCIiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImRjLWNvaW4iIHgxPSIxNTAiIHkxPSI4MCIgeDI9IjM3MCIgeTI9IjMxMCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNGQ0QzNEQiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIuNSIgc3RvcC1jb2xvcj0iI0Y1OUUwQiIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNEOTc3MDYiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgoKICA8IS0tIOa1heiJsuS4u+mimOiJsuW6leW6pyAtLT4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjExMiIgZmlsbD0iI0ZFRjNDNyIvPgogIDwhLS0g5bqV6YOo5ZCM6Imy5YWJ5pmVIC0tPgogIDxlbGxpcHNlIGN4PSIyNTYiIGN5PSI1MTIiIHJ4PSIyNTYiIHJ5PSIxNTAiIGZpbGw9InVybCgjZGMtZ2xvdykiLz4KCiAgPCEtLSDnoazluIEgLS0+CiAgPGNpcmNsZSBjeD0iMjU2IiBjeT0iMTkyIiByPSIxMjgiIGZpbGw9InVybCgjZGMtY29pbikiLz4KICA8Y2lyY2xlIGN4PSIyNTYiIGN5PSIxOTIiIHI9IjEyOCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utb3BhY2l0eT0iLjU1IiBzdHJva2Utd2lkdGg9IjEwIi8+CiAgPGNpcmNsZSBjeD0iMjU2IiBjeT0iMTkyIiByPSI5OCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utb3BhY2l0eT0iLjI4IiBzdHJva2Utd2lkdGg9IjYiLz4KCiAgPCEtLSDCpSDnrKblj7cgLS0+CiAgPGcgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPgogICAgPHBhdGggZD0iTTIwNCAxNDYgTDI1NiAxOTYgTDMwOCAxNDYiLz4KICAgIDxwYXRoIGQ9Ik0yNTYgMTk2IEwyNTYgMjc4Ii8+CiAgICA8cGF0aCBkPSJNMjA4IDIyMiBMMzA0IDIyMiIvPgogICAgPHBhdGggZD0iTTIwOCAyNTQgTDMwNCAyNTQiLz4KICA8L2c+CgogIDwhLS0g6ZqP5pe26Ze06YCS5YeP55qE5oiQ5pys5p+xIC0tPgogIDxnIGZpbGw9IiNEOTc3MDYiPgogICAgPHJlY3QgeD0iMTEyIiB5PSIzNTYiIHdpZHRoPSI1NiIgaGVpZ2h0PSI4MCIgcng9IjE4Ii8+CiAgICA8cmVjdCB4PSIyMjgiIHk9IjM4NiIgd2lkdGg9IjU2IiBoZWlnaHQ9IjUwIiByeD0iMTciLz4KICAgIDxyZWN0IHg9IjM0NCIgeT0iNDA4IiB3aWR0aD0iNTYiIGhlaWdodD0iMjgiIHJ4PSIxNCIvPgogIDwvZz4KPC9zdmc+Cg==",
-      "category": "productivity",
-      "tags": [
-        "cost",
-        "finance",
-        "shopping",
-        "widget",
-        "消费"
-      ],
-      "author": {
-        "name": "ygr99"
-      },
-      "license": "MIT",
-      "zipUrl": "/apps/daily-cost-1.0.0.zip",
-      "stars": 0,
-      "updatedAt": "2026-09-04"
-    },
     {
       "id": "random-box",
       "name": {
