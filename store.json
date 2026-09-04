@@ -12,7 +12,7 @@
         "en": "Put various random sources in one box, click to draw and open one random item.",
         "zh-CN": "把各种随机源装进一个盒子，点一下随机抽一条内容打开：B站视频、追剧、博客、书、导航站、分页文章"
       },
-      "version": "1.2.0",
+      "version": "1.2.1",
       "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIwIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2Y4ZjVmZiIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNlYmU0ZmUiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImxpZCIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNlZGU5ZmUiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjYzRiNWZkIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KCiAgPHJlY3QgeD0iMzYiIHk9IjM2IiB3aWR0aD0iNDQwIiBoZWlnaHQ9IjQ0MCIgcng9IjEwOCIgZmlsbD0idXJsKCNiZykiIHN0cm9rZT0iI2RkZDJmYiIgc3Ryb2tlLXdpZHRoPSIxMCIvPgogIDxlbGxpcHNlIGN4PSIyNTYiIGN5PSI0MjgiIHJ4PSIxMjYiIHJ5PSIyMiIgZmlsbD0iIzdjM2FlZCIgb3BhY2l0eT0iLjE1Ii8+CgogIDwhLS0g55uS6Lqr77yI562J6Led77yJ77ya55uS5Y+jICsg5bem5Y+z5Lik5L6n6Z2iIC0tPgogIDxwYXRoIGQ9Ik0yNTYgMjQ4IEwzNjAgMzA2IEwyNTYgMzY0IEwxNTIgMzA2IFoiIGZpbGw9IiM0YzFkOTUiLz4KICA8cGF0aCBkPSJNMTUyIDMwNiBMMjU2IDM2NCBMMjU2IDQyNCBMMTUyIDM2NiBaIiBmaWxsPSIjOGI1Y2Y2Ii8+CiAgPHBhdGggZD0iTTM2MCAzMDYgTDI1NiAzNjQgTDI1NiA0MjQgTDM2MCAzNjYgWiIgZmlsbD0iIzZkMjhkOSIvPgogIDxwYXRoIGQ9Ik0yNTYgMzY0IEwyNTYgNDI0IiBzdHJva2U9IiM0YzFkOTUiIHN0cm9rZS13aWR0aD0iOSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CgogIDwhLS0g5o6A5byA55qE55uS55uWIC0tPgogIDxwYXRoIGQ9Ik0yNTYgMTUwIEwzODIgMjAwIEwyNjIgMjYyIEwxNDIgMjE0IFoiIGZpbGw9InVybCgjbGlkKSIgc3Ryb2tlPSIjOGI1Y2Y2IiBzdHJva2Utd2lkdGg9IjkiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KCiAgPCEtLSDku47nm5Lph4zlhpLlh7rmnaXnmoTpmo/mnLrlhYPntKAgLS0+CiAgPGNpcmNsZSBjeD0iMjEyIiBjeT0iMjIyIiByPSIxMSIgZmlsbD0iI2ZiYmYyNCIvPgogIDxjaXJjbGUgY3g9IjI1NiIgY3k9IjIwMCIgcj0iMTMiIGZpbGw9IiNmNTllMGIiLz4KICA8Y2lyY2xlIGN4PSIzMDAiIGN5PSIyMjQiIHI9IjExIiBmaWxsPSIjZmJiZjI0Ii8+CiAgPHBhdGggZD0iTTE4NiAxODYgbDcgMTUgMTYgMiAtMTIgMTEgMyAxNiAtMTQtOCAtMTQgOCAzLTE2IC0xMi0xMSAxNi0yeiIgZmlsbD0iI2ZiYmYyNCIgb3BhY2l0eT0iLjkiLz4KICA8cGF0aCBkPSJNMzMwIDE5MCBsNSAxMSAxMiAxIC05IDggMiAxMiAtMTAtNiAtMTAgNiAyLTEyIC05LTggMTItMXoiIGZpbGw9IiNmNTllMGIiIG9wYWNpdHk9Ii45Ii8+Cjwvc3ZnPgo=",
       "category": "utility",
       "tags": [
@@ -25,7 +25,7 @@
         "name": "ygr99"
       },
       "license": "MIT",
-      "zipUrl": "/apps/random-box-1.2.0.zip",
+      "zipUrl": "/apps/random-box-1.2.1.zip",
       "stars": 0,
       "updatedAt": "2026-09-04"
     },
