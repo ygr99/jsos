@@ -39,7 +39,7 @@
         "en": "One movie and one English sentence, every day.",
         "zh-CN": "侧边栏切换「每日电影」与「每日英语」：每天一部电影、一句英语"
       },
-      "version": "1.0.1",
+      "version": "1.1.0",
       "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzM4YmRmOCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM2MzY2ZjEiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiByeD0iMTEyIiBmaWxsPSJ1cmwoI2JnKSIvPgogIDxjaXJjbGUgY3g9IjI1NiIgY3k9IjE5NiIgcj0iNzQiIGZpbGw9IiNmZmYiLz4KICA8ZyBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMjYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iLjk1Ij4KICAgIDxwYXRoIGQ9Ik0yNTYgNjh2MzQiLz4KICAgIDxwYXRoIGQ9Ik0xMzQgMTk2aDM0Ii8+CiAgICA8cGF0aCBkPSJNMzQ0IDE5NmgzNCIvPgogICAgPHBhdGggZD0iTTE2OCAxMDhsMjQgMjQiLz4KICAgIDxwYXRoIGQ9Ik0zNDQgMTA4bC0yNCAyNCIvPgogIDwvZz4KICA8ZyBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMzAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iLjkyIj4KICAgIDxwYXRoIGQ9Ik0xMTYgMzU2aDI4MCIvPgogICAgPHBhdGggZD0iTTExNiA0MjRoMTgwIi8+CiAgPC9nPgogIDxjaXJjbGUgY3g9IjM2MCIgY3k9IjQyNCIgcj0iMjAiIGZpbGw9IiNmZmYiLz4KPC9zdmc+Cg==",
       "category": "utility",
       "tags": [
@@ -52,7 +52,7 @@
         "name": "ygr99"
       },
       "license": "MIT",
-      "zipUrl": "/apps/daily-brief-1.0.1.zip",
+      "zipUrl": "/apps/daily-brief-1.1.0.zip",
       "stars": 0,
       "updatedAt": "2026-09-04"
     },
