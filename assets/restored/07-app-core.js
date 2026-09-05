@@ -1195,7 +1195,7 @@ function IO(e) {
   return Hf.get(e);
 }
 const LO = {
-  url: "https://cors-proxy.jsos.dev",
+  url: "https://proxy.xn--4gqta1h0zg9yuu7a.fun",
   key: "hello-world"
 };
 const PO = "jsos-workspaces";
