@@ -1,5 +1,5 @@
 {
-  "appCount": 18,
+  "appCount": 19,
   "updatedAt": "2026-09-04",
   "apps": [
     {
@@ -453,6 +453,35 @@
       "zipUrl": "/apps/cn.uapis.weather-2026.7.25.zip",
       "stars": 0,
       "updatedAt": "2026-07-25"
+    },
+    {
+      "id": "media-log",
+      "name": {
+        "en": "Media Log",
+        "zh-CN": "书影音游"
+      },
+      "description": {
+        "en": "Track the books, films, music and games you consume, archived on a year-month-day timeline.",
+        "zh-CN": "记录读过的书、看过的影视、听过的音乐、玩过的游戏，按年月日时间轴归档；评分与短评，默认 4 类不可删。"
+      },
+      "version": "1.0.0",
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZjdmNGZmIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2U4ZTFmZiIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZ2xvdyIgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiM3YzNhZWQiIHN0b3Atb3BhY2l0eT0iLjM0Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzdjM2FlZCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KCiAgPCEtLSDmtYXoibLkuLvpopjlupXluqcgKyDlupXpg6jlkIzoibLlhYnmmZUgLS0+CiAgPHJlY3Qgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHJ4PSIxMTIiIGZpbGw9InVybCgjYmcpIi8+CiAgPGVsbGlwc2UgY3g9IjI1NiIgY3k9IjQzMiIgcng9IjE4NiIgcnk9IjU2IiBmaWxsPSJ1cmwoI2dsb3cpIi8+CgogIDwhLS0g5Lmm57GNIC0tPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDk4LDg0KSI+CiAgICA8cmVjdCB3aWR0aD0iMTQ0IiBoZWlnaHQ9IjE0NCIgcng9IjM0IiBmaWxsPSIjZjU5ZTBiIi8+CiAgICA8ZyBmaWxsPSIjZmZmIj4KICAgICAgPHBhdGggZD0iTTI2IDQ0YzEyLTcgMjYtNyAzOCAwdjYyYy0xMi03LTI2LTctMzggMHoiLz4KICAgICAgPHBhdGggZD0iTTExOCA0NGMtMTItNy0yNi03LTM4IDB2NjJjMTItNyAyNi03IDM4IDB6IiBvcGFjaXR5PSIuNzgiLz4KICAgIDwvZz4KICAgIDxwYXRoIGQ9Ik03MiA0NHY2MiIgc3Ryb2tlPSIjZjU5ZTBiIiBzdHJva2Utd2lkdGg9IjYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDwvZz4KCiAgPCEtLSDlvbHop4YgLS0+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjcwLDg0KSI+CiAgICA8cmVjdCB3aWR0aD0iMTQ0IiBoZWlnaHQ9IjE0NCIgcng9IjM0IiBmaWxsPSIjZjQzZjVlIi8+CiAgICA8cmVjdCB4PSIyNiIgeT0iMzgiIHdpZHRoPSI5MiIgaGVpZ2h0PSI2OCIgcng9IjEyIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iOCIvPgogICAgPHBhdGggZD0iTTYwIDU2bDMyIDIxLTMyIDIxeiIgZmlsbD0iI2ZmZiIvPgogICAgPGcgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjkiPgogICAgICA8cmVjdCB4PSIzNCIgeT0iMjYiIHdpZHRoPSI4IiBoZWlnaHQ9IjEwIiByeD0iMiIvPgogICAgICA8cmVjdCB4PSIzNCIgeT0iMTA4IiB3aWR0aD0iOCIgaGVpZ2h0PSIxMCIgcng9IjIiLz4KICAgICAgPHJlY3QgeD0iMTAyIiB5PSIyNiIgd2lkdGg9IjgiIGhlaWdodD0iMTAiIHJ4PSIyIi8+CiAgICAgIDxyZWN0IHg9IjEwMiIgeT0iMTA4IiB3aWR0aD0iOCIgaGVpZ2h0PSIxMCIgcng9IjIiLz4KICAgIDwvZz4KICA8L2c+CgogIDwhLS0g6Z+z5LmQIC0tPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDk4LDI1NikiPgogICAgPHJlY3Qgd2lkdGg9IjE0NCIgaGVpZ2h0PSIxNDQiIHJ4PSIzNCIgZmlsbD0iIzEwYjk4MSIvPgogICAgPHBhdGggZD0iTTY3IDEwMFY0NmwzOC0xMnY2NiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjgiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgogICAgPGNpcmNsZSBjeD0iNTEiIGN5PSIxMDAiIHI9IjE2IiBmaWxsPSIjZmZmIi8+CiAgICA8Y2lyY2xlIGN4PSI4OSIgY3k9IjEwMCIgcj0iMTYiIGZpbGw9IiNmZmYiLz4KICA8L2c+CgogIDwhLS0g5ri45oiPIC0tPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI3MCwyNTYpIj4KICAgIDxyZWN0IHdpZHRoPSIxNDQiIGhlaWdodD0iMTQ0IiByeD0iMzQiIGZpbGw9IiM3YzNhZWQiLz4KICAgIDxyZWN0IHg9IjE2IiB5PSI0OCIgd2lkdGg9IjExMiIgaGVpZ2h0PSI2MiIgcng9IjMwIiBmaWxsPSIjZmZmIi8+CiAgICA8cGF0aCBkPSJNNTIgNjh2MjJNNDEgNzloMjIiIHN0cm9rZT0iIzdjM2FlZCIgc3Ryb2tlLXdpZHRoPSI3IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICAgIDxjaXJjbGUgY3g9Ijk4IiBjeT0iNzAiIHI9IjcuNSIgZmlsbD0iIzdjM2FlZCIvPgogICAgPGNpcmNsZSBjeD0iMTE0IiBjeT0iODgiIHI9IjcuNSIgZmlsbD0iIzdjM2FlZCIvPgogIDwvZz4KPC9zdmc+Cg==",
+      "category": "productivity",
+      "tags": [
+        "book",
+        "movie",
+        "music",
+        "game",
+        "tracker",
+        "时间轴"
+      ],
+      "author": {
+        "name": "ygr99"
+      },
+      "license": "MIT",
+      "zipUrl": "/apps/media-log-1.0.0.zip",
+      "stars": 0,
+      "updatedAt": "2026-09-05"
     }
   ]
 }
