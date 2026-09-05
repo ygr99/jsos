@@ -1,34 +1,7 @@
 {
   "appCount": 20,
-  "updatedAt": "2026-09-04",
+  "updatedAt": "2026-09-05",
   "apps": [
-    {
-      "id": "random-box",
-      "name": {
-        "en": "Random Box",
-        "zh-CN": "随机盒子"
-      },
-      "description": {
-        "en": "Put various random sources in one box, click to draw and open one random item.",
-        "zh-CN": "把各种随机源装进一个盒子，点一下随机抽一条内容打开：B站视频、追剧、博客、书、导航站、分页文章"
-      },
-      "version": "1.2.12",
-      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIwIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2Y4ZjVmZiIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNlYmU0ZmUiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImxpZCIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNlZGU5ZmUiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjYzRiNWZkIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KCiAgPHJlY3QgeD0iMzYiIHk9IjM2IiB3aWR0aD0iNDQwIiBoZWlnaHQ9IjQ0MCIgcng9IjEwOCIgZmlsbD0idXJsKCNiZykiIHN0cm9rZT0iI2RkZDJmYiIgc3Ryb2tlLXdpZHRoPSIxMCIvPgogIDxlbGxpcHNlIGN4PSIyNTYiIGN5PSI0MjgiIHJ4PSIxMjYiIHJ5PSIyMiIgZmlsbD0iIzdjM2FlZCIgb3BhY2l0eT0iLjE1Ii8+CgogIDwhLS0g55uS6Lqr77yI562J6Led77yJ77ya55uS5Y+jICsg5bem5Y+z5Lik5L6n6Z2iIC0tPgogIDxwYXRoIGQ9Ik0yNTYgMjQ4IEwzNjAgMzA2IEwyNTYgMzY0IEwxNTIgMzA2IFoiIGZpbGw9IiM0YzFkOTUiLz4KICA8cGF0aCBkPSJNMTUyIDMwNiBMMjU2IDM2NCBMMjU2IDQyNCBMMTUyIDM2NiBaIiBmaWxsPSIjOGI1Y2Y2Ii8+CiAgPHBhdGggZD0iTTM2MCAzMDYgTDI1NiAzNjQgTDI1NiA0MjQgTDM2MCAzNjYgWiIgZmlsbD0iIzZkMjhkOSIvPgogIDxwYXRoIGQ9Ik0yNTYgMzY0IEwyNTYgNDI0IiBzdHJva2U9IiM0YzFkOTUiIHN0cm9rZS13aWR0aD0iOSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CgogIDwhLS0g5o6A5byA55qE55uS55uWIC0tPgogIDxwYXRoIGQ9Ik0yNTYgMTUwIEwzODIgMjAwIEwyNjIgMjYyIEwxNDIgMjE0IFoiIGZpbGw9InVybCgjbGlkKSIgc3Ryb2tlPSIjOGI1Y2Y2IiBzdHJva2Utd2lkdGg9IjkiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KCiAgPCEtLSDku47nm5Lph4zlhpLlh7rmnaXnmoTpmo/mnLrlhYPntKAgLS0+CiAgPGNpcmNsZSBjeD0iMjEyIiBjeT0iMjIyIiByPSIxMSIgZmlsbD0iI2ZiYmYyNCIvPgogIDxjaXJjbGUgY3g9IjI1NiIgY3k9IjIwMCIgcj0iMTMiIGZpbGw9IiNmNTllMGIiLz4KICA8Y2lyY2xlIGN4PSIzMDAiIGN5PSIyMjQiIHI9IjExIiBmaWxsPSIjZmJiZjI0Ii8+CiAgPHBhdGggZD0iTTE4NiAxODYgbDcgMTUgMTYgMiAtMTIgMTEgMyAxNiAtMTQtOCAtMTQgOCAzLTE2IC0xMi0xMSAxNi0yeiIgZmlsbD0iI2ZiYmYyNCIgb3BhY2l0eT0iLjkiLz4KICA8cGF0aCBkPSJNMzMwIDE5MCBsNSAxMSAxMiAxIC05IDggMiAxMiAtMTAtNiAtMTAgNiAyLTEyIC05LTggMTItMXoiIGZpbGw9IiNmNTllMGIiIG9wYWNpdHk9Ii45Ii8+Cjwvc3ZnPgo=",
-      "category": "utility",
-      "tags": [
-        "random",
-        "discovery",
-        "reading",
-        "box"
-      ],
-      "author": {
-        "name": "ygr99"
-      },
-      "license": "MIT",
-      "zipUrl": "/apps/random-box-1.2.12.zip",
-      "stars": 0,
-      "updatedAt": "2026-09-04"
-    },
     {
       "id": "daily-brief",
       "name": {
@@ -39,7 +12,7 @@
         "en": "Daily briefs in one sidebar: AI news, movies, English and more to come.",
         "zh-CN": "侧边栏切换多种每日信息：AI 快讯、每日电影、每日英语，持续扩展中"
       },
-      "version": "1.3.1",
+      "version": "1.3.2",
       "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzM4YmRmOCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM2MzY2ZjEiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiByeD0iMTEyIiBmaWxsPSJ1cmwoI2JnKSIvPgogIDxjaXJjbGUgY3g9IjI1NiIgY3k9IjE5NiIgcj0iNzQiIGZpbGw9IiNmZmYiLz4KICA8ZyBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMjYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iLjk1Ij4KICAgIDxwYXRoIGQ9Ik0yNTYgNjh2MzQiLz4KICAgIDxwYXRoIGQ9Ik0xMzQgMTk2aDM0Ii8+CiAgICA8cGF0aCBkPSJNMzQ0IDE5NmgzNCIvPgogICAgPHBhdGggZD0iTTE2OCAxMDhsMjQgMjQiLz4KICAgIDxwYXRoIGQ9Ik0zNDQgMTA4bC0yNCAyNCIvPgogIDwvZz4KICA8ZyBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMzAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iLjkyIj4KICAgIDxwYXRoIGQ9Ik0xMTYgMzU2aDI4MCIvPgogICAgPHBhdGggZD0iTTExNiA0MjRoMTgwIi8+CiAgPC9nPgogIDxjaXJjbGUgY3g9IjM2MCIgY3k9IjQyNCIgcj0iMjAiIGZpbGw9IiNmZmYiLz4KPC9zdmc+Cg==",
       "category": "utility",
       "tags": [
@@ -53,9 +26,94 @@
         "name": "ygr99"
       },
       "license": "MIT",
-      "zipUrl": "/apps/daily-brief-1.3.1.zip",
+      "zipUrl": "/apps/daily-brief-1.3.2.zip",
       "stars": 0,
-      "updatedAt": "2026-09-04"
+      "updatedAt": "2026-09-05"
+    },
+    {
+      "id": "media-log",
+      "name": {
+        "en": "Media Log",
+        "zh-CN": "书影音游"
+      },
+      "description": {
+        "en": "Track the books, films, music and games you consume, archived on a year-month-day timeline.",
+        "zh-CN": "记录读过的书、看过的影视、听过的音乐、玩过的游戏，按年月日时间轴归档；评分与短评，默认 4 类不可删。"
+      },
+      "version": "1.0.0",
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZjdmNGZmIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2U4ZTFmZiIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZ2xvdyIgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiM3YzNhZWQiIHN0b3Atb3BhY2l0eT0iLjM0Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzdjM2FlZCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KCiAgPCEtLSDmtYXoibLkuLvpopjlupXluqcgKyDlupXpg6jlkIzoibLlhYnmmZUgLS0+CiAgPHJlY3Qgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHJ4PSIxMTIiIGZpbGw9InVybCgjYmcpIi8+CiAgPGVsbGlwc2UgY3g9IjI1NiIgY3k9IjQzMiIgcng9IjE4NiIgcnk9IjU2IiBmaWxsPSJ1cmwoI2dsb3cpIi8+CgogIDwhLS0g5Lmm57GNIC0tPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDk4LDg0KSI+CiAgICA8cmVjdCB3aWR0aD0iMTQ0IiBoZWlnaHQ9IjE0NCIgcng9IjM0IiBmaWxsPSIjZjU5ZTBiIi8+CiAgICA8ZyBmaWxsPSIjZmZmIj4KICAgICAgPHBhdGggZD0iTTI2IDQ0YzEyLTcgMjYtNyAzOCAwdjYyYy0xMi03LTI2LTctMzggMHoiLz4KICAgICAgPHBhdGggZD0iTTExOCA0NGMtMTItNy0yNi03LTM4IDB2NjJjMTItNyAyNi03IDM4IDB6IiBvcGFjaXR5PSIuNzgiLz4KICAgIDwvZz4KICAgIDxwYXRoIGQ9Ik03MiA0NHY2MiIgc3Ryb2tlPSIjZjU5ZTBiIiBzdHJva2Utd2lkdGg9IjYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDwvZz4KCiAgPCEtLSDlvbHop4YgLS0+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjcwLDg0KSI+CiAgICA8cmVjdCB3aWR0aD0iMTQ0IiBoZWlnaHQ9IjE0NCIgcng9IjM0IiBmaWxsPSIjZjQzZjVlIi8+CiAgICA8cmVjdCB4PSIyNiIgeT0iMzgiIHdpZHRoPSI5MiIgaGVpZ2h0PSI2OCIgcng9IjEyIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iOCIvPgogICAgPHBhdGggZD0iTTYwIDU2bDMyIDIxLTMyIDIxeiIgZmlsbD0iI2ZmZiIvPgogICAgPGcgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjkiPgogICAgICA8cmVjdCB4PSIzNCIgeT0iMjYiIHdpZHRoPSI4IiBoZWlnaHQ9IjEwIiByeD0iMiIvPgogICAgICA8cmVjdCB4PSIzNCIgeT0iMTA4IiB3aWR0aD0iOCIgaGVpZ2h0PSIxMCIgcng9IjIiLz4KICAgICAgPHJlY3QgeD0iMTAyIiB5PSIyNiIgd2lkdGg9IjgiIGhlaWdodD0iMTAiIHJ4PSIyIi8+CiAgICAgIDxyZWN0IHg9IjEwMiIgeT0iMTA4IiB3aWR0aD0iOCIgaGVpZ2h0PSIxMCIgcng9IjIiLz4KICAgIDwvZz4KICA8L2c+CgogIDwhLS0g6Z+z5LmQIC0tPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDk4LDI1NikiPgogICAgPHJlY3Qgd2lkdGg9IjE0NCIgaGVpZ2h0PSIxNDQiIHJ4PSIzNCIgZmlsbD0iIzEwYjk4MSIvPgogICAgPHBhdGggZD0iTTY3IDEwMFY0NmwzOC0xMnY2NiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjgiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgogICAgPGNpcmNsZSBjeD0iNTEiIGN5PSIxMDAiIHI9IjE2IiBmaWxsPSIjZmZmIi8+CiAgICA8Y2lyY2xlIGN4PSI4OSIgY3k9IjEwMCIgcj0iMTYiIGZpbGw9IiNmZmYiLz4KICA8L2c+CgogIDwhLS0g5ri45oiPIC0tPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI3MCwyNTYpIj4KICAgIDxyZWN0IHdpZHRoPSIxNDQiIGhlaWdodD0iMTQ0IiByeD0iMzQiIGZpbGw9IiM3YzNhZWQiLz4KICAgIDxyZWN0IHg9IjE2IiB5PSI0OCIgd2lkdGg9IjExMiIgaGVpZ2h0PSI2MiIgcng9IjMwIiBmaWxsPSIjZmZmIi8+CiAgICA8cGF0aCBkPSJNNTIgNjh2MjJNNDEgNzloMjIiIHN0cm9rZT0iIzdjM2FlZCIgc3Ryb2tlLXdpZHRoPSI3IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICAgIDxjaXJjbGUgY3g9Ijk4IiBjeT0iNzAiIHI9IjcuNSIgZmlsbD0iIzdjM2FlZCIvPgogICAgPGNpcmNsZSBjeD0iMTE0IiBjeT0iODgiIHI9IjcuNSIgZmlsbD0iIzdjM2FlZCIvPgogIDwvZz4KPC9zdmc+Cg==",
+      "category": "productivity",
+      "tags": [
+        "book",
+        "movie",
+        "music",
+        "game",
+        "tracker",
+        "时间轴"
+      ],
+      "author": {
+        "name": "ygr99"
+      },
+      "license": "MIT",
+      "zipUrl": "/apps/media-log-1.0.0.zip",
+      "stars": 0,
+      "updatedAt": "2026-09-05"
+    },
+    {
+      "id": "music",
+      "name": {
+        "en": "Music",
+        "zh-CN": "音乐"
+      },
+      "description": {
+        "en": "Multi-platform music player: search & play from Netease/QQ/Soda/Bilibili/Douyin, synced lyrics, AI lyric analysis, playlists and random songs.",
+        "zh-CN": "多平台音乐播放器：网易云/QQ/汽水/B站/抖音搜索播放，歌词滚动，AI 歌词解读，歌单管理与随机一首歌。"
+      },
+      "version": "1.0.4",
+      "icon": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLm0tYmFzZSB7IGZpbGw6ICNmZmUzZWU7IHN0cm9rZS13aWR0aDogMHB4OyB9CiAgICAgIC5tLWdsb3cgeyBmaWxsOiB1cmwoI20tcmFkaWFsKTsgc3Ryb2tlLXdpZHRoOiAwcHg7IH0KICAgICAgLm0tbm90ZSB7IGZpbGw6IHVybCgjbS1saW5lYXIpOyBzdHJva2Utd2lkdGg6IDBweDsgfQogICAgICAubS1zaGluZSB7IGZpbGw6ICNmZmZmZmY7IHN0cm9rZS13aWR0aDogMHB4OyBvcGFjaXR5OiAuODU7IH0KICAgIDwvc3R5bGU+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9Im0tcmFkaWFsIiBjeD0iMjU2IiBjeT0iNDMwIiBmeD0iMjU2IiBmeT0iNDMwIiByPSIyMTAiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZjA0MjZlIiBzdG9wLW9wYWNpdHk9Ii41NSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmMDQyNmUiIHN0b3Atb3BhY2l0eT0iMCIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibS1saW5lYXIiIHgxPSI5MCIgeTE9IjExMCIgeDI9IjQyMCIgeTI9IjQyMCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZjZmOWMiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIuNTUiIHN0b3AtY29sb3I9IiNmMDQyNmUiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjYzkyNjVhIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KCiAgPCEtLSDmtYXoibLlupXluqfvvIjlnIbop5LmlrnvvIkgLS0+CiAgPHBhdGggY2xhc3M9Im0tYmFzZSIgZD0ibTQ5Ni41MiwxMjkuODVjLTEzLjQzLTQ5LjQ4LTY0Ljg5LTEwMC45My0xMTQuMzctMTE0LjM3QzM1MS44MSw3LjkyLDMxMS4xNy4xMywyNTYsMGMtNTUuMTcuMTQtOTUuODEsNy45Mi0xMjYuMTUsMTUuNDlDODAuMzgsMjguOTIsMjguOTIsODAuMzcsMTUuNDgsMTI5Ljg1LDcuOTIsMTYwLjE5LjEzLDIwMC44MywwLDI1NmMuMTQsNTUuMTcsNy45Miw5NS44MSwxNS40OSwxMjYuMTUsMTMuNDQsNDkuNDgsNjQuODksMTAwLjkzLDExNC4zNywxMTQuMzcsMzAuMzQsNy41Nyw3MC45OCwxNS4zNSwxMjYuMTUsMTUuNDksNTUuMTYtLjE0LDk1LjgxLTcuOTIsMTI2LjE1LTE1LjQ5LDQ5LjQ4LTEzLjQ0LDEwMC45My02NC44OSwxMTQuMzctMTE0LjM3LDcuNTctMzAuMzMsMTUuMzUtNzAuOTgsMTUuNDktMTI2LjE1LS4xNC01NS4xNy03LjkyLTk1LjgxLTE1LjQ5LTEyNi4xNVoiLz4KCiAgPCEtLSDlupXpg6jlkIzoibLlhYnmmZUgLS0+CiAgPGVsbGlwc2UgY2xhc3M9Im0tZ2xvdyIgY3g9IjI1NiIgY3k9IjM5MiIgcng9IjE4MCIgcnk9Ijg2Ii8+CgogIDwhLS0g5Y+M6Z+z56ym77ya56ym5aS0ICsg56ym5bmyICsg6L+e5o6l5qiq5qKBIC0tPgogIDxnIGNsYXNzPSJtLW5vdGUiPgogICAgPHBhdGggZD0iTTE4Ni41LDE1My4yYzAtOC42LDUuNi0xNC45LDE0LjItMTYuOWwxMjguNC0yOS40YzEyLjQtMi45LDIwLjQsNC45LDIwLjQsMTYuNnYxNzIuOWMwLDIuNi0uNCw1LjEtMS4yLDcuNC0xLjEsMTguOS0xNy40LDM0LjktMzkuOSw0MC4yLTI0LjcsNS44LTQ4LjItMy45LTUyLjYtMjEuNi00LjQtMTcuOCwxMi0zNi43LDM2LjctNDIuNSwxMi45LTMsMjUuNC0xLjksMzQuOSwyLjJWMTcyLjlsLTExOS43LDI3LjR2MTU5LjljMCwyLjYtLjQsNS4xLTEuMiw3LjQtMS4xLDE4LjktMTcuNCwzNC45LTM5LjksNDAuMi0yNC43LDUuOC00OC4yLTMuOS01Mi42LTIxLjYtNC40LTE3LjgsMTItMzYuNywzNi43LTQyLjUsMTIuOS0zLDI1LjQtMS45LDM0LjksMi4yVjE1My4yWiIvPgogIDwvZz4KCiAgPCEtLSDpq5jlhYkgLS0+CiAgPGVsbGlwc2UgY2xhc3M9Im0tc2hpbmUiIGN4PSIzNDIiIGN5PSIxMTgiIHJ4PSIyNiIgcnk9IjEwIiB0cmFuc2Zvcm09InJvdGF0ZSgtMTMgMzQyIDExOCkiLz4KPC9zdmc+Cg==",
+      "category": "productivity",
+      "tags": [
+        "music",
+        "player",
+        "netease",
+        "qq",
+        "bilibili",
+        "lyrics"
+      ],
+      "author": {
+        "name": "ygr99"
+      },
+      "license": "MIT",
+      "zipUrl": "/apps/music-1.0.4.zip",
+      "stars": 0,
+      "updatedAt": "2026-09-05"
+    },
+    {
+      "id": "random-box",
+      "name": {
+        "en": "Random Box",
+        "zh-CN": "随机盒子"
+      },
+      "description": {
+        "en": "Put various random sources in one box, click to draw and open one random item.",
+        "zh-CN": "把各种随机源装进一个盒子，点一下随机抽一条内容打开：B站视频、追剧、博客、书、导航站、分页文章"
+      },
+      "version": "1.2.13",
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIwIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2Y4ZjVmZiIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNlYmU0ZmUiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImxpZCIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNlZGU5ZmUiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjYzRiNWZkIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KCiAgPHJlY3QgeD0iMzYiIHk9IjM2IiB3aWR0aD0iNDQwIiBoZWlnaHQ9IjQ0MCIgcng9IjEwOCIgZmlsbD0idXJsKCNiZykiIHN0cm9rZT0iI2RkZDJmYiIgc3Ryb2tlLXdpZHRoPSIxMCIvPgogIDxlbGxpcHNlIGN4PSIyNTYiIGN5PSI0MjgiIHJ4PSIxMjYiIHJ5PSIyMiIgZmlsbD0iIzdjM2FlZCIgb3BhY2l0eT0iLjE1Ii8+CgogIDwhLS0g55uS6Lqr77yI562J6Led77yJ77ya55uS5Y+jICsg5bem5Y+z5Lik5L6n6Z2iIC0tPgogIDxwYXRoIGQ9Ik0yNTYgMjQ4IEwzNjAgMzA2IEwyNTYgMzY0IEwxNTIgMzA2IFoiIGZpbGw9IiM0YzFkOTUiLz4KICA8cGF0aCBkPSJNMTUyIDMwNiBMMjU2IDM2NCBMMjU2IDQyNCBMMTUyIDM2NiBaIiBmaWxsPSIjOGI1Y2Y2Ii8+CiAgPHBhdGggZD0iTTM2MCAzMDYgTDI1NiAzNjQgTDI1NiA0MjQgTDM2MCAzNjYgWiIgZmlsbD0iIzZkMjhkOSIvPgogIDxwYXRoIGQ9Ik0yNTYgMzY0IEwyNTYgNDI0IiBzdHJva2U9IiM0YzFkOTUiIHN0cm9rZS13aWR0aD0iOSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CgogIDwhLS0g5o6A5byA55qE55uS55uWIC0tPgogIDxwYXRoIGQ9Ik0yNTYgMTUwIEwzODIgMjAwIEwyNjIgMjYyIEwxNDIgMjE0IFoiIGZpbGw9InVybCgjbGlkKSIgc3Ryb2tlPSIjOGI1Y2Y2IiBzdHJva2Utd2lkdGg9IjkiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KCiAgPCEtLSDku47nm5Lph4zlhpLlh7rmnaXnmoTpmo/mnLrlhYPntKAgLS0+CiAgPGNpcmNsZSBjeD0iMjEyIiBjeT0iMjIyIiByPSIxMSIgZmlsbD0iI2ZiYmYyNCIvPgogIDxjaXJjbGUgY3g9IjI1NiIgY3k9IjIwMCIgcj0iMTMiIGZpbGw9IiNmNTllMGIiLz4KICA8Y2lyY2xlIGN4PSIzMDAiIGN5PSIyMjQiIHI9IjExIiBmaWxsPSIjZmJiZjI0Ii8+CiAgPHBhdGggZD0iTTE4NiAxODYgbDcgMTUgMTYgMiAtMTIgMTEgMyAxNiAtMTQtOCAtMTQgOCAzLTE2IC0xMi0xMSAxNi0yeiIgZmlsbD0iI2ZiYmYyNCIgb3BhY2l0eT0iLjkiLz4KICA8cGF0aCBkPSJNMzMwIDE5MCBsNSAxMSAxMiAxIC05IDggMiAxMiAtMTAtNiAtMTAgNiAyLTEyIC05LTggMTItMXoiIGZpbGw9IiNmNTllMGIiIG9wYWNpdHk9Ii45Ii8+Cjwvc3ZnPgo=",
+      "category": "utility",
+      "tags": [
+        "random",
+        "discovery",
+        "reading",
+        "box"
+      ],
+      "author": {
+        "name": "ygr99"
+      },
+      "license": "MIT",
+      "zipUrl": "/apps/random-box-1.2.13.zip",
+      "stars": 0,
+      "updatedAt": "2026-09-05"
     },
     {
       "id": "web-screen",
@@ -453,64 +511,6 @@
       "zipUrl": "/apps/cn.uapis.weather-2026.7.25.zip",
       "stars": 0,
       "updatedAt": "2026-07-25"
-    },
-    {
-      "id": "media-log",
-      "name": {
-        "en": "Media Log",
-        "zh-CN": "书影音游"
-      },
-      "description": {
-        "en": "Track the books, films, music and games you consume, archived on a year-month-day timeline.",
-        "zh-CN": "记录读过的书、看过的影视、听过的音乐、玩过的游戏，按年月日时间轴归档；评分与短评，默认 4 类不可删。"
-      },
-      "version": "1.0.0",
-      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZjdmNGZmIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2U4ZTFmZiIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZ2xvdyIgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiM3YzNhZWQiIHN0b3Atb3BhY2l0eT0iLjM0Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzdjM2FlZCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KCiAgPCEtLSDmtYXoibLkuLvpopjlupXluqcgKyDlupXpg6jlkIzoibLlhYnmmZUgLS0+CiAgPHJlY3Qgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHJ4PSIxMTIiIGZpbGw9InVybCgjYmcpIi8+CiAgPGVsbGlwc2UgY3g9IjI1NiIgY3k9IjQzMiIgcng9IjE4NiIgcnk9IjU2IiBmaWxsPSJ1cmwoI2dsb3cpIi8+CgogIDwhLS0g5Lmm57GNIC0tPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDk4LDg0KSI+CiAgICA8cmVjdCB3aWR0aD0iMTQ0IiBoZWlnaHQ9IjE0NCIgcng9IjM0IiBmaWxsPSIjZjU5ZTBiIi8+CiAgICA8ZyBmaWxsPSIjZmZmIj4KICAgICAgPHBhdGggZD0iTTI2IDQ0YzEyLTcgMjYtNyAzOCAwdjYyYy0xMi03LTI2LTctMzggMHoiLz4KICAgICAgPHBhdGggZD0iTTExOCA0NGMtMTItNy0yNi03LTM4IDB2NjJjMTItNyAyNi03IDM4IDB6IiBvcGFjaXR5PSIuNzgiLz4KICAgIDwvZz4KICAgIDxwYXRoIGQ9Ik03MiA0NHY2MiIgc3Ryb2tlPSIjZjU5ZTBiIiBzdHJva2Utd2lkdGg9IjYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDwvZz4KCiAgPCEtLSDlvbHop4YgLS0+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjcwLDg0KSI+CiAgICA8cmVjdCB3aWR0aD0iMTQ0IiBoZWlnaHQ9IjE0NCIgcng9IjM0IiBmaWxsPSIjZjQzZjVlIi8+CiAgICA8cmVjdCB4PSIyNiIgeT0iMzgiIHdpZHRoPSI5MiIgaGVpZ2h0PSI2OCIgcng9IjEyIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iOCIvPgogICAgPHBhdGggZD0iTTYwIDU2bDMyIDIxLTMyIDIxeiIgZmlsbD0iI2ZmZiIvPgogICAgPGcgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjkiPgogICAgICA8cmVjdCB4PSIzNCIgeT0iMjYiIHdpZHRoPSI4IiBoZWlnaHQ9IjEwIiByeD0iMiIvPgogICAgICA8cmVjdCB4PSIzNCIgeT0iMTA4IiB3aWR0aD0iOCIgaGVpZ2h0PSIxMCIgcng9IjIiLz4KICAgICAgPHJlY3QgeD0iMTAyIiB5PSIyNiIgd2lkdGg9IjgiIGhlaWdodD0iMTAiIHJ4PSIyIi8+CiAgICAgIDxyZWN0IHg9IjEwMiIgeT0iMTA4IiB3aWR0aD0iOCIgaGVpZ2h0PSIxMCIgcng9IjIiLz4KICAgIDwvZz4KICA8L2c+CgogIDwhLS0g6Z+z5LmQIC0tPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDk4LDI1NikiPgogICAgPHJlY3Qgd2lkdGg9IjE0NCIgaGVpZ2h0PSIxNDQiIHJ4PSIzNCIgZmlsbD0iIzEwYjk4MSIvPgogICAgPHBhdGggZD0iTTY3IDEwMFY0NmwzOC0xMnY2NiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjgiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgogICAgPGNpcmNsZSBjeD0iNTEiIGN5PSIxMDAiIHI9IjE2IiBmaWxsPSIjZmZmIi8+CiAgICA8Y2lyY2xlIGN4PSI4OSIgY3k9IjEwMCIgcj0iMTYiIGZpbGw9IiNmZmYiLz4KICA8L2c+CgogIDwhLS0g5ri45oiPIC0tPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI3MCwyNTYpIj4KICAgIDxyZWN0IHdpZHRoPSIxNDQiIGhlaWdodD0iMTQ0IiByeD0iMzQiIGZpbGw9IiM3YzNhZWQiLz4KICAgIDxyZWN0IHg9IjE2IiB5PSI0OCIgd2lkdGg9IjExMiIgaGVpZ2h0PSI2MiIgcng9IjMwIiBmaWxsPSIjZmZmIi8+CiAgICA8cGF0aCBkPSJNNTIgNjh2MjJNNDEgNzloMjIiIHN0cm9rZT0iIzdjM2FlZCIgc3Ryb2tlLXdpZHRoPSI3IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICAgIDxjaXJjbGUgY3g9Ijk4IiBjeT0iNzAiIHI9IjcuNSIgZmlsbD0iIzdjM2FlZCIvPgogICAgPGNpcmNsZSBjeD0iMTE0IiBjeT0iODgiIHI9IjcuNSIgZmlsbD0iIzdjM2FlZCIvPgogIDwvZz4KPC9zdmc+Cg==",
-      "category": "productivity",
-      "tags": [
-        "book",
-        "movie",
-        "music",
-        "game",
-        "tracker",
-        "时间轴"
-      ],
-      "author": {
-        "name": "ygr99"
-      },
-      "license": "MIT",
-      "zipUrl": "/apps/media-log-1.0.0.zip",
-      "stars": 0,
-      "updatedAt": "2026-09-05"
-    },
-    {
-      "id": "music",
-      "name": {
-        "en": "Music",
-        "zh-CN": "音乐"
-      },
-      "description": {
-        "en": "Multi-platform music player: search & play from Netease/QQ/Soda/Bilibili/Douyin, synced lyrics, AI lyric analysis, playlists and random songs.",
-        "zh-CN": "多平台音乐播放器：网易云/QQ/汽水/B站/抖音搜索播放，歌词滚动，AI 歌词解读，歌单管理与随机一首歌。"
-      },
-      "version": "1.0.4",
-      "icon": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLm0tYmFzZSB7IGZpbGw6ICNmZmUzZWU7IHN0cm9rZS13aWR0aDogMHB4OyB9CiAgICAgIC5tLWdsb3cgeyBmaWxsOiB1cmwoI20tcmFkaWFsKTsgc3Ryb2tlLXdpZHRoOiAwcHg7IH0KICAgICAgLm0tbm90ZSB7IGZpbGw6IHVybCgjbS1saW5lYXIpOyBzdHJva2Utd2lkdGg6IDBweDsgfQogICAgICAubS1zaGluZSB7IGZpbGw6ICNmZmZmZmY7IHN0cm9rZS13aWR0aDogMHB4OyBvcGFjaXR5OiAuODU7IH0KICAgIDwvc3R5bGU+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9Im0tcmFkaWFsIiBjeD0iMjU2IiBjeT0iNDMwIiBmeD0iMjU2IiBmeT0iNDMwIiByPSIyMTAiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZjA0MjZlIiBzdG9wLW9wYWNpdHk9Ii41NSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmMDQyNmUiIHN0b3Atb3BhY2l0eT0iMCIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibS1saW5lYXIiIHgxPSI5MCIgeTE9IjExMCIgeDI9IjQyMCIgeTI9IjQyMCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZjZmOWMiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIuNTUiIHN0b3AtY29sb3I9IiNmMDQyNmUiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjYzkyNjVhIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KCiAgPCEtLSDmtYXoibLlupXluqfvvIjlnIbop5LmlrnvvIkgLS0+CiAgPHBhdGggY2xhc3M9Im0tYmFzZSIgZD0ibTQ5Ni41MiwxMjkuODVjLTEzLjQzLTQ5LjQ4LTY0Ljg5LTEwMC45My0xMTQuMzctMTE0LjM3QzM1MS44MSw3LjkyLDMxMS4xNy4xMywyNTYsMGMtNTUuMTcuMTQtOTUuODEsNy45Mi0xMjYuMTUsMTUuNDlDODAuMzgsMjguOTIsMjguOTIsODAuMzcsMTUuNDgsMTI5Ljg1LDcuOTIsMTYwLjE5LjEzLDIwMC44MywwLDI1NmMuMTQsNTUuMTcsNy45Miw5NS44MSwxNS40OSwxMjYuMTUsMTMuNDQsNDkuNDgsNjQuODksMTAwLjkzLDExNC4zNywxMTQuMzcsMzAuMzQsNy41Nyw3MC45OCwxNS4zNSwxMjYuMTUsMTUuNDksNTUuMTYtLjE0LDk1LjgxLTcuOTIsMTI2LjE1LTE1LjQ5LDQ5LjQ4LTEzLjQ0LDEwMC45My02NC44OSwxMTQuMzctMTE0LjM3LDcuNTctMzAuMzMsMTUuMzUtNzAuOTgsMTUuNDktMTI2LjE1LS4xNC01NS4xNy03LjkyLTk1LjgxLTE1LjQ5LTEyNi4xNVoiLz4KCiAgPCEtLSDlupXpg6jlkIzoibLlhYnmmZUgLS0+CiAgPGVsbGlwc2UgY2xhc3M9Im0tZ2xvdyIgY3g9IjI1NiIgY3k9IjM5MiIgcng9IjE4MCIgcnk9Ijg2Ii8+CgogIDwhLS0g5Y+M6Z+z56ym77ya56ym5aS0ICsg56ym5bmyICsg6L+e5o6l5qiq5qKBIC0tPgogIDxnIGNsYXNzPSJtLW5vdGUiPgogICAgPHBhdGggZD0iTTE4Ni41LDE1My4yYzAtOC42LDUuNi0xNC45LDE0LjItMTYuOWwxMjguNC0yOS40YzEyLjQtMi45LDIwLjQsNC45LDIwLjQsMTYuNnYxNzIuOWMwLDIuNi0uNCw1LjEtMS4yLDcuNC0xLjEsMTguOS0xNy40LDM0LjktMzkuOSw0MC4yLTI0LjcsNS44LTQ4LjItMy45LTUyLjYtMjEuNi00LjQtMTcuOCwxMi0zNi43LDM2LjctNDIuNSwxMi45LTMsMjUuNC0xLjksMzQuOSwyLjJWMTcyLjlsLTExOS43LDI3LjR2MTU5LjljMCwyLjYtLjQsNS4xLTEuMiw3LjQtMS4xLDE4LjktMTcuNCwzNC45LTM5LjksNDAuMi0yNC43LDUuOC00OC4yLTMuOS01Mi42LTIxLjYtNC40LTE3LjgsMTItMzYuNywzNi43LTQyLjUsMTIuOS0zLDI1LjQtMS45LDM0LjksMi4yVjE1My4yWiIvPgogIDwvZz4KCiAgPCEtLSDpq5jlhYkgLS0+CiAgPGVsbGlwc2UgY2xhc3M9Im0tc2hpbmUiIGN4PSIzNDIiIGN5PSIxMTgiIHJ4PSIyNiIgcnk9IjEwIiB0cmFuc2Zvcm09InJvdGF0ZSgtMTMgMzQyIDExOCkiLz4KPC9zdmc+Cg==",
-      "category": "productivity",
-      "tags": [
-        "music",
-        "player",
-        "netease",
-        "qq",
-        "bilibili",
-        "lyrics"
-      ],
-      "author": {
-        "name": "ygr99"
-      },
-      "license": "MIT",
-      "zipUrl": "/apps/music-1.0.4.zip",
-      "stars": 0,
-      "updatedAt": "2026-09-05"
     }
   ]
 }
