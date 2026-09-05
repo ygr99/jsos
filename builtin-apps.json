@@ -48,8 +48,8 @@
       "en": "System settings and preferences",
       "zh-CN": "系统设置与偏好"
     },
-    "version": "1.2.34",
-    "zipUrl": "apps/dev.jsos.settings-1.2.34.zip"
+    "version": "1.2.35",
+    "zipUrl": "apps/dev.jsos.settings-1.2.35.zip"
   },
   {
     "id": "dev.jsos.appmanager",
