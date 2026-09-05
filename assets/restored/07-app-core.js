@@ -1331,6 +1331,17 @@ async function UO() {
 async function Lv() {
   const e = await _u("proxy-config");
   if (e) {
+    if (e.url === "https://cors-proxy.jsos.dev") {
+      const t = {
+        ...e,
+        url: "https://proxy.xn--4gqta1h0zg9yuu7a.fun"
+      };
+      await VO(t);
+      return {
+        ...t,
+        isDefault: false
+      };
+    }
     return {
       ...e,
       isDefault: false
