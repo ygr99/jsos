@@ -1,5 +1,5 @@
 {
-  "appCount": 22,
+  "appCount": 23,
   "updatedAt": "2026-09-05",
   "apps": [
     {
@@ -559,6 +559,33 @@
         "name": "ygr99"
       },
       "zipUrl": "/apps/calendar-1.1.0.zip",
+      "stars": 0,
+      "updatedAt": "2026-09-07"
+    },
+    {
+      "id": "virtual-pet",
+      "name": {
+        "en": "Virtual Pet",
+        "zh-CN": "桌面宠物"
+      },
+      "description": {
+        "en": "Raise your own virtual pet: feed, play and watch it grow, with a desktop pet widget",
+        "zh-CN": "养一只自己的虚拟宠物：喂食、玩耍、升级养成，附桌面宠物小组件，宠物直接住在桌面上"
+      },
+      "version": "1.0.0",
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIwIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2ZmZDU0ZiIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZmIzMDAiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9Imdsb3ciIGN4PSIwLjUiIGN5PSIxIiByPSIwLjciPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmIzMDAiIHN0b3Atb3BhY2l0eT0iMC41NSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZmIzMDAiIHN0b3Atb3BhY2l0eT0iMCIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgeD0iMTYiIHk9IjE2IiB3aWR0aD0iNDgwIiBoZWlnaHQ9IjQ4MCIgcng9IjExMiIgZmlsbD0idXJsKCNiZykiLz4KICA8cmVjdCB4PSIxNiIgeT0iMTYiIHdpZHRoPSI0ODAiIGhlaWdodD0iNDgwIiByeD0iMTEyIiBmaWxsPSJ1cmwoI2dsb3cpIi8+CiAgPCEtLSDniKrljbAgLS0+CiAgPGcgZmlsbD0iIzVkNDAzNyI+CiAgICA8ZWxsaXBzZSBjeD0iMTgwIiBjeT0iMTk2IiByeD0iNDIiIHJ5PSI1NiIgdHJhbnNmb3JtPSJyb3RhdGUoLTE4IDE4MCAxOTYpIi8+CiAgICA8ZWxsaXBzZSBjeD0iMjU2IiBjeT0iMTY0IiByeD0iNDIiIHJ5PSI1OCIvPgogICAgPGVsbGlwc2UgY3g9IjMzMiIgY3k9IjE5NiIgcng9IjQyIiByeT0iNTYiIHRyYW5zZm9ybT0icm90YXRlKDE4IDMzMiAxOTYpIi8+CiAgICA8ZWxsaXBzZSBjeD0iNDA0IiBjeT0iMjYyIiByeD0iMzYiIHJ5PSI0NiIgdHJhbnNmb3JtPSJyb3RhdGUoMzggNDA0IDI2MikiLz4KICAgIDxwYXRoIGQ9Ik0yNTYgMjQ2YzYyIDAgMTE2IDQ0IDExNiA5OCAwIDQ0LTM4IDY2LTcwIDU4LTE4LTQtMzAtMTAtNDYtMTBzLTI4IDYtNDYgMTBjLTMyIDgtNzAtMTQtNzAtNTggMC01NCA1NC05OCAxMTYtOTh6Ii8+CiAgPC9nPgogIDwhLS0g6auY5YWJIC0tPgogIDxlbGxpcHNlIGN4PSIyMjgiIGN5PSIzMDAiIHJ4PSIyNiIgcnk9IjE4IiBmaWxsPSIjOGQ2ZTYzIiBvcGFjaXR5PSIwLjUiIHRyYW5zZm9ybT0icm90YXRlKC0xMiAyMjggMzAwKSIvPgo8L3N2Zz4K",
+      "category": "entertainment",
+      "tags": [
+        "pet",
+        "widget",
+        "桌面宠物",
+        "小组件"
+      ],
+      "author": {
+        "name": "ygr99"
+      },
+      "license": "MIT",
+      "zipUrl": "/apps/virtual-pet-1.0.0.zip",
       "stars": 0,
       "updatedAt": "2026-09-07"
     }
