@@ -1,5 +1,5 @@
 {
-  "appCount": 20,
+  "appCount": 21,
   "updatedAt": "2026-09-05",
   "apps": [
     {
@@ -85,6 +85,31 @@
       },
       "license": "MIT",
       "zipUrl": "/apps/music-1.0.19.zip",
+      "stars": 0,
+      "updatedAt": "2026-09-07"
+    },
+    {
+      "id": "meinv-video",
+      "name": {
+        "en": "Beauty Video",
+        "zh-CN": "小姐姐视频"
+      },
+      "description": {
+        "en": "Random beauty video player: one tap for a new video, auto next, seek and source link.",
+        "zh-CN": "随机小姐姐视频：一键换一个，播完自动连播，支持进度拖动与源视频直达"
+      },
+      "version": "1.0.0",
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2ZiNzE4NSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNlMTFkNDgiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiByeD0iMTEyIiBmaWxsPSJ1cmwoI2JnKSIvPgogIDxlbGxpcHNlIGN4PSIyNTYiIGN5PSI0NDgiIHJ4PSIxNTAiIHJ5PSIyMiIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iLjE2Ii8+CiAgPGcgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iLjg1Ij4KICAgIDxyZWN0IHg9IjEyOCIgeT0iODQiIHdpZHRoPSI1MiIgaGVpZ2h0PSIxNCIgcng9IjciLz4KICAgIDxyZWN0IHg9IjIzMCIgeT0iODQiIHdpZHRoPSI1MiIgaGVpZ2h0PSIxNCIgcng9IjciLz4KICAgIDxyZWN0IHg9IjMzMiIgeT0iODQiIHdpZHRoPSI1MiIgaGVpZ2h0PSIxNCIgcng9IjciLz4KICA8L2c+CiAgPHJlY3QgeD0iOTIiIHk9IjExOCIgd2lkdGg9IjMyOCIgaGVpZ2h0PSIyMjIiIHJ4PSIzMCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iLjk2Ii8+CiAgPHBhdGggZD0iTTIyNCAxNzZsOTIgNTMtOTIgNTN6IiBmaWxsPSIjZTExZDQ4Ii8+CiAgPHBhdGggZD0iTTI1NiA0MzZjLTIuMSAwLTQuMi0uOC01LjgtMi4zbC0zMC40LTI3LjZjLTguOS04LjEtMTQtMTkuNC0xNC0zMSAwLTE3LjMgMTMuNS0zMC40IDMxLjItMzAuNCA5LjUgMCAxNS40IDQuNiAxOSA4LjIgMy42LTMuNiA5LjUtOC4yIDE5LTguMiAxNy43IDAgMzEuMiAxMy4xIDMxLjIgMzAuNCAwIDExLjYtNS4xIDIyLjktMTQgMzFsLTMwLjQgMjcuNmMtMS42IDEuNS0zLjcgMi4zLTUuOCAyLjN6IiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIuOTUiLz4KPC9zdmc+Cg==",
+      "category": "entertainment",
+      "tags": [
+        "视频",
+        "随机",
+        "娱乐"
+      ],
+      "author": {
+        "name": "ygr99"
+      },
+      "zipUrl": "/apps/meinv-video-1.0.0.zip",
       "stars": 0,
       "updatedAt": "2026-09-07"
     },
