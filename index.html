@@ -19,10 +19,40 @@
   <link rel="me" href="https://github.com/ygr99" type="text/html">
   <meta property="og:url" content="https://jsos.喜欢上一个人.fun">
   <title>JSOS</title>
+  <style>html{background:#000}</style>
+  <link rel="preload" as="image" href="/bg.webp">
   <script type="module" crossorigin src="/assets/index-restored.js"></script>
   <link rel="stylesheet" crossorigin href="/assets/index-D_GfNr6K.css">
 </head>
 <body>
+  <!-- 启动封面：HTML 解析即铺壁纸，消除首屏白屏；React 挂载后淡出 -->
+  <div id="boot-splash" style="position:fixed;inset:0;z-index:9999;background:#000 url('/bg.webp') center/cover no-repeat;display:flex;align-items:center;justify-content:center;">
+    <img src="/logo.svg" alt="" style="width:88px;height:88px;filter:drop-shadow(0 4px 24px rgba(0,0,0,.5));animation:boot-pulse 2s ease-in-out infinite;">
+  </div>
+  <style>@keyframes boot-pulse{0%,100%{opacity:.8;transform:scale(1)}50%{opacity:1;transform:scale(1.06)}}</style>
   <div id="root"></div>
+  <script>
+    (function(){
+      var splash=document.getElementById('boot-splash');
+      var root=document.getElementById('root');
+      if(!splash||!root)return;
+      var hidden=false;
+      function hide(){
+        if(hidden)return;hidden=true;
+        splash.style.transition='opacity .4s ease';
+        splash.style.opacity='0';
+        setTimeout(function(){splash.remove();},450);
+      }
+      if(root.firstElementChild){hide();return;}
+      var obs=new MutationObserver(function(){
+        if(root.firstElementChild){
+          obs.disconnect();
+          requestAnimationFrame(hide);
+        }
+      });
+      obs.observe(root,{childList:true,subtree:true});
+      setTimeout(hide,60000);/* 兜底：异常时 60s 后必移除 */
+    })();
+  </script>
 </body>
 </html>
