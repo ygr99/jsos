@@ -624,7 +624,7 @@
         "en": "A collection of casual mini games: puzzles, board games and arcade classics.",
         "zh-CN": "各种休闲小游戏集合：数字华容道、扫雷、贪吃蛇、俄罗斯方块、五子棋、象棋、汉诺塔、数独、舒尔特方格、打弹珠、捕鱼达人"
       },
-      "version": "1.0.0",
+      "version": "1.1.0",
       "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjYTc4YmZhIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzdjM2FlZCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0icGFkIiB4MT0iMCIgeTE9IjAiIHgyPSIwIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNlZGU5ZmUiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDwhLS0g5bqV5bqn5ruh55S75biD77yM5LiO5YW25LuW5bqU55So5Zu+5qCH5pW05L2T5aSn5bCP5LiA6Ie0IC0tPgogIDxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiByeD0iMTEyIiBmaWxsPSJ1cmwoI2JnKSIvPgogIDxlbGxpcHNlIGN4PSIyNTYiIGN5PSI0NTIiIHJ4PSIxNTAiIHJ5PSIyNiIgZmlsbD0iIzViMjFiNiIgb3BhY2l0eT0iMC41Ii8+CiAgPCEtLSDmiYvmn4TkuLvkvZMgLS0+CiAgPHBhdGggZD0iTTE2OCAxNzYgaDE3NiBhNzIgNzIgMCAwIDEgNzIgNzIgdjQwIGE1NiA1NiAwIDAgMSAtNTYgNTYgYy0yMiAwIC0zNiAtMTIgLTQ4IC0yNiBsLTEwIC0xMiBoLTkyIGwtMTAgMTIgYy0xMiAxNCAtMjYgMjYgLTQ4IDI2IGE1NiA1NiAwIDAgMSAtNTYgLTU2IHYtNDAgYTcyIDcyIDAgMCAxIDcyIC03MiB6IiBmaWxsPSJ1cmwoI3BhZCkiLz4KICA8IS0tIOWNgeWtl+mUriAtLT4KICA8cmVjdCB4PSIxNDAiIHk9IjIyNiIgd2lkdGg9IjIyIiBoZWlnaHQ9IjY4IiByeD0iOCIgZmlsbD0iIzdjM2FlZCIvPgogIDxyZWN0IHg9IjExNyIgeT0iMjQ5IiB3aWR0aD0iNjgiIGhlaWdodD0iMjIiIHJ4PSI4IiBmaWxsPSIjN2MzYWVkIi8+CiAgPCEtLSBBQiDplK4gLS0+CiAgPGNpcmNsZSBjeD0iMzMwIiBjeT0iMjM4IiByPSIxNSIgZmlsbD0iI2Y1OWUwYiIvPgogIDxjaXJjbGUgY3g9IjM2NiIgY3k9IjI3MCIgcj0iMTUiIGZpbGw9IiMxMGI5ODEiLz4KICA8IS0tIOS4remXtOWwj+mUriAtLT4KICA8Y2lyY2xlIGN4PSIyNDgiIGN5PSIyNDgiIHI9IjgiIGZpbGw9IiNjNGI1ZmQiLz4KICA8Y2lyY2xlIGN4PSIyNjQiIGN5PSIyNDgiIHI9IjgiIGZpbGw9IiNjNGI1ZmQiLz4KPC9zdmc+Cg==",
       "category": "games",
       "tags": [
@@ -636,7 +636,7 @@
       "author": {
         "name": "ygr99"
       },
-      "zipUrl": "/apps/minigames-1.0.0.zip",
+      "zipUrl": "/apps/minigames-1.1.0.zip",
       "stars": 0,
       "updatedAt": "2026-09-08"
     }
