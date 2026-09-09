@@ -650,7 +650,7 @@
         "en": "Watch live TV: CCTV, satellite and local channels with multi-source fallback and an HLS player.",
         "zh-CN": "观看电视直播：央视频道（CCTV1/9/12/13）+ 卫视频道（浙江卫视）+ 地方频道（浙江广电系 10 个），精选稳定源并经存活校验，内置 HLS 播放器与多源自动切换。"
       },
-      "version": "1.0.5",
+      "version": "1.0.6",
       "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIwIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzJkZDRiZiIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwZjc2NmUiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9Imdsb3ciIGN4PSIwLjUiIGN5PSIxIiByPSIwLjc1Ij4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjNWVlYWQ0IiBzdG9wLW9wYWNpdHk9IjAuNTUiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNWVlYWQ0IiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgPC9kZWZzPgoKICA8IS0tIOW6leW6p++8muWchuinkuaWuSArIOW6lemDqOWFieaZlSAtLT4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjExNSIgZmlsbD0idXJsKCNiZykiLz4KICA8ZWxsaXBzZSBjeD0iMjU2IiBjeT0iNDcwIiByeD0iMjIwIiByeT0iMTMwIiBmaWxsPSJ1cmwoI2dsb3cpIi8+CgogIDwhLS0g5aSp57q/IC0tPgogIDxsaW5lIHgxPSIyNTYiIHkxPSIxNjgiIHgyPSIxNjgiIHkyPSI3MiIgc3Ryb2tlPSIjZjBmZGZhIiBzdHJva2Utd2lkdGg9IjIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8bGluZSB4MT0iMjU2IiB5MT0iMTY4IiB4Mj0iMzQ0IiB5Mj0iNzIiIHN0cm9rZT0iI2YwZmRmYSIgc3Ryb2tlLXdpZHRoPSIyMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPGNpcmNsZSBjeD0iMjU2IiBjeT0iMTY4IiByPSIxNiIgZmlsbD0iI2YwZmRmYSIvPgoKICA8IS0tIOacuui6qyAtLT4KICA8cmVjdCB4PSI3NiIgeT0iMTc2IiB3aWR0aD0iMzYwIiBoZWlnaHQ9IjI2NCIgcng9IjQwIiBmaWxsPSIjZjBmZGZhIi8+CgogIDwhLS0g5bGP5bmVIC0tPgogIDxyZWN0IHg9IjEwOCIgeT0iMjA4IiB3aWR0aD0iMjQwIiBoZWlnaHQ9IjIwMCIgcng9IjI0IiBmaWxsPSIjMGY3NjZlIi8+CgogIDwhLS0g5pKt5pS+6ZSuIC0tPgogIDxwYXRoIGQ9Ik0gMjA1IDI1OCBMIDI2OCAzMDggTCAyMDUgMzU4IFoiIGZpbGw9IiNmMGZkZmEiLz4KCiAgPCEtLSDkvqfovrnml4vpkq4gLS0+CiAgPGNpcmNsZSBjeD0iMzkyIiBjeT0iMjQ4IiByPSIxNiIgZmlsbD0iIzBmNzY2ZSIvPgogIDxsaW5lIHgxPSIzODAiIHkxPSIyOTIiIHgyPSI0MDQiIHkyPSIyOTIiIHN0cm9rZT0iIzBmNzY2ZSIgc3Ryb2tlLXdpZHRoPSIxMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPGxpbmUgeDE9IjM4MCIgeTE9IjMyNiIgeDI9IjQwNCIgeTI9IjMyNiIgc3Ryb2tlPSIjMGY3NjZlIiBzdHJva2Utd2lkdGg9IjEyIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+Cg==",
       "category": "entertainment",
       "tags": [
@@ -663,7 +663,7 @@
         "name": "ygr99"
       },
       "license": "MIT",
-      "zipUrl": "/apps/watch-tv-1.0.5.zip",
+      "zipUrl": "/apps/watch-tv-1.0.6.zip",
       "stars": 0,
       "updatedAt": "2026-09-09"
     }
