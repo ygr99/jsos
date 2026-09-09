@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2dd4bf"/>
+      <stop offset="1" stop-color="#0f766e"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="1" r="0.75">
+      <stop offset="0" stop-color="#5eead4" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#5eead4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 底座：圆角方 + 底部光晕 -->
+  <rect x="0" y="0" width="512" height="512" rx="115" fill="url(#bg)"/>
+  <ellipse cx="256" cy="470" rx="220" ry="130" fill="url(#glow)"/>
+
+  <!-- 天线 -->
+  <line x1="256" y1="168" x2="168" y2="72" stroke="#f0fdfa" stroke-width="22" stroke-linecap="round"/>
+  <line x1="256" y1="168" x2="344" y2="72" stroke="#f0fdfa" stroke-width="22" stroke-linecap="round"/>
+  <circle cx="256" cy="168" r="16" fill="#f0fdfa"/>
+
+  <!-- 机身 -->
+  <rect x="76" y="176" width="360" height="264" rx="40" fill="#f0fdfa"/>
+
+  <!-- 屏幕 -->
+  <rect x="108" y="208" width="240" height="200" rx="24" fill="#0f766e"/>
+
+  <!-- 播放键 -->
+  <path d="M 205 258 L 268 308 L 205 358 Z" fill="#f0fdfa"/>
+
+  <!-- 侧边旋钮 -->
+  <circle cx="392" cy="248" r="16" fill="#0f766e"/>
+  <line x1="380" y1="292" x2="404" y2="292" stroke="#0f766e" stroke-width="12" stroke-linecap="round"/>
+  <line x1="380" y1="326" x2="404" y2="326" stroke="#0f766e" stroke-width="12" stroke-linecap="round"/>
+</svg>
