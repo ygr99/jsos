@@ -547,7 +547,7 @@
         "en": "Calendar with lunar date, year/month/week progress, 24 solar terms card with illustration and daily 60s world news, plus 4 desktop widgets",
         "zh-CN": "日历应用：日期卡片（公历+农历）、年/月/周进度、二十四节气卡（配图 + 倒计时 + 交节时刻），附每天60秒读懂世界；5 种桌面小组件：完整日历卡（4×2）、进度卡（4×2）、紧凑日历牌（2×2）、二十四节气（2×2）、二十四节气配图（2×1，只显示当前节气图片）"
       },
-      "version": "1.7.0",
+      "version": "1.7.1",
       "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIwIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI0ZGRTlFQyIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNGRkQzREEiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9Imdsb3ciIGN4PSIwLjUiIGN5PSIxIiByPSIwLjcyIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjRTEwMDAwIiBzdG9wLW9wYWNpdHk9IjAuNSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNFMTAwMDAiIHN0b3Atb3BhY2l0eT0iMCIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHJ4PSIxMTIiIGZpbGw9InVybCgjYmcpIi8+CiAgPGVsbGlwc2UgY3g9IjI1NiIgY3k9IjUxMiIgcng9IjI0MCIgcnk9IjIwNSIgZmlsbD0idXJsKCNnbG93KSIvPgogIDwhLS0g5pel5Y6G5Li75L2TIC0tPgogIDxyZWN0IHg9Ijk2IiB5PSIxMjAiIHdpZHRoPSIzMjAiIGhlaWdodD0iMzAwIiByeD0iNDAiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZT0iI2UxMDAwMCIgc3Ryb2tlLXdpZHRoPSIxNCIvPgogIDwhLS0g6aG26YOo6Imy5p2hIC0tPgogIDxwYXRoIGQ9Ik05NiAxNjAgYTQwIDQwIDAgMCAxIDQwIC00MCBoMjQwIGE0MCA0MCAwIDAgMSA0MCA0MCB2NDAgaC0zMjAgeiIgZmlsbD0iI2UxMDAwMCIvPgogIDwhLS0g5oyC546vIC0tPgogIDxyZWN0IHg9IjE2MCIgeT0iODQiIHdpZHRoPSIyMCIgaGVpZ2h0PSI3MCIgcng9IjEwIiBmaWxsPSIjZTEwMDAwIi8+CiAgPHJlY3QgeD0iMzMyIiB5PSI4NCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjcwIiByeD0iMTAiIGZpbGw9IiNlMTAwMDAiLz4KICA8IS0tIOe9keagvOeCuSAtLT4KICA8ZyBmaWxsPSIjZTEwMDAwIiBvcGFjaXR5PSIwLjI4Ij4KICAgIDxjaXJjbGUgY3g9IjE1MiIgY3k9IjI0OCIgcj0iMTQiLz48Y2lyY2xlIGN4PSIyMTYiIGN5PSIyNDgiIHI9IjE0Ii8+PGNpcmNsZSBjeD0iMjgwIiBjeT0iMjQ4IiByPSIxNCIvPjxjaXJjbGUgY3g9IjM0NCIgY3k9IjI0OCIgcj0iMTQiLz4KICAgIDxjaXJjbGUgY3g9IjE1MiIgY3k9IjMxMiIgcj0iMTQiLz48Y2lyY2xlIGN4PSIyMTYiIGN5PSIzMTIiIHI9IjE0Ii8+PGNpcmNsZSBjeD0iMzQ0IiBjeT0iMzEyIiByPSIxNCIvPgogICAgPGNpcmNsZSBjeD0iMTUyIiBjeT0iMzcyIiByPSIxNCIvPjxjaXJjbGUgY3g9IjM0NCIgY3k9IjM3MiIgcj0iMTQiLz4KICA8L2c+CiAgPCEtLSDku4rml6Xpq5jkuq4gLS0+CiAgPGNpcmNsZSBjeD0iMjgwIiBjeT0iMzEyIiByPSIzNCIgZmlsbD0iI2UxMDAwMCIvPgogIDx0ZXh0IHg9IjI4MCIgeT0iMzI2IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iNDIiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjZmZmZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj43PC90ZXh0Pgo8L3N2Zz4NCg==",
       "category": "productivity",
       "tags": [
@@ -558,9 +558,9 @@
       "author": {
         "name": "ygr99"
       },
-      "zipUrl": "/apps/calendar-1.7.0.zip",
+      "zipUrl": "/apps/calendar-1.7.1.zip",
       "stars": 0,
-      "updatedAt": "2026-09-08"
+      "updatedAt": "2026-09-09"
     },
     {
       "id": "virtual-pet",
