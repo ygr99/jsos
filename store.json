@@ -677,8 +677,8 @@
         "en": "Countdowns, monthly repeats and anniversaries for the days that matter, with a 1x1 desktop widget",
         "zh-CN": "记录重要的日子：倒数日、每月重复、累计纪念日，附 1×1 桌面小组件"
       },
-      "version": "1.0.0",
-      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmY5ZGMwIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2ZmNmJhMyIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHJ4PSIxMTIiIGZpbGw9InVybCgjYmcpIi8+CiAgPHJlY3QgeD0iODIiIHk9IjExMiIgd2lkdGg9IjM0OCIgaGVpZ2h0PSIyODgiIHJ4PSI0MCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC45NyIvPgogIDx0ZXh0IHg9IjI1NiIgeT0iMTk2IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0ic3lzdGVtLXVpLC1hcHBsZS1zeXN0ZW0sJ1BpbmdGYW5nIFNDJywnTWljcm9zb2Z0IFlhSGVpJyxzYW5zLXNlcmlmIiBmb250LXNpemU9IjQ2IiBmb250LXdlaWdodD0iNjAwIiBmaWxsPSIjZjA2MjljIj7lhYPml6Y8L3RleHQ+CiAgPHRleHQgeD0iMjU2IiB5PSIzNDIiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksLWFwcGxlLXN5c3RlbSwnU2Vnb2UgVUknLEFyaWFsLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTI4IiBmb250LXdlaWdodD0iODAwIiBmaWxsPSIjMmU3Y2Y2Ij4xMTM8L3RleHQ+Cjwvc3ZnPgo=",
+      "version": "1.0.1",
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmY4ZmI0Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2VmNWE5MCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHJ4PSIxMTIiIGZpbGw9InVybCgjYmcpIi8+CiAgPGVsbGlwc2UgY3g9IjI1NiIgY3k9IjQ4MCIgcng9IjIxMCIgcnk9Ijk2IiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjE0Ii8+CiAgPGNpcmNsZSBjeD0iMzg0IiBjeT0iMTI4IiByPSIyOCIgZmlsbD0iI2ZmZDc2ZSIvPgogIDx0ZXh0IHg9IjI1NiIgeT0iMjY4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0iY2VudHJhbCIgZm9udC1mYW1pbHk9IidQaW5nRmFuZyBTQycsJ01pY3Jvc29mdCBZYUhlaScsJ1NvdXJjZSBIYW4gU2FucyBTQycsc3lzdGVtLXVpLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMzAwIiBmb250LXdlaWdodD0iODAwIiBmaWxsPSIjZmZmZmZmIj7ml6U8L3RleHQ+Cjwvc3ZnPgo=",
       "category": "productivity",
       "tags": [
         "时间",
@@ -689,7 +689,7 @@
       "author": {
         "name": "ygr99"
       },
-      "zipUrl": "/apps/days-matter-1.0.0.zip",
+      "zipUrl": "/apps/days-matter-1.0.1.zip",
       "stars": 0,
       "updatedAt": "2026-09-10"
     }
