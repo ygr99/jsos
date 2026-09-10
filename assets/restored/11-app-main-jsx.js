@@ -8195,6 +8195,15 @@ function _Component105({
     }
     try {
       const be = new URL(te);
+      // [jsos-local-wipe] 卸载删数据标记透传：给应用窗口 URL 追加 __jsos_wipe=<t>，应用启动时自清存储
+      let jsWipeT = null;
+      try {
+        const jsWipeMap = JSON.parse(localStorage.getItem("__jsos_data_wipe") || "{}");
+        jsWipeT = jsWipeMap[e.appId] || jsWipeMap[(e.app || {}).id] || null;
+      } catch {}
+      if (jsWipeT && !be.searchParams.has("__jsos_wipe")) {
+        be.searchParams.set("__jsos_wipe", String(jsWipeT));
+      }
       return `http://localhost:${e.serverPort}${be.pathname}${be.search}${be.hash}`;
     } catch {
       return te;
@@ -15465,7 +15474,30 @@ function Xz({
       return () => clearTimeout(te);
     }
   }, [C]);
-  const X = n ? `${n}${e.widget.url}` : null;
+  // [jsos-local-wipe] 卸载删数据标记透传：小组件 URL 同样追加 __jsos_wipe=<t>（小组件可能先于主窗口打开）
+  const X = (() => {
+    if (!n) {
+      return null;
+    }
+    const jsBase = `${n}${e.widget.url}`;
+    let jsWipeT = null;
+    try {
+      const jsWipeMap = JSON.parse(localStorage.getItem("__jsos_data_wipe") || "{}");
+      jsWipeT = jsWipeMap[e.appId] || jsWipeMap[(e.app || {}).id] || null;
+    } catch {}
+    if (!jsWipeT) {
+      return jsBase;
+    }
+    try {
+      const jsU = new URL(jsBase);
+      if (!jsU.searchParams.has("__jsos_wipe")) {
+        jsU.searchParams.set("__jsos_wipe", String(jsWipeT));
+      }
+      return jsU.toString();
+    } catch {
+      return jsBase;
+    }
+  })();
   const Q = e.app || {};
   const se = Q.icon && !m ? Q.icon : null;
   const {
@@ -22824,6 +22856,13 @@ function _Component113() {
         if (Ce) {
           await UM(fe);
           await sO(n, fe);
+          // [jsos-local-wipe] 卸载勾选删除数据：应用 iframe 存储在 localhost:port 跨源，平台无法直接清；
+          // 记录待清理标记，应用下次启动时窗口/小组件 URL 会带上 __jsos_wipe=<t>，由应用自行清除存储
+          try {
+            const m = JSON.parse(localStorage.getItem("__jsos_data_wipe") || "{}");
+            m[fe] = Date.now();
+            localStorage.setItem("__jsos_data_wipe", JSON.stringify(m));
+          } catch {}
         }
         d();
         he();
