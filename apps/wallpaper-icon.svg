@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="wp-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#60a5fa"/>
+      <stop offset="1" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="wp-far" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".97"/>
+      <stop offset="1" stop-color="#dbeafe" stop-opacity=".9"/>
+    </linearGradient>
+    <clipPath id="wp-clip"><rect width="512" height="512" rx="112"/></clipPath>
+  </defs>
+  <g clip-path="url(#wp-clip)">
+    <rect width="512" height="512" fill="url(#wp-bg)"/>
+    <circle cx="374" cy="136" r="60" fill="#ffffff" opacity=".95"/>
+    <path d="M-16 512 L152 236 L322 512 Z" fill="#ffffff" opacity=".9"/>
+    <path d="M168 512 L334 196 L520 512 Z" fill="url(#wp-far)"/>
+    <path d="M-16 512 L86 372 L206 512 Z" fill="#1e40af" opacity=".5"/>
+    <rect x="0" y="466" width="512" height="46" fill="#1e3a8a" opacity=".32"/>
+  </g>
+</svg>
