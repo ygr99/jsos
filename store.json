@@ -1,5 +1,5 @@
 {
-  "appCount": 30,
+  "appCount": 31,
   "updatedAt": "2026-09-12",
   "apps": [
     {
@@ -773,6 +773,34 @@
       },
       "license": "MIT",
       "zipUrl": "/apps/translator-1.0.0.zip",
+      "stars": 0,
+      "updatedAt": "2026-09-12"
+    },
+    {
+      "id": "poster",
+      "name": {
+        "en": "Poster",
+        "zh-CN": "海报"
+      },
+      "description": {
+        "en": "Pick a single image or a slideshow folder and show it on your desktop widget.",
+        "zh-CN": "选一张图片或一个相册文件夹轮播，海报桌面小组件按你的设置展示"
+      },
+      "version": "1.0.0",
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2ZiOTIzYyIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNlMTFkNDgiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8Y2xpcFBhdGggaWQ9InNjZW5lIj4KICAgICAgPHJlY3QgeD0iMTQwIiB5PSIxMjAiIHdpZHRoPSIyMzIiIGhlaWdodD0iMTcwIiByeD0iMTQiLz4KICAgIDwvY2xpcFBhdGg+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiByeD0iMTEyIiBmaWxsPSJ1cmwoI2JnKSIvPgogIDwhLS0g5rW35oql57q45Y2hIC0tPgogIDxyZWN0IHg9IjExNiIgeT0iOTYiIHdpZHRoPSIyODAiIGhlaWdodD0iMzIwIiByeD0iMjgiIGZpbGw9IiNmZmZmZmYiLz4KICA8IS0tIOmFjeWbvuWMuu+8muWkqumYsyArIOi/nOWxsSAtLT4KICA8cmVjdCB4PSIxNDAiIHk9IjEyMCIgd2lkdGg9IjIzMiIgaGVpZ2h0PSIxNzAiIHJ4PSIxNCIgZmlsbD0iI2ZmZjFmMiIvPgogIDxnIGNsaXAtcGF0aD0idXJsKCNzY2VuZSkiPgogICAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMTc2IiByPSIyNiIgZmlsbD0iI2Y1OWUwYiIvPgogICAgPHBhdGggZD0iTTEyMCAyOTAgTDIzMiAxOTYgTDI5MiAyNjQgTDMyNiAyMzAgTDM5MiAyOTAgWiIgZmlsbD0iI2ZiNzE4NSIvPgogICAgPHBhdGggZD0iTTE3NiAyOTAgTDI2NiAyMTYgTDM3MiAyOTAgWiIgZmlsbD0iI2UxMWQ0OCIvPgogIDwvZz4KICA8IS0tIOagh+mimOS4juWJr+mimOS4pOihjCAtLT4KICA8cmVjdCB4PSIxNDAiIHk9IjMyNiIgd2lkdGg9IjE2OCIgaGVpZ2h0PSIyMiIgcng9IjExIiBmaWxsPSIjZTExZDQ4Ii8+CiAgPHJlY3QgeD0iMTQwIiB5PSIzNjQiIHdpZHRoPSIxMTgiIGhlaWdodD0iMjIiIHJ4PSIxMSIgZmlsbD0iI2ZkYTRhZiIvPgo8L3N2Zz4K",
+      "category": "utilities",
+      "tags": [
+        "海报",
+        "图片",
+        "幻灯片",
+        "桌面小组件",
+        "桌面美化"
+      ],
+      "author": {
+        "name": "ygr99"
+      },
+      "license": "MIT",
+      "zipUrl": "/apps/poster-1.0.0.zip",
       "stars": 0,
       "updatedAt": "2026-09-12"
     }
