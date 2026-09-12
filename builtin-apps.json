@@ -78,16 +78,16 @@
     "zipUrl": "/apps/dev.jsos.docs-1.2.6.zip"
   },
   {
-    "id": "dev.jsos.datetime-display",
+    "id": "wallpaper",
     "name": {
-      "en": "Date & Time",
-      "zh-CN": "日期时间"
+      "en": "Wallpaper",
+      "zh-CN": "壁纸"
     },
     "description": {
-      "en": "Display current date and time",
-      "zh-CN": "显示当前日期和时间"
+      "en": "Pick a wallpaper for your desktop: solid/gradient colors, Bing daily photos, video wallpapers and more.",
+      "zh-CN": "给桌面挑壁纸：纯色渐变、必应每日一图、动态视频壁纸，可一直往回翻到 2010 年"
     },
-    "version": "1.0.0",
-    "zipUrl": "/apps/dev.jsos.datetime-display-1.0.0.zip"
+    "version": "1.6.0",
+    "zipUrl": "/apps/wallpaper-1.6.0.zip"
   }
 ]
