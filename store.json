@@ -1,5 +1,5 @@
 {
-  "appCount": 29,
+  "appCount": 30,
   "updatedAt": "2026-09-12",
   "apps": [
     {
@@ -746,6 +746,33 @@
       },
       "license": "MIT",
       "zipUrl": "/apps/aggregate-hitokoto-1.0.1.zip",
+      "stars": 0,
+      "updatedAt": "2026-09-12"
+    },
+    {
+      "id": "translator",
+      "name": {
+        "en": "Translator",
+        "zh-CN": "翻译"
+      },
+      "description": {
+        "en": "Two-panel translator powered by Youdao via the 60s API: auto language detection, 109 languages, pronunciation and a 4x2 desktop widget",
+        "zh-CN": "双栏翻译工具（有道数据）：自动检测语言、109 种语言互译、发音标注，附 4×2 桌面小组件"
+      },
+      "version": "1.0.0",
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjNWZkNjhhIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzJmOWU1NyIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHJ4PSIxMTIiIGZpbGw9InVybCgjYmcpIi8+CiAgPGVsbGlwc2UgY3g9IjI1NiIgY3k9IjQ4MCIgcng9IjIxMCIgcnk9Ijk2IiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjE0Ii8+CiAgPHRleHQgeD0iMTk2IiB5PSIyMzgiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJjZW50cmFsIiBmb250LWZhbWlseT0iJ1BpbmdGYW5nIFNDJywnTWljcm9zb2Z0IFlhSGVpJywnU291cmNlIEhhbiBTYW5zIFNDJyxzeXN0ZW0tdWksc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNDAiIGZvbnQtd2VpZ2h0PSI4MDAiIGZpbGw9IiNmZmZmZmYiPuaWhzwvdGV4dD4KICA8dGV4dCB4PSIzNTIiIHk9IjM2OCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9ImNlbnRyYWwiIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksLWFwcGxlLXN5c3RlbSwnU2Vnb2UgVUknLEFyaWFsLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTcwIiBmb250LXdlaWdodD0iODAwIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjcyIj5BPC90ZXh0Pgo8L3N2Zz4K",
+      "category": "utilities",
+      "tags": [
+        "翻译",
+        "词典",
+        "语言学习",
+        "工具"
+      ],
+      "author": {
+        "name": "ygr99"
+      },
+      "license": "MIT",
+      "zipUrl": "/apps/translator-1.0.0.zip",
       "stars": 0,
       "updatedAt": "2026-09-12"
     }
