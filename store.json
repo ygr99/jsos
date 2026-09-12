@@ -758,8 +758,8 @@
         "en": "One place for quotes: hitokoto, jokes, fabing literature, the Book of Answers, KFC V50, classic poetry and iPartment lines",
         "zh-CN": "聚合 7 类一句话内容：一言 / 段子 / 发病文学 / 答案之书 / KFC V50 / 古诗词 / 爱情公寓语录，一键再来一条"
       },
-      "version": "1.0.0",
-      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzgxOGNmOCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM0ZjQ2ZTUiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxlbGxpcHNlIGN4PSIyNTYiIGN5PSI0NzQiIHJ4PSIxNTAiIHJ5PSIxNiIgZmlsbD0iIzYzNjZmMSIgb3BhY2l0eT0iMC4zNSIvPgogIDxyZWN0IHg9IjMyIiB5PSIzMiIgd2lkdGg9IjQ0OCIgaGVpZ2h0PSI0NDgiIHJ4PSI5NiIgZmlsbD0idXJsKCNiZykiLz4KICA8ZyBmaWxsPSIjZmZmZmZmIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMiw0Nikgc2NhbGUoMTgpIj4KICAgIDxwYXRoIGQ9Ik02IDE3aDNsMi00VjdINXY2aDN6bTggMGgzbDItNFY3aC02djZoM3oiLz4KICA8L2c+CiAgPGNpcmNsZSBjeD0iMzkyIiBjeT0iMTMyIiByPSIxNCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC45Ii8+CiAgPGNpcmNsZSBjeD0iNDI0IiBjeT0iMTAwIiByPSI4IiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjYiLz4KPC9zdmc+Cg==",
+      "version": "1.0.1",
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjODE4Y2Y4Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzRmNDZlNSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPCEtLSDlupXluqfmu6HnlLvluIPvvIjkuI7lhbbku5blupTnlKjlm77moIfmlbTkvZPlpKflsI/kuIDoh7TvvInvvIxyeD0xMTIg5ZCM5peP5ZyG6KeSIC0tPgogIDxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiByeD0iMTEyIiBmaWxsPSJ1cmwoI2JnKSIvPgogIDxlbGxpcHNlIGN4PSIyNTYiIGN5PSI1MDAiIHJ4PSIyMzAiIHJ5PSIxMTAiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMTAiLz4KICA8ZyBmaWxsPSIjZmZmZmZmIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNCwxNikgc2NhbGUoMjApIj4KICAgIDxwYXRoIGQ9Ik02IDE3aDNsMi00VjdINXY2aDN6bTggMGgzbDItNFY3aC02djZoM3oiLz4KICA8L2c+CiAgPGNpcmNsZSBjeD0iMzk2IiBjeT0iMTI4IiByPSIxNCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC45Ii8+CiAgPGNpcmNsZSBjeD0iNDI4IiBjeT0iOTYiIHI9IjgiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuNiIvPgo8L3N2Zz4K",
       "category": "entertainment",
       "tags": [
         "一言",
@@ -772,7 +772,7 @@
         "name": "ygr99"
       },
       "license": "MIT",
-      "zipUrl": "/apps/aggregate-hitokoto-1.0.0.zip",
+      "zipUrl": "/apps/aggregate-hitokoto-1.0.1.zip",
       "stars": 0,
       "updatedAt": "2026-09-12"
     }
