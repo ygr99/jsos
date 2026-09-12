@@ -731,7 +731,7 @@
         "en": "One place for quotes: hitokoto, jokes, fabing literature, the Book of Answers, KFC V50, classic poetry and iPartment lines",
         "zh-CN": "聚合 7 类一句话内容：一言 / 段子 / 发病文学 / 答案之书 / KFC V50 / 古诗词 / 爱情公寓语录，一键再来一条"
       },
-      "version": "1.0.1",
+      "version": "1.1.0",
       "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjODE4Y2Y4Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzRmNDZlNSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPCEtLSDlupXluqfmu6HnlLvluIPvvIjkuI7lhbbku5blupTnlKjlm77moIfmlbTkvZPlpKflsI/kuIDoh7TvvInvvIxyeD0xMTIg5ZCM5peP5ZyG6KeSIC0tPgogIDxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiByeD0iMTEyIiBmaWxsPSJ1cmwoI2JnKSIvPgogIDxlbGxpcHNlIGN4PSIyNTYiIGN5PSI1MDAiIHJ4PSIyMzAiIHJ5PSIxMTAiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMTAiLz4KICA8ZyBmaWxsPSIjZmZmZmZmIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNCwxNikgc2NhbGUoMjApIj4KICAgIDxwYXRoIGQ9Ik02IDE3aDNsMi00VjdINXY2aDN6bTggMGgzbDItNFY3aC02djZoM3oiLz4KICA8L2c+CiAgPGNpcmNsZSBjeD0iMzk2IiBjeT0iMTI4IiByPSIxNCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC45Ii8+CiAgPGNpcmNsZSBjeD0iNDI4IiBjeT0iOTYiIHI9IjgiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuNiIvPgo8L3N2Zz4K",
       "category": "entertainment",
       "tags": [
@@ -745,7 +745,7 @@
         "name": "ygr99"
       },
       "license": "MIT",
-      "zipUrl": "/apps/aggregate-hitokoto-1.0.1.zip",
+      "zipUrl": "/apps/aggregate-hitokoto-1.1.0.zip",
       "stars": 0,
       "updatedAt": "2026-09-12"
     },
