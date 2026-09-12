@@ -704,7 +704,7 @@
         "en": "Pick a wallpaper for your desktop: solid/gradient colors, Bing daily photos, video wallpapers and more.",
         "zh-CN": "给桌面挑壁纸：纯色渐变、必应每日一图、动态视频壁纸，可一直往回翻到 2010 年"
       },
-      "version": "1.5.0",
+      "version": "1.6.0",
       "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9IndwLWJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzYwYTVmYSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMxZDRlZDgiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9IndwLWZhciIgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iLjk3Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2RiZWFmZSIgc3RvcC1vcGFjaXR5PSIuOSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxjbGlwUGF0aCBpZD0id3AtY2xpcCI+PHJlY3Qgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHJ4PSIxMTIiLz48L2NsaXBQYXRoPgogIDwvZGVmcz4KICA8ZyBjbGlwLXBhdGg9InVybCgjd3AtY2xpcCkiPgogICAgPHJlY3Qgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIGZpbGw9InVybCgjd3AtYmcpIi8+CiAgICA8Y2lyY2xlIGN4PSIzNzQiIGN5PSIxMzYiIHI9IjYwIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIuOTUiLz4KICAgIDxwYXRoIGQ9Ik0tMTYgNTEyIEwxNTIgMjM2IEwzMjIgNTEyIFoiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9Ii45Ii8+CiAgICA8cGF0aCBkPSJNMTY4IDUxMiBMMzM0IDE5NiBMNTIwIDUxMiBaIiBmaWxsPSJ1cmwoI3dwLWZhcikiLz4KICAgIDxwYXRoIGQ9Ik0tMTYgNTEyIEw4NiAzNzIgTDIwNiA1MTIgWiIgZmlsbD0iIzFlNDBhZiIgb3BhY2l0eT0iLjUiLz4KICA8L2c+Cjwvc3ZnPgo=",
       "category": "utilities",
       "tags": [
@@ -717,7 +717,7 @@
         "name": "ygr99"
       },
       "license": "MIT",
-      "zipUrl": "/apps/wallpaper-1.5.0.zip",
+      "zipUrl": "/apps/wallpaper-1.6.0.zip",
       "stars": 0,
       "updatedAt": "2026-09-12"
     },
