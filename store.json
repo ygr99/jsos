@@ -731,7 +731,7 @@
         "en": "Mix 60 nature, place and ambient sounds with 6 one-tap scene presets and save your own",
         "zh-CN": "60 种自然 / 场所 / 环境白噪音自由混音，内置 6 组声景预设一键进入状态，支持保存自己的组合"
       },
-      "version": "1.1.0",
+      "version": "1.1.1",
       "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMTdiZmFkIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzBkOGI4MCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0id3YiIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2U2ZmZmYiIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CgogIDxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiByeD0iMTEyIiBmaWxsPSJ1cmwoI2JnKSIvPgogIDxlbGxpcHNlIGN4PSIyNTYiIGN5PSI0OTgiIHJ4PSIyMzIiIHJ5PSIxMTIiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMTAiLz4KCiAgPCEtLSDlo7Dms6Lmn7HnirbmnaHvvJo3IOagueWchuinkuerluadoe+8jOS4remXtOacgOmrmOWQkeS4pOS+p+mAkuWHj++8jOWhq+a7oeeUu+W4gyAtLT4KICA8ZyBmaWxsPSJ1cmwoI3d2KSI+CiAgICA8cmVjdCB4PSI3NiIgIHk9IjE5MiIgd2lkdGg9IjMwIiBoZWlnaHQ9IjEyOCIgcng9IjE1Ii8+CiAgICA8cmVjdCB4PSIxMjYiIHk9IjE0NiIgd2lkdGg9IjMwIiBoZWlnaHQ9IjIyMCIgcng9IjE1Ii8+CiAgICA8cmVjdCB4PSIxNzYiIHk9Ijk4IiAgd2lkdGg9IjMwIiBoZWlnaHQ9IjMxNiIgcng9IjE1Ii8+CiAgICA8cmVjdCB4PSIyNDEiIHk9IjcyIiAgd2lkdGg9IjMwIiBoZWlnaHQ9IjM2OCIgcng9IjE1Ii8+CiAgICA8cmVjdCB4PSIzMDYiIHk9Ijk4IiAgd2lkdGg9IjMwIiBoZWlnaHQ9IjMxNiIgcng9IjE1Ii8+CiAgICA8cmVjdCB4PSIzNTYiIHk9IjE0NiIgd2lkdGg9IjMwIiBoZWlnaHQ9IjIyMCIgcng9IjE1Ii8+CiAgICA8cmVjdCB4PSI0MDYiIHk9IjE5MiIgd2lkdGg9IjMwIiBoZWlnaHQ9IjEyOCIgcng9IjE1Ii8+CiAgPC9nPgo8L3N2Zz4K",
       "category": "multimedia",
       "tags": [
@@ -744,7 +744,7 @@
       "author": {
         "name": "ygr99"
       },
-      "zipUrl": "/apps/whitenoise-1.1.0.zip",
+      "zipUrl": "/apps/whitenoise-1.1.1.zip",
       "stars": 0,
       "updatedAt": "2026-09-11"
     }
