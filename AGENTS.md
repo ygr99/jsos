@@ -30,6 +30,18 @@ C:\Users\99\jsos
 
 构建产物是压缩过的单文件，`index.html` 引用它。分片间**共享同一顶层作用域**，新增顶层标识符必须用独特前缀（历史先例：`__jsosZipCache`、`jsFetchAppAsset`）。
 
+### ⚠️ 只改分片 ≠ 生效；直接改 `index-restored.js` 又不能重建（两条都要记住）
+
+`index.html` 实际加载的是**构建产物 `assets/index-restored.js`**，分片源码不会被浏览器读到。历史坑（commit 097fe85）：改文案只动了 `assets/restored/07-app-core.js`，忘了重建 → 线上文案毫无变化。
+
+但也不能无脑 `node tools/rebuild.mjs`：**部分平台补丁只存在于 `assets/index-restored.js`，不在任何分片里**。例如 `__jsos_wid`（小组件实例 id 追加，见 7.7）——重建会把整文件覆盖成分片拼接的结果，该补丁直接消失（`__jsos_wipe` 例外，它在 `11-app-main-jsx.js` 里有）。
+
+**判据 + 正确做法**：
+- 改分片源码后想重建 → 先 `grep -r "__jsos_wid" assets/restored/` 自查，凡"只出现在 `index-restored.js`"的补丁，重建后必须手动补回（`tools/patch*.mjs` 里就有这类直接补丁脚本）
+- 单纯改文案/小补丁 → **直接在 `assets/index-restored.js` 上做外科替换**（该文件是 esbuild 产物：非 ASCII 会被转义成 `\uXXXX` 大写十六进制，如「添加组件」= `\u6DFB\u52A0\u7EC4\u4EF6`，按转义串匹配，改完 `node --check` 过一遍）
+- 记得同步 `dist/assets/index-restored.js`（`dist/` 被 git ignore，由 `node tools/prepare-dist.mjs` 从 `assets/` 复制生成，是 wrangler 部署的内容）与参照副本（`*.beauty.js` 也被 ignore，改了 `index-liunM0pp.js` 就顺手同步 `index-liunM0pp.beauty.js`，别让参照副本漂移）
+
+
 ## 3. 分片地图（assets/restored/）
 
 | 分片 | 内容 | 常改什么 |
