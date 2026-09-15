@@ -1,24 +1,27 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
   <defs>
-    <linearGradient id="opBg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#17b3a3" />
-      <stop offset="1" stop-color="#0a6b62" />
+    <linearGradient id="opMark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1e74f2" />
+      <stop offset="1" stop-color="#0053d4" />
     </linearGradient>
-    <radialGradient id="opGlow" cx="0.5" cy="0.16" r="0.8">
-      <stop offset="0" stop-color="#ffffff" stop-opacity="0.3" />
-      <stop offset="1" stop-color="#ffffff" stop-opacity="0" />
+    <radialGradient id="opGlow" cx="0.5" cy="0.92" r="0.72">
+      <stop offset="0" stop-color="#005eeb" stop-opacity="0.14" />
+      <stop offset="1" stop-color="#005eeb" stop-opacity="0" />
     </radialGradient>
+    <filter id="opShadow" x="-15%" y="-15%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#0055d9" flood-opacity="0.24" />
+    </filter>
   </defs>
 
-  <!-- 底座满画布，不留边距 -->
-  <rect width="512" height="512" rx="112" fill="url(#opBg)" />
+  <!-- 白色底座满画布（描边用于在纯白卡片背景上仍能分辨） -->
+  <rect width="512" height="512" rx="112" fill="#ffffff" />
   <rect width="512" height="512" rx="112" fill="url(#opGlow)" />
-  <circle cx="256" cy="256" r="112" fill="#ffffff" fill-opacity="0.08" />
+  <rect x="3" y="3" width="506" height="506" rx="110" fill="none" stroke="#e5e8ec" stroke-width="6" />
 
-  <!-- 状态环：轨道 + 70% 进度 -->
-  <g transform="rotate(-90 256 256)">
-    <circle cx="256" cy="256" r="160" fill="none" stroke="#ffffff" stroke-opacity="0.32" stroke-width="52" />
-    <circle cx="256" cy="256" r="160" fill="none" stroke="#ffffff" stroke-width="52"
-      stroke-linecap="round" stroke-dasharray="703.7 301.6" />
+  <!-- 1Panel logo（33×33 原始坐标系 → 396×396 居中） -->
+  <g fill="url(#opMark)" filter="url(#opShadow)" transform="translate(58 58) scale(12)">
+    <path d="M19.42 4.842 7.785 11.56v10.064l7.539 4.353-2.921 1.686-7.54-4.353V9.874L16.5 3.156zM25.216 21.625l-11.638 6.717 2.921 1.686 11.638-6.716z" />
+    <path d="m20.598 5.522-2.921 1.686 7.539 4.352v10.064l2.92 1.686V9.874zM16.922 9.328l.892.532v13.666l-.892.515zM12.523 11.862l4.399-2.534-.002 14.714-2.848-1.644v-8.82h-1.549z" />
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 8.796 16.5 1 30 8.796v15.592l-13.5 7.796L3 24.388zm26.64.208L16.5 1.417V1.41L3.357 8.997v15.182L16.5 31.772l13.141-7.587z" />
   </g>
 </svg>
