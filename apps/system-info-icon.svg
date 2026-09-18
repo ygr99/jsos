@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="siBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#14b8a6"/>
+      <stop offset="1" stop-color="#0f766e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 底座满画布圆角方：不留白边 -->
+  <rect width="512" height="512" rx="112" fill="url(#siBg)"/>
+  <ellipse cx="256" cy="452" rx="152" ry="26" fill="#0b5d57" opacity="0.45"/>
+
+  <!-- 芯片引脚 -->
+  <g fill="#a7f3e6">
+    <rect x="104" y="196" width="42" height="26" rx="9"/>
+    <rect x="104" y="243" width="42" height="26" rx="9"/>
+    <rect x="104" y="290" width="42" height="26" rx="9"/>
+    <rect x="366" y="196" width="42" height="26" rx="9"/>
+    <rect x="366" y="243" width="42" height="26" rx="9"/>
+    <rect x="366" y="290" width="42" height="26" rx="9"/>
+    <rect x="196" y="104" width="26" height="42" rx="9"/>
+    <rect x="243" y="104" width="26" height="42" rx="9"/>
+    <rect x="290" y="104" width="26" height="42" rx="9"/>
+    <rect x="196" y="366" width="26" height="42" rx="9"/>
+    <rect x="243" y="366" width="26" height="42" rx="9"/>
+    <rect x="290" y="366" width="26" height="42" rx="9"/>
+  </g>
+
+  <!-- 芯片本体 -->
+  <rect x="146" y="146" width="220" height="220" rx="40" fill="#ffffff"/>
+
+  <!-- 芯片内部四核 -->
+  <g fill="#0f9488">
+    <rect x="180" y="180" width="68" height="68" rx="18"/>
+    <rect x="264" y="180" width="68" height="68" rx="18"/>
+    <rect x="180" y="264" width="68" height="68" rx="18"/>
+    <rect x="264" y="264" width="68" height="68" rx="18"/>
+  </g>
+</svg>

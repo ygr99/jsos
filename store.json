@@ -1,6 +1,6 @@
 {
-  "appCount": 34,
-  "updatedAt": "2026-09-15",
+  "appCount": 35,
+  "updatedAt": "2026-09-18",
   "apps": [
     {
       "id": "daily-brief",
@@ -886,6 +886,35 @@
       "zipUrl": "/apps/onepanel-1.0.1.zip",
       "stars": 0,
       "updatedAt": "2026-09-15"
+    },
+    {
+      "id": "system-info",
+      "name": {
+        "en": "System Info",
+        "zh-CN": "本机信息"
+      },
+      "description": {
+        "en": "What a browser can actually tell about this machine: CPU cores, memory tier, GPU model, screen, storage quota, network, power and codec support.",
+        "zh-CN": "用浏览器能拿到的本机信息：处理器核心、内存档位、显卡型号、屏幕、存储配额、网络、电源与编解码能力；并明确列出浏览器拿不到的项"
+      },
+      "version": "1.0.0",
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9InNpQmciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMTRiOGE2Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzBmNzY2ZSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CgogIDwhLS0g5bqV5bqn5ruh55S75biD5ZyG6KeS5pa577ya5LiN55WZ55m96L65IC0tPgogIDxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiByeD0iMTEyIiBmaWxsPSJ1cmwoI3NpQmcpIi8+CiAgPGVsbGlwc2UgY3g9IjI1NiIgY3k9IjQ1MiIgcng9IjE1MiIgcnk9IjI2IiBmaWxsPSIjMGI1ZDU3IiBvcGFjaXR5PSIwLjQ1Ii8+CgogIDwhLS0g6Iqv54mH5byV6ISaIC0tPgogIDxnIGZpbGw9IiNhN2YzZTYiPgogICAgPHJlY3QgeD0iMTA0IiB5PSIxOTYiIHdpZHRoPSI0MiIgaGVpZ2h0PSIyNiIgcng9IjkiLz4KICAgIDxyZWN0IHg9IjEwNCIgeT0iMjQzIiB3aWR0aD0iNDIiIGhlaWdodD0iMjYiIHJ4PSI5Ii8+CiAgICA8cmVjdCB4PSIxMDQiIHk9IjI5MCIgd2lkdGg9IjQyIiBoZWlnaHQ9IjI2IiByeD0iOSIvPgogICAgPHJlY3QgeD0iMzY2IiB5PSIxOTYiIHdpZHRoPSI0MiIgaGVpZ2h0PSIyNiIgcng9IjkiLz4KICAgIDxyZWN0IHg9IjM2NiIgeT0iMjQzIiB3aWR0aD0iNDIiIGhlaWdodD0iMjYiIHJ4PSI5Ii8+CiAgICA8cmVjdCB4PSIzNjYiIHk9IjI5MCIgd2lkdGg9IjQyIiBoZWlnaHQ9IjI2IiByeD0iOSIvPgogICAgPHJlY3QgeD0iMTk2IiB5PSIxMDQiIHdpZHRoPSIyNiIgaGVpZ2h0PSI0MiIgcng9IjkiLz4KICAgIDxyZWN0IHg9IjI0MyIgeT0iMTA0IiB3aWR0aD0iMjYiIGhlaWdodD0iNDIiIHJ4PSI5Ii8+CiAgICA8cmVjdCB4PSIyOTAiIHk9IjEwNCIgd2lkdGg9IjI2IiBoZWlnaHQ9IjQyIiByeD0iOSIvPgogICAgPHJlY3QgeD0iMTk2IiB5PSIzNjYiIHdpZHRoPSIyNiIgaGVpZ2h0PSI0MiIgcng9IjkiLz4KICAgIDxyZWN0IHg9IjI0MyIgeT0iMzY2IiB3aWR0aD0iMjYiIGhlaWdodD0iNDIiIHJ4PSI5Ii8+CiAgICA8cmVjdCB4PSIyOTAiIHk9IjM2NiIgd2lkdGg9IjI2IiBoZWlnaHQ9IjQyIiByeD0iOSIvPgogIDwvZz4KCiAgPCEtLSDoiq/niYfmnKzkvZMgLS0+CiAgPHJlY3QgeD0iMTQ2IiB5PSIxNDYiIHdpZHRoPSIyMjAiIGhlaWdodD0iMjIwIiByeD0iNDAiIGZpbGw9IiNmZmZmZmYiLz4KCiAgPCEtLSDoiq/niYflhoXpg6jlm5vmoLggLS0+CiAgPGcgZmlsbD0iIzBmOTQ4OCI+CiAgICA8cmVjdCB4PSIxODAiIHk9IjE4MCIgd2lkdGg9IjY4IiBoZWlnaHQ9IjY4IiByeD0iMTgiLz4KICAgIDxyZWN0IHg9IjI2NCIgeT0iMTgwIiB3aWR0aD0iNjgiIGhlaWdodD0iNjgiIHJ4PSIxOCIvPgogICAgPHJlY3QgeD0iMTgwIiB5PSIyNjQiIHdpZHRoPSI2OCIgaGVpZ2h0PSI2OCIgcng9IjE4Ii8+CiAgICA8cmVjdCB4PSIyNjQiIHk9IjI2NCIgd2lkdGg9IjY4IiBoZWlnaHQ9IjY4IiByeD0iMTgiLz4KICA8L2c+Cjwvc3ZnPgo=",
+      "category": "utilities",
+      "tags": [
+        "系统信息",
+        "硬件",
+        "设备",
+        "显卡",
+        "system",
+        "hardware",
+        "system-info"
+      ],
+      "author": {
+        "name": "ygr99"
+      },
+      "zipUrl": "/apps/system-info-1.0.0.zip",
+      "stars": 0,
+      "updatedAt": "2026-09-18"
     }
   ]
 }
