@@ -953,9 +953,9 @@
       },
       "description": {
         "en": "Panda DJ charts: six rankings, in-app streaming with real seeking, search and one-click download.",
-        "zh-CN": "熊猫DJ 六大排行榜（新歌/推荐/收藏/下载/月收藏/月下载），内置播放器可拖动进度、搜索与一键下载"
+        "zh-CN": "熊猫DJ 六大排行榜（新歌/推荐/收藏/下载/月收藏/月下载），内置播放器可拖动进度、搜索与一键下载；加载/缓冲/播放状态如实显示"
       },
-      "version": "1.0.0",
+      "version": "1.1.0",
       "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgZmlsbD0ibm9uZSI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImRqQmciIHgxPSIwIiB5MT0iMCIgeDI9IjAuMzUiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjOGI1Y2Y2Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMC41NSIgc3RvcC1jb2xvcj0iIzZkMjhkOSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM0YzFkOTUiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9ImRqR2xvdyIgY3g9IjAuNSIgY3k9IjEiIHI9IjAuOCI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2RkZDZmZSIgc3RvcC1vcGFjaXR5PSIwLjkiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIwLjYiIHN0b3AtY29sb3I9IiNjNGI1ZmQiIHN0b3Atb3BhY2l0eT0iMC4yOCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNjNGI1ZmQiIHN0b3Atb3BhY2l0eT0iMCIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICAgIDxjbGlwUGF0aCBpZD0iZGpDbGlwIj48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjExMiIvPjwvY2xpcFBhdGg+CiAgPC9kZWZzPgoKICA8ZyBjbGlwLXBhdGg9InVybCgjZGpDbGlwKSI+CiAgICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0idXJsKCNkakJnKSIvPgogICAgPGVsbGlwc2UgY3g9IjI1NiIgY3k9IjQ4NiIgcng9IjI1MCIgcnk9IjE1MiIgZmlsbD0idXJsKCNkakdsb3cpIi8+CgogICAgPCEtLSDogLPmnLrvvIhsdWNpZGUgaGVhZHBob25lc++8jDE6MSDnvKnmlL7lsYXkuK3vvIkgLS0+CiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg5NiA5Mikgc2NhbGUoMTMuMzMzMykiCiAgICAgICBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMS43IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPgogICAgICA8cGF0aCBkPSJNMyAxNGgzYTIgMiAwIDAgMSAyIDJ2M2EyIDIgMCAwIDEtMiAySDVhMiAyIDAgMCAxLTItMnYtN2E5IDkgMCAwIDEgMTggMHY3YTIgMiAwIDAgMS0yIDJoLTFhMiAyIDAgMCAxLTItMnYtM2EyIDIgMCAwIDEgMi0yaDMiLz4KICAgIDwvZz4KCiAgICA8IS0tIOmfs+espiAtLT4KICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwMCAxOTYpIHNjYWxlKDUuMikiCiAgICAgICBzdHJva2U9IiNlOWQ1ZmYiIHN0cm9rZS13aWR0aD0iMS45IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPgogICAgICA8cGF0aCBkPSJNOSAxOFY1bDEyLTJ2MTMiLz4KICAgICAgPGNpcmNsZSBjeD0iNiIgY3k9IjE4IiByPSIzIi8+CiAgICAgIDxjaXJjbGUgY3g9IjE4IiBjeT0iMTYiIHI9IjMiLz4KICAgIDwvZz4KICA8L2c+Cjwvc3ZnPgo=",
       "category": "multimedia",
       "tags": [
@@ -971,7 +971,7 @@
       "author": {
         "name": "ygr99"
       },
-      "zipUrl": "/apps/dj-music-1.0.0.zip",
+      "zipUrl": "/apps/dj-music-1.1.0.zip",
       "stars": 0,
       "updatedAt": "2026-09-22"
     }
