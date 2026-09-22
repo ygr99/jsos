@@ -79,6 +79,30 @@ npx serve -l 4173 .        # serve.json 自动带 COOP/COEP（WebContainer 必�
 - 商店应用**不进** builtin-apps.json → 不自动安装、不上桌面、`isSystem=false` 可卸载
 - 商店 UI 已定制：无星标排序（默认"更新时间"）、无标签行、元信息只显示时间
 
+### 应用代码存放与生命周期（`zip-data` / `app-snapshots`，2026-09-22 读源码定案）
+
+挂载时（`07-app-core.js:1777-1846`）依次尝试 **`zip-data`（原始 zip）→ `app-snapshots`（容器 FS 快照）→ `files`**，
+**三条全空直接 `throw new Error("No app files found")`，没有任何兜底**。
+
+但决定性的不是优先级而是**平台自己的写入节奏**（`07-app-core.js:1899-1913`）：
+
+| 时刻 | 平台动作 | 结果 |
+|---|---|---|
+| 安装 `Nf()` | `put zip-data` + `delete app-snapshots` | 只有 zip-data |
+| **第一次启动** | 从 zip 挂载 → `export()` 成快照 `VM()` → **`YM()` 删 zip-data** → `PM()` 删 files | **只剩快照** |
+| 之后每次启动 | `GM()` 为 null → 走快照分支 | 只剩快照 |
+
+- ⚠️ **所以 `zip-data` 是一次性的、`app-snapshots` 才是跑过的应用的稳态来源**。任何"只留 zip-data"或"只留快照"
+  的备份/迁移方案都会漏掉一半应用（**两个 store 谁都不能单独当作应用代码的可靠来源**）。
+- ⚠️ **`files` 是 v7 之前的遗留格式**：全仓库只有读（`Nw`）/删（`LM`/`PM`）**没有任何写入点**，实际永远是空的。
+- **平台不会自动补代码**：内置应用只有「已装版本 !== 清单版本」才重装（`qM()` = `isSystem && builtinVersion`），
+  **同机清库恢复时版本必然一致 → 永不重装**；商店应用连版本比对都没有。
+- 要让应用代码重新可用，只有两条路：**从 zip 里 `installApp`**（写 `zip-data`），或让内置应用的
+  `builtinVersion` 变成"不等于清单版本"。`Nf()` 会继承既有记录的 `isSystem` / `builtinVersion`，
+  **所以补装时不要先 `uninstallApp`**（会把内置应用降级成商店应用）。
+- 实例：设置应用的「云同步」正是按这套机制做的（备份只留用户数据，恢复后按 `store.json` /
+  `builtin-apps.json` 的 `zipUrl` 逐个重装），见 `dev.jsos.settings/cloud-sync-append.js`。
+
 ### 为什么应用里 fetch 不到主站（重要教训）
 WebContainer 给应用 iframe 注册预览 SW，应用内发出的 `localhost` 请求被路由进容器内部 → 必然网络错误。**跨源资源一律走 `window.JSOS.fetchAppAsset({url:"/path"})`**（主页面同源 fetch 后 base64 回传；仅允许站内绝对路径）。现有一侧定义在 07 分片（API 方法）、一侧在 11 分片（`jsFetchAppAsset` 实现 + switch 分支）。
 
