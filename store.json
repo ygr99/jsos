@@ -1,5 +1,5 @@
 {
-  "appCount": 38,
+  "appCount": 39,
   "updatedAt": "2026-09-23",
   "apps": [
     {
@@ -1005,6 +1005,33 @@
       "zipUrl": "/apps/cn.uapis.hotboard-2026.7.27.zip",
       "stars": 0,
       "updatedAt": "2026-07-26"
+    },
+    {
+      "id": "live-view",
+      "name": {
+        "en": "Live View",
+        "zh-CN": "直播视界"
+      },
+      "description": {
+        "en": "Track live status of your favorite streamers on Douyu / Bilibili / Douyin: live badges, viewer counts, platform & tag filters, add/edit/remove rooms.",
+        "zh-CN": "直播视界：关注斗鱼/B站/抖音主播的直播间，开播状态一目了然，支持平台与标签筛选、直播中置顶、增删改管理"
+      },
+      "version": "1.0.0",
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibHZnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzdiNWNlNyIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM1YjNmZDYiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiByeD0iMTEyIiBmaWxsPSJ1cmwoI2x2ZykiLz4KICA8cGF0aCBkPSJNMTg2IDk2IEwyNDAgMTU4IE0zMjYgOTYgTDI3MiAxNTgiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyNiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBmaWxsPSJub25lIi8+CiAgPHJlY3QgeD0iODgiIHk9IjE2MCIgd2lkdGg9IjMzNiIgaGVpZ2h0PSIyNTIiIHJ4PSI0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjMwIi8+CiAgPGNpcmNsZSBjeD0iMTYwIiBjeT0iMjMyIiByPSIyMiIgZmlsbD0iI2ZmNTc1NyIvPgogIDxwYXRoIGQ9Ik0yMzIgMjE2IEwzMzAgMjg2IEwyMzIgMzU2IFoiIGZpbGw9IiNmZmZmZmYiLz4KPC9zdmc+Cg==",
+      "category": "entertainment",
+      "tags": [
+        "直播",
+        "斗鱼",
+        "B站",
+        "抖音",
+        "主播"
+      ],
+      "author": {
+        "name": "ygr99"
+      },
+      "zipUrl": "/apps/live-view-1.0.0.zip",
+      "stars": 0,
+      "updatedAt": "2026-09-23"
     }
   ]
 }
