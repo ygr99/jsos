@@ -105,6 +105,23 @@ Two headers must be set on **every HTML response**:
 
 ---
 
+## 📝 Git 提交信息规范（摘要）
+
+完整规范见 [AGENTS.md §8](AGENTS.md)。格式：`<中文类型>(<中文 scope>): <更新日志式描述>`，描述 = 一条更新日志，末尾带版本号。
+
+| 类型 | 什么时候用 |
+|------|-----------|
+| 新增 | **仅限上架一个全新应用**（该应用第一次进 `apps/`） |
+| 更新 | 已有应用的任何新功能 / 新内容（功能再新、再大也算更新） |
+| 修复 | 修 bug |
+| 优化 | 体验 / 性能 / 文案打磨（不改变既有行为） |
+| 调整 | 有意的行为或结构变更 |
+| 文档 / 杂务 / 构建 / 测试 | 相应的非功能改动 |
+
+★ **写「新增」前先查该应用有没有历史提交**：`git log --oneline -1 -- apps/<id>-*.zip` —— 有输出一律用「更新」。判据是应用有没有提交史，不看功能新旧。
+
+---
+
 ## ⭐ Star
 
 If you like JSOS, please give us a ⭐! Your support helps us speed up source code organization and open-source plan progress.
