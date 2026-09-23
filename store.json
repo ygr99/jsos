@@ -1,6 +1,6 @@
 {
-  "appCount": 37,
-  "updatedAt": "2026-09-22",
+  "appCount": 38,
+  "updatedAt": "2026-09-23",
   "apps": [
     {
       "id": "daily-brief",
@@ -974,6 +974,37 @@
       "zipUrl": "/apps/dj-music-1.1.0.zip",
       "stars": 0,
       "updatedAt": "2026-09-22"
+    },
+    {
+      "id": "glance",
+      "name": {
+        "en": "Counts",
+        "zh-CN": "关注数"
+      },
+      "description": {
+        "en": "The numbers you keep an eye on - weight, balance, follower count. Write down the current value and watch it change, on the wall or on your desktop.",
+        "zh-CN": "记录你在意的每一个数字 —— 体重、余额、关注数。写下此刻的值，应用帮你盯着它的变化，还能把「关注数墙」摆到桌面上"
+      },
+      "version": "1.3.6",
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdsQmciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjNmZkN2I0Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzBlN2M2MyIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZ2xHbG93IiB4MT0iMCIgeTE9IjAiIHgyPSIwIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjUiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgoKICA8IS0tIOa7oeeUu+W4g+W6leW6pyAtLT4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjExMiIgZmlsbD0idXJsKCNnbEJnKSIvPgogIDwhLS0g5bqV6YOo5ZCM6Imy5YWJ5pmVIC0tPgogIDxlbGxpcHNlIGN4PSIyNTYiIGN5PSI0NjgiIHJ4PSIxNzYiIHJ5PSI0NCIgZmlsbD0idXJsKCNnbEdsb3cpIi8+CgogIDwhLS0g6K+75pWw5Y2hIC0tPgogIDxyZWN0IHg9IjEwNCIgeT0iODgiIHdpZHRoPSIzMDQiIGhlaWdodD0iMzM2IiByeD0iMzIiIGZpbGw9IiNmZmZmZmYiLz4KCiAgPCEtLSDlj7PkvqfliLvluqblsLrvvIjkuIDop4ggPSDor7vmlbAgLyDph4/vvIkgLS0+CiAgPHJlY3QgeD0iMzY2IiB5PSIxNTAiIHdpZHRoPSI3IiBoZWlnaHQ9IjIxMiIgcng9IjMuNSIgZmlsbD0iI2VhZmFmNCIvPgogIDxyZWN0IHg9IjM1OCIgeT0iMTcwIiB3aWR0aD0iMjMiIGhlaWdodD0iOCIgcng9IjQiIGZpbGw9IiNiOGU2ZDUiLz4KICA8cmVjdCB4PSIzNTgiIHk9IjI1MiIgd2lkdGg9IjIzIiBoZWlnaHQ9IjgiIHJ4PSI0IiBmaWxsPSIjYjhlNmQ1Ii8+CiAgPHJlY3QgeD0iMzU4IiB5PSIzMzQiIHdpZHRoPSIyMyIgaGVpZ2h0PSI4IiByeD0iNCIgZmlsbD0iI2I4ZTZkNSIvPgoKICA8IS0tIOS4ieadoeivu+aVsO+8muWuveW6puS4jeWQjCA9IOaVsOWAvOS4jeWQjO+8jOminOiJsuS7jua3seWIsOa1hSAtLT4KICA8cmVjdCB4PSIxNDAiIHk9IjE3MCIgd2lkdGg9IjE5MiIgaGVpZ2h0PSI0NCIgcng9IjE1IiBmaWxsPSIjMGU3YzYzIi8+CiAgPHJlY3QgeD0iMTQwIiB5PSIyNTIiIHdpZHRoPSIxMzIiIGhlaWdodD0iNDQiIHJ4PSIxNSIgZmlsbD0iIzFkOWU3NSIvPgogIDxyZWN0IHg9IjE0MCIgeT0iMzM0IiB3aWR0aD0iMTY0IiBoZWlnaHQ9IjQ0IiByeD0iMTUiIGZpbGw9IiM1ZGNhYTUiLz4KPC9zdmc+Cg==",
+      "category": "productivity",
+      "tags": [
+        "记录",
+        "数值",
+        "追踪",
+        "数据",
+        "习惯",
+        "数字",
+        "glance",
+        "tracker",
+        "numbers"
+      ],
+      "author": {
+        "name": "ygr99"
+      },
+      "zipUrl": "/apps/glance-1.3.6.zip",
+      "stars": 0,
+      "updatedAt": "2026-09-23"
     }
   ]
 }
