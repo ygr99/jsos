@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="kgmv-base" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3cb4f2"/>
+      <stop offset="1" stop-color="#1b7ad4"/>
+    </linearGradient>
+    <linearGradient id="kgmv-glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 底座：满画布圆角方 -->
+  <rect width="512" height="512" rx="112" fill="url(#kgmv-base)"/>
+  <rect width="512" height="512" rx="112" fill="url(#kgmv-glow)"/>
+
+  <!-- 屏幕框 -->
+  <rect x="104" y="140" width="304" height="216" rx="36" fill="none" stroke="#ffffff" stroke-opacity="0.9" stroke-width="22"/>
+
+  <!-- 播放三角 -->
+  <path d="M226 196l92 52-92 52z" fill="#ffffff"/>
+
+  <!-- 进度条 -->
+  <rect x="140" y="416" width="180" height="16" rx="8" fill="#ffffff" fill-opacity="0.55"/>
+  <rect x="140" y="416" width="96" height="16" rx="8" fill="#ffffff"/>
+  <circle cx="236" cy="424" r="20" fill="#ffffff"/>
+</svg>
