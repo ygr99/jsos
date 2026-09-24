@@ -1069,7 +1069,7 @@
         "en": "Subscribe to your favorite blogs and news feeds (RSS/Atom), with pinning and built-in article view.",
         "zh-CN": "订阅你喜爱的博客与新闻，RSS/Atom 双格式，支持源置顶与应用内阅读。"
       },
-      "version": "1.0.0",
+      "version": "1.0.1",
       "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJhc2UiIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmI5MjNjIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2VhNTgwYyIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHJ4PSIxMTIiIGZpbGw9InVybCgjYmFzZSkiLz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg4MCA1Nikgc2NhbGUoMTYpIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMS43NSIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIj4KICAgIDxwYXRoIGQ9Ik00IDExYTkgOSAwIDAgMSA5IDkiLz4KICAgIDxwYXRoIGQ9Ik00IDRhMTYgMTYgMCAwIDEgMTYgMTYiLz4KICA8L2c+CiAgPGNpcmNsZSBjeD0iMTQ0IiBjeT0iMzY4IiByPSIyNCIgZmlsbD0iI2ZmZmZmZiIvPgo8L3N2Zz4K",
       "category": "productivity",
       "tags": [
@@ -1087,7 +1087,7 @@
       "author": {
         "name": "ygr99"
       },
-      "zipUrl": "/apps/rss-reader-1.0.0.zip",
+      "zipUrl": "/apps/rss-reader-1.0.1.zip",
       "stars": 0,
       "updatedAt": "2026-09-24"
     }
