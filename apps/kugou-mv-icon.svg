@@ -1,27 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="kgmv-base" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#3cb4f2"/>
-      <stop offset="1" stop-color="#1b7ad4"/>
+    <linearGradient id="kg_main" x1="256" y1="92" x2="256" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#33AAE4"/>
+      <stop offset="1" stop-color="#0077BF"/>
     </linearGradient>
-    <linearGradient id="kgmv-glow" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#ffffff" stop-opacity="0.28"/>
-      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
-    </linearGradient>
+    <radialGradient id="kg_glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(256 408) rotate(90) scale(120 190)">
+      <stop stop-color="#008AD4" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#008AD4" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="kg_d" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="bg"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="18"/>
+      <feGaussianBlur stdDeviation="16"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0.35 0 0 0.54 0 0 0.83 0 0 0 0 0 0.28 0"/>
+      <feBlend mode="normal" in2="bg" result="shadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="shadow" result="shape"/>
+    </filter>
   </defs>
 
-  <!-- 底座：满画布圆角方 -->
-  <rect width="512" height="512" rx="112" fill="url(#kgmv-base)"/>
-  <rect width="512" height="512" rx="112" fill="url(#kgmv-glow)"/>
-
-  <!-- 屏幕框 -->
-  <rect x="104" y="140" width="304" height="216" rx="36" fill="none" stroke="#ffffff" stroke-opacity="0.9" stroke-width="22"/>
-
-  <!-- 播放三角 -->
-  <path d="M226 196l92 52-92 52z" fill="#ffffff"/>
-
-  <!-- 进度条 -->
-  <rect x="140" y="416" width="180" height="16" rx="8" fill="#ffffff" fill-opacity="0.55"/>
-  <rect x="140" y="416" width="96" height="16" rx="8" fill="#ffffff"/>
-  <circle cx="236" cy="424" r="20" fill="#ffffff"/>
+  <!-- 淡蓝 squircle 底座（com.deepseek.balance 同款形状） -->
+  <path d="M496.52 129.85C483.09 80.37 431.63 28.92 382.15 15.48C351.81 7.92 311.17 0.13 256 0C200.83 0.14 160.19 7.92 129.85 15.49C80.38 28.92 28.92 80.37 15.48 129.85C7.92 160.19 0.13 200.83 0 256C0.14 311.17 7.92 351.81 15.49 382.15C28.93 431.63 80.38 483.08 129.86 496.52C160.2 504.09 200.84 511.87 256.01 512.01C311.17 511.87 351.82 504.09 382.16 496.52C431.64 483.08 483.09 431.63 496.53 382.15C504.1 351.82 511.88 311.17 512.02 256C511.88 200.83 504.1 160.19 496.53 129.85H496.52Z" fill="#E1F2FC"/>
+  <!-- 底部主题色光晕 -->
+  <ellipse cx="256" cy="415" rx="205" ry="115" fill="url(#kg_glow)"/>
+  <!-- 酷狗标志（官方 kugou.svg 白色图形，改主题色渐变 + 柔和投影，缩放居中） -->
+  <g filter="url(#kg_d)" transform="translate(256 256) scale(0.355) translate(-512 -512)">
+    <path d="m979.325 410.303a478.067 478.067 0 0 0 -489.512-375.969 478.77 478.77 0 0 0 -399.46 702.946 482.886 482.886 0 0 0 154.001 170.667 478.268 478.268 0 0 0 734.971-497.644zm-67.262 226.183a419.137 419.137 0 0 1 -403.376 294.25 419.037 419.037 0 0 1 -396.75-294.15 418.234 418.234 0 0 1 157.214-465.92 415.724 415.724 0 0 1 220.863-76.9 418.936 418.936 0 0 1 421.647 542.72z" fill="url(#kg_main)"/>
+    <path d="m327.981 284.813c-15.56 151.39-30.118 302.883-45.779 454.274h111.838c15.16-151.693 32.427-303.084 47.084-454.776-37.647 1.003-75.394.702-113.142.502z" fill="url(#kg_main)"/>
+    <path d="m573.139 315.432c-39.454 39.053-81.217 76.097-119.467 116.254-21.183 23.19-38.65 54.212-33.631 86.538 1.606 22.89 14.356 42.567 27.106 60.236 37.546 52.906 72.784 107.42 110.431 160.627h143.762c-46.783-59.03-91.86-119.165-137.136-179.2-11.144-15.46-25.098-31.322-26.403-51.2-1.908-17.368 10.039-31.523 21.383-43.269 60.838-60.235 122.077-120.47 182.614-180.706-45.378.602-90.353 0-136.032 0-11.043 10.04-21.684 20.079-32.627 30.62z" fill="url(#kg_main)"/>
+  </g>
 </svg>
