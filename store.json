@@ -1,5 +1,5 @@
 {
-  "appCount": 42,
+  "appCount": 43,
   "updatedAt": "2026-09-24",
   "apps": [
     {
@@ -577,6 +577,31 @@
       "zipUrl": "/apps/meinv-video-1.2.6.zip",
       "stars": 0,
       "updatedAt": "2026-09-09"
+    },
+    {
+      "id": "heisi-pic",
+      "name": {
+        "en": "Heisi Pics",
+        "zh-CN": "黑丝"
+      },
+      "description": {
+        "en": "Douyin-style portrait picture feed: swipe or tap left/right side for prev/next picture, auto preloaded.",
+        "zh-CN": "抖音式随机黑丝图片流：左右滑动换图，点左侧上一张、右侧下一张，自动预加载秒开"
+      },
+      "version": "1.0.4",
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2MwODRmYyIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM5MzMzZWEiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiByeD0iMTEyIiBmaWxsPSJ1cmwoI2JnKSIvPgogIDxlbGxpcHNlIGN4PSIyNTYiIGN5PSI0NTIiIHJ4PSIxNTAiIHJ5PSIyMiIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iLjE2Ii8+CiAgPGcgZmlsbD0iI2ZmZmZmZiI+CiAgICA8cGF0aCBkPSJNMjU2IDc4bC0zOC0yMXY0MnoiLz4KICAgIDxwYXRoIGQ9Ik0yNTYgNzhsMzgtMjF2NDJ6Ii8+CiAgICA8Y2lyY2xlIGN4PSIyNTYiIGN5PSI3OCIgcj0iMTAiLz4KICA8L2c+CiAgPGcgZmlsbD0iI2ZmZmZmZiI+CiAgICA8cmVjdCB4PSIyMDIiIHk9IjEzMCIgd2lkdGg9IjQyIiBoZWlnaHQ9IjI2NiIgcng9IjIxIi8+CiAgICA8cmVjdCB4PSIyNzIiIHk9IjEzMCIgd2lkdGg9IjQyIiBoZWlnaHQ9IjI2NiIgcng9IjIxIi8+CiAgICA8ZWxsaXBzZSBjeD0iMjQwIiBjeT0iMzkyIiByeD0iMzYiIHJ5PSIxNCIgdHJhbnNmb3JtPSJyb3RhdGUoLTI1IDI0MCAzOTIpIi8+CiAgICA8ZWxsaXBzZSBjeD0iMzEwIiBjeT0iMzkyIiByeD0iMzYiIHJ5PSIxNCIgdHJhbnNmb3JtPSJyb3RhdGUoLTI1IDMxMCAzOTIpIi8+CiAgPC9nPgo8L3N2Zz4K",
+      "category": "entertainment",
+      "tags": [
+        "图片",
+        "随机",
+        "娱乐"
+      ],
+      "author": {
+        "name": "ygr99"
+      },
+      "zipUrl": "/apps/heisi-pic-1.0.4.zip",
+      "stars": 0,
+      "updatedAt": "2026-09-24"
     },
     {
       "id": "cn.uapis.weather",
