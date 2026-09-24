@@ -1043,7 +1043,7 @@
         "en": "Search and play Kugou music MVs, with search history and seekable playback.",
         "zh-CN": "搜索并播放酷狗音乐 MV：关键词搜歌名或歌手，封面列表点开即看，支持搜索历史与进度拖动"
       },
-      "version": "1.0.0",
+      "version": "1.0.1",
       "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImtnbXYtYmFzZSIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMzY2I0ZjIiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMWI3YWQ0Ii8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJrZ212LWdsb3ciIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAuMjgiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgoKICA8IS0tIOW6leW6p++8mua7oeeUu+W4g+WchuinkuaWuSAtLT4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjExMiIgZmlsbD0idXJsKCNrZ212LWJhc2UpIi8+CiAgPHJlY3Qgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHJ4PSIxMTIiIGZpbGw9InVybCgja2dtdi1nbG93KSIvPgoKICA8IS0tIOWxj+W5leahhiAtLT4KICA8cmVjdCB4PSIxMDQiIHk9IjE0MCIgd2lkdGg9IjMwNCIgaGVpZ2h0PSIyMTYiIHJ4PSIzNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utb3BhY2l0eT0iMC45IiBzdHJva2Utd2lkdGg9IjIyIi8+CgogIDwhLS0g5pKt5pS+5LiJ6KeSIC0tPgogIDxwYXRoIGQ9Ik0yMjYgMTk2bDkyIDUyLTkyIDUyeiIgZmlsbD0iI2ZmZmZmZiIvPgoKICA8IS0tIOi/m+W6puadoSAtLT4KICA8cmVjdCB4PSIxNDAiIHk9IjQxNiIgd2lkdGg9IjE4MCIgaGVpZ2h0PSIxNiIgcng9IjgiIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC41NSIvPgogIDxyZWN0IHg9IjE0MCIgeT0iNDE2IiB3aWR0aD0iOTYiIGhlaWdodD0iMTYiIHJ4PSI4IiBmaWxsPSIjZmZmZmZmIi8+CiAgPGNpcmNsZSBjeD0iMjM2IiBjeT0iNDI0IiByPSIyMCIgZmlsbD0iI2ZmZmZmZiIvPgo8L3N2Zz4K",
       "category": "entertainment",
       "tags": [
@@ -1055,9 +1055,9 @@
       "author": {
         "name": "ygr99"
       },
-      "zipUrl": "/apps/kugou-mv-1.0.0.zip",
+      "zipUrl": "/apps/kugou-mv-1.0.1.zip",
       "stars": 0,
-      "updatedAt": "2026-09-23"
+      "updatedAt": "2026-09-24"
     }
   ]
 }
