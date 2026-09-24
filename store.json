@@ -1,5 +1,5 @@
 {
-  "appCount": 43,
+  "appCount": 44,
   "updatedAt": "2026-09-24",
   "apps": [
     {
@@ -600,6 +600,32 @@
         "name": "ygr99"
       },
       "zipUrl": "/apps/heisi-pic-1.0.4.zip",
+      "stars": 0,
+      "updatedAt": "2026-09-24"
+    },
+    {
+      "id": "meinv-pic",
+      "name": {
+        "en": "Beauty Pics",
+        "zh-CN": "小姐姐图片"
+      },
+      "description": {
+        "en": "Douyin-style portrait picture feed: swipe or tap left/right side for prev/next picture, auto preloaded.",
+        "zh-CN": "抖音式随机小姐姐图片流：左右滑动换图，点左侧上一张、右侧下一张，自动预加载秒开"
+      },
+      "version": "1.0.0",
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2Y5YThkNCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNlYzQ4OTkiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiByeD0iMTEyIiBmaWxsPSJ1cmwoI2JnKSIvPgogIDxlbGxpcHNlIGN4PSIyNTYiIGN5PSI0NTIiIHJ4PSIxNTAiIHJ5PSIyMiIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iLjE2Ii8+CiAgPGNpcmNsZSBjeD0iMjU2IiBjeT0iMTIwIiByPSI0NiIgZmlsbD0iI2ZmZmZmZiIvPgogIDxwYXRoIGQ9Ik0yNTYgMTc4Yy0yMCAwLTM0IDEyLTM5IDMwbC00NiAxNThjLTQgMTMgNSAyNCAxOCAyNGgxMzRjMTMgMCAyMi0xMSAxOC0yNGwtNDYtMTU4Yy01LTE4LTE5LTMwLTM5LTMweiIgZmlsbD0iI2ZmZmZmZiIvPgogIDxnIGZpbGw9IiNmZmZmZmYiPgogICAgPHJlY3QgeD0iMjE2IiB5PSIzODYiIHdpZHRoPSIyNCIgaGVpZ2h0PSI2NiIgcng9IjEyIi8+CiAgICA8cmVjdCB4PSIyNzIiIHk9IjM4NiIgd2lkdGg9IjI0IiBoZWlnaHQ9IjY2IiByeD0iMTIiLz4KICA8L2c+CiAgPHBhdGggZD0iTTM4NCA5NmwxMiAzMCAzMCAxMi0zMCAxMi0xMiAzMC0xMi0zMC0zMC0xMiAzMC0xMnoiIGZpbGw9IiNmZmZmZmYiLz4KPC9zdmc+Cg==",
+      "category": "entertainment",
+      "tags": [
+        "图片",
+        "随机",
+        "美女",
+        "娱乐"
+      ],
+      "author": {
+        "name": "ygr99"
+      },
+      "zipUrl": "/apps/meinv-pic-1.0.0.zip",
       "stars": 0,
       "updatedAt": "2026-09-24"
     },
