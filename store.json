@@ -1,6 +1,6 @@
 {
   "appCount": 44,
-  "updatedAt": "2026-09-24",
+  "updatedAt": "2026-10-01",
   "apps": [
     {
       "id": "random-box",
@@ -1146,23 +1146,24 @@
         "en": "Date & Time"
       },
       "description": {
-        "zh-CN": "显示当前日期和时间",
-        "en": "Display current date and time"
+        "zh-CN": "显示当前日期和时间，含数字时钟与写实挂钟两种桌面小组件",
+        "en": "Show the current date and time, with digital and analog clock widgets"
       },
-      "version": "1.0.0",
-      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImZhY2UiIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMWUxZTJlIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzExMTExYiIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPGNpcmNsZSBjeD0iMzIiIGN5PSIzMiIgcj0iMjciIGZpbGw9InVybCgjZmFjZSkiIHN0cm9rZT0iIzg5YjRmYSIgc3Ryb2tlLXdpZHRoPSIzIi8+CiAgPGNpcmNsZSBjeD0iMzIiIGN5PSIzMiIgcj0iMjEiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzg5YjRmYSIgc3Ryb2tlLXdpZHRoPSIxIiBvcGFjaXR5PSIuMjUiLz4KICA8bGluZSB4MT0iMzIiIHkxPSIzMiIgeDI9IjMyIiB5Mj0iMTgiIHN0cm9rZT0iI2NkZDZmNCIgc3Ryb2tlLXdpZHRoPSIzLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxsaW5lIHgxPSIzMiIgeTE9IjMyIiB4Mj0iNDMiIHkyPSIzOCIgc3Ryb2tlPSIjY2RkNmY0IiBzdHJva2Utd2lkdGg9IjMuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPGNpcmNsZSBjeD0iMzIiIGN5PSIzMiIgcj0iMi44IiBmaWxsPSIjODliNGZhIi8+CiAgPGxpbmUgeDE9IjMyIiB5MT0iOC41IiB4Mj0iMzIiIHkyPSIxMiIgc3Ryb2tlPSIjODliNGZhIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iLjciLz4KICA8bGluZSB4MT0iMzIiIHkxPSI1MiIgeDI9IjMyIiB5Mj0iNTUuNSIgc3Ryb2tlPSIjODliNGZhIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iLjciLz4KICA8bGluZSB4MT0iOC41IiB5MT0iMzIiIHgyPSIxMiIgeTI9IjMyIiBzdHJva2U9IiM4OWI0ZmEiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIuNyIvPgogIDxsaW5lIHgxPSI1MiIgeTE9IjMyIiB4Mj0iNTUuNSIgeTI9IjMyIiBzdHJva2U9IiM4OWI0ZmEiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIuNyIvPgo8L3N2Zz4K",
+      "version": "1.2.2",
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZmFjZSIgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMxZTFlMmUiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMTExMTFiIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8Y2lyY2xlIGN4PSIyNTYiIGN5PSIyNTYiIHI9IjIzNi44IiBmaWxsPSJ1cmwoI2ZhY2UpIiBzdHJva2U9IiM4OWI0ZmEiIHN0cm9rZS13aWR0aD0iMjYuMyIvPgogIDxjaXJjbGUgY3g9IjI1NiIgY3k9IjI1NiIgcj0iMTg0LjIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzg5YjRmYSIgc3Ryb2tlLXdpZHRoPSI4LjgiIG9wYWNpdHk9Ii4yNSIvPgogIDxsaW5lIHgxPSIyNTYiIHkxPSIyNTYiIHgyPSIyNTYiIHkyPSIxMzMuMiIgc3Ryb2tlPSIjY2RkNmY0IiBzdHJva2Utd2lkdGg9IjMwLjciIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxsaW5lIHgxPSIyNTYiIHkxPSIyNTYiIHgyPSIzNTIuNSIgeTI9IjMwOC42IiBzdHJva2U9IiNjZGQ2ZjQiIHN0cm9rZS13aWR0aD0iMzAuNyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPGNpcmNsZSBjeD0iMjU2IiBjeT0iMjU2IiByPSIyNC42IiBmaWxsPSIjODliNGZhIi8+CiAgPGxpbmUgeDE9IjI1NiIgeTE9IjQ5LjkiIHgyPSIyNTYiIHkyPSI4MC42IiBzdHJva2U9IiM4OWI0ZmEiIHN0cm9rZS13aWR0aD0iMTcuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIuNyIvPgogIDxsaW5lIHgxPSIyNTYiIHkxPSI0MzEuNCIgeDI9IjI1NiIgeTI9IjQ2Mi4xIiBzdHJva2U9IiM4OWI0ZmEiIHN0cm9rZS13aWR0aD0iMTcuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIuNyIvPgogIDxsaW5lIHgxPSI0OS45IiB5MT0iMjU2IiB4Mj0iODAuNiIgeTI9IjI1NiIgc3Ryb2tlPSIjODliNGZhIiBzdHJva2Utd2lkdGg9IjE3LjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iLjciLz4KICA8bGluZSB4MT0iNDMxLjQiIHkxPSIyNTYiIHgyPSI0NjIuMSIgeTI9IjI1NiIgc3Ryb2tlPSIjODliNGZhIiBzdHJva2Utd2lkdGg9IjE3LjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iLjciLz4KPC9zdmc+Cg==",
       "category": "productivity",
       "tags": [
         "时钟",
+        "模拟时钟",
         "日期",
         "小组件"
       ],
       "author": {
         "name": "ygr99"
       },
-      "zipUrl": "/apps/dev.jsos.datetime-display-1.0.0.zip",
+      "zipUrl": "/apps/dev.jsos.datetime-display-1.2.2.zip",
       "stars": 0,
-      "updatedAt": "2026-09-24"
+      "updatedAt": "2026-10-01"
     }
   ]
 }
