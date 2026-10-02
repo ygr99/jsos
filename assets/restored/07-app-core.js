@@ -2161,11 +2161,15 @@ function Ni(e, n, r, i, o) {
       }
     }
   }
-  const u = Math.floor((window.innerWidth - R1 * 2) / Ur);
+  // [jsos-local-grid] 右边界 = 图标/小组件容器完整落在屏幕内（与网格线画出的完整格子一致）。
+  // 原公式要求整格距(104，含 8px 间隙)塞进左右各 20px 边距：150% 缩放（宽 1280）时边距内剩 96px、
+  // 恰好够图标内容却差 8px 间隙 → 最右一列被锁死（看得见、拖进去红框弹回）。改为按容器右缘 ≤ 屏宽判。
+  const u = Math.floor((window.innerWidth - R1) / Ur);
   return !(e + (r - 1) * Ur > (u - 1) * Ur);
 }
 function k1(e, n, r, i, o) {
-  const u = Math.floor((window.innerWidth - R1 * 2) / Ur);
+  // [jsos-local-grid] 同 Ni（右边界与网格线对齐）
+  const u = Math.floor((window.innerWidth - R1) / Ur);
   const h = 50;
   if (Ni(e, n, r, i, o)) {
     return {
@@ -2416,7 +2420,8 @@ function nD(e, n, r, i) {
     }
     const U = Object.entries(o).filter(([, V]) => V.workspaceId === D).reduce((V, [, Z]) => Math.max(V, Z.y), 0);
     const L = Math.floor(U / Pi) + 10;
-    const F = Math.floor((window.innerWidth - $c * 2) / Pi);
+    // [jsos-local-grid] 同 Ni
+    const F = Math.floor((window.innerWidth - $c) / Pi);
     for (let V = 0; V <= L; V++) {
       for (let Z = 0; Z < F; Z++) {
         const J = Z * Pi;
@@ -2692,9 +2697,10 @@ function pD(e, n, r) {
     }
     const me = Object.values(de).reduce((X, Q) => Math.max(X, Q.y), 0);
     const H = Math.floor(me / Jt) + 10;
-    const ae = Math.floor((window.innerWidth - Ai * 2) / Jt);
+    // [jsos-local-grid] 同 Ni；循环上界去掉 +1：原式比拖拽判定多放一列（宽屏会把小组件自动放到屏幕外）
+    const ae = Math.floor((window.innerWidth - Ai) / Jt);
     for (let X = 0; X <= H; X++) {
-      for (let Q = 0; Q <= ae - Y + 1; Q++) {
+      for (let Q = 0; Q <= ae - Y; Q++) {
         const se = Q * Jt;
         const he = X * Jt;
         let ye = true;
@@ -2751,7 +2757,8 @@ function pD(e, n, r) {
         }
       }
     }
-    const H = Math.floor((window.innerWidth - Ai * 2) / Jt);
+    // [jsos-local-grid] 同 Ni
+    const H = Math.floor((window.innerWidth - Ai) / Jt);
     return !(ee / Jt + re > H);
   }, [u, i]);
   const I = E.useCallback(async (ee, Y, re, ce) => {
@@ -3150,7 +3157,8 @@ function pD(e, n, r) {
           }
         }
       }
-      const he = Math.floor((window.innerWidth - Ai * 2) / Jt);
+      // [jsos-local-grid] 同 Ni
+      const he = Math.floor((window.innerWidth - Ai) / Jt);
       if (re.posX + X.newCols > he * Jt) {
         se = false;
       }
