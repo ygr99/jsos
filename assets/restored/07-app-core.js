@@ -2412,12 +2412,8 @@ function nD(e, n, r, i) {
     d(null);
   }, []);
   const I = E.useCallback((D, $) => {
-    const G = new Set();
-    for (const [V, Z] of Object.entries(o)) {
-      if (V !== $ && Z.workspaceId === D) {
-        G.add(`${Z.x},${Z.y}`);
-      }
-    }
+    // [jsos-local-findcell] 占用格计入桌面小组件占位（原实现只看图标 → 自动落位会叠在小组件上）
+    const G = T1(w.current, g.current, b.current, D, $, "icon");
     const U = Object.entries(o).filter(([, V]) => V.workspaceId === D).reduce((V, [, Z]) => Math.max(V, Z.y), 0);
     const L = Math.floor(U / Pi) + 10;
     // [jsos-local-grid] 同 Ni

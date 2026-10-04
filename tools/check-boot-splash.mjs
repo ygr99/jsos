@@ -1,6 +1,5 @@
-import { createRequire } from 'module';
-const require = createRequire('C:/Users/99/.workbuddy/binaries/node/workspace/');
-const puppeteer = require('puppeteer-core');
+// puppeteer-core 25 起为 ESM-only（createRequire 方式会 ERR_REQUIRE_ESM），改用动态 import
+const puppeteer = await import('file:///C:/Users/99/.workbuddy/binaries/node/workspace/node_modules/puppeteer-core/lib/puppeteer/puppeteer-core.js').then(m => m.launch ? m : m.default);
 
 const browser = await puppeteer.launch({
   executablePath: 'C:/Program Files/Google/Chrome/Application/chrome.exe',
