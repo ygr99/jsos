@@ -1,6 +1,6 @@
 {
-  "appCount": 48,
-  "updatedAt": "2026-10-05",
+  "appCount": 49,
+  "updatedAt": "2026-10-07",
   "apps": [
     {
       "id": "random-box",
@@ -1277,6 +1277,34 @@
       "zipUrl": "/apps/jianyue-1.0.1.zip",
       "stars": 0,
       "updatedAt": "2026-10-06"
+    },
+    {
+      "id": "ugly-avatar",
+      "name": {
+        "en": "Ugly Avatar",
+        "zh-CN": "丑丑头像"
+      },
+      "description": {
+        "en": "Generate an ugly avatar with one click; add it to the desktop and click the widget for a new face.",
+        "zh-CN": "一键生成丑丑的头像，摆上桌面点一下小组件就换新头像"
+      },
+      "version": "1.0.0",
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8dGl0bGU+5LiR5LiR5aS05YOPPC90aXRsZT4KICA8ZGVmcz4KICAgIDxmaWx0ZXIgaWQ9InVnbHktaWNvbi1ibHVyIiB4PSItNDAlIiB5PSItNDAlIiB3aWR0aD0iMTgwJSIgaGVpZ2h0PSIxODAlIj4KICAgICAgPGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMTYiLz4KICAgIDwvZmlsdGVyPgogIDwvZGVmcz4KICA8IS0tIOW6leW6p+a7oeeUu+W4gyAtLT4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjExMiIgZmlsbD0iI0ZGRDM3RSIvPgogIDwhLS0g5bqV6YOo5ZCM6Imy5YWJ5pmVIC0tPgogIDxlbGxpcHNlIGN4PSIyNTYiIGN5PSI0NjIiIHJ4PSIxNzYiIHJ5PSI2NiIgZmlsbD0iI0ZGQjM1QyIgb3BhY2l0eT0iMC42IiBmaWx0ZXI9InVybCgjdWdseS1pY29uLWJsdXIpIi8+CiAgPCEtLSDom4vlvaLohLggLS0+CiAgPHBhdGggZD0iTSAxMzAgMjUwIEMgMTMwIDE0MCAxOTAgOTUgMjU2IDk1IEMgMzIyIDk1IDM4MiAxNDAgMzgyIDI1MCBDIDM4MiAzNjAgMzMwIDQzMCAyNTYgNDMwIEMgMTgyIDQzMCAxMzAgMzYwIDEzMCAyNTAgWiIKICAgICAgICBmaWxsPSIjRkZDOUE5IiBzdHJva2U9IiMyQjJCMkIiIHN0cm9rZS13aWR0aD0iMTAiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KICA8IS0tIOWktOWPkeS4ieaSriAtLT4KICA8cGF0aCBkPSJNIDIwMCAxMTIgQyAxOTAgNjIgMTYwIDQ3IDEzNSA0MiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMkIyQjJCIiBzdHJva2Utd2lkdGg9IjEzIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8cGF0aCBkPSJNIDI1NiA5NCBDIDI1NiA1NyAyNDAgMzIgMjI2IDIwIiBmaWxsPSJub25lIiBzdHJva2U9IiMyQjJCMkIiIHN0cm9rZS13aWR0aD0iMTMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxwYXRoIGQ9Ik0gMzEwIDEwNiBDIDMzMCA2MiAzNTUgNDcgMzg0IDQwIiBmaWxsPSJub25lIiBzdHJva2U9IiMyQjJCMkIiIHN0cm9rZS13aWR0aD0iMTMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDwhLS0g55yJ5q+b5LiA6auY5LiA5L2OIC0tPgogIDxwYXRoIGQ9Ik0gMTY4IDIxNiBDIDE5MCAyMDAgMjE2IDIwMCAyMzMgMjEyIiBmaWxsPSJub25lIiBzdHJva2U9IiMyQjJCMkIiIHN0cm9rZS13aWR0aD0iMTAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxwYXRoIGQ9Ik0gMjg5IDIwMyBDIDMwNyAyMTYgMzMwIDIyMCAzNDkgMjEwIiBmaWxsPSJub25lIiBzdHJva2U9IiMyQjJCMkIiIHN0cm9rZS13aWR0aD0iMTAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDwhLS0g5bem55y85aSn77yI556z5a2U5YGP5LiK77yJIC0tPgogIDxlbGxpcHNlIGN4PSIyMDAiIGN5PSIyNjYiIHJ4PSIzNSIgcnk9IjI3IiBmaWxsPSIjRkZGRkZGIiBzdHJva2U9IiMyQjJCMkIiIHN0cm9rZS13aWR0aD0iOCIvPgogIDxjaXJjbGUgY3g9IjIxMSIgY3k9IjI2MCIgcj0iMTIuNSIgZmlsbD0iIzJCMkIyQiIvPgogIDxjaXJjbGUgY3g9IjIxNSIgY3k9IjI1NSIgcj0iNCIgZmlsbD0iI0ZGRkZGRiIvPgogIDwhLS0g5Y+z55y85bCP77yI5LiL5Z6C55yv55y877yJIC0tPgogIDxwYXRoIGQ9Ik0gMjk4IDI2NCBDIDMxNCAyNTAgMzM2IDI1MCAzNTIgMjY0IiBmaWxsPSJub25lIiBzdHJva2U9IiMyQjJCMkIiIHN0cm9rZS13aWR0aD0iMTAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDwhLS0g6by75a2Q5Lik54K5IC0tPgogIDxjaXJjbGUgY3g9IjI0NSIgY3k9IjMxNiIgcj0iNS41IiBmaWxsPSIjMkIyQjJCIi8+CiAgPGNpcmNsZSBjeD0iMjcxIiBjeT0iMzIxIiByPSI1LjUiIGZpbGw9IiMyQjJCMkIiLz4KICA8IS0tIOiFrue6oiAtLT4KICA8Y2lyY2xlIGN4PSIxNjQiIGN5PSIzMTIiIHI9IjE2IiBmaWxsPSIjRjg5QkE0IiBvcGFjaXR5PSIwLjU1Ii8+CiAgPGNpcmNsZSBjeD0iMzUyIiBjeT0iMzAxIiByPSIxNSIgZmlsbD0iI0Y4OUJBNCIgb3BhY2l0eT0iMC41NSIvPgogIDwhLS0g5q2q5pac5aSn56yR5Zi0IC0tPgogIDxwYXRoIGQ9Ik0gMTcwIDM1MCBRIDI1NSA0NDggMzQ1IDMzOCBRIDMyMiA0MDggMjUyIDQxMiBRIDE5MCA0MDggMTcwIDM1MCBaIgogICAgICAgIGZpbGw9IiNENzdGOEMiIHN0cm9rZT0iIzJCMkIyQiIgc3Ryb2tlLXdpZHRoPSI5IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo=",
+      "category": "lifestyle",
+      "tags": [
+        "avatar",
+        "头像",
+        "丑丑头像",
+        "生成器",
+        "趣味"
+      ],
+      "author": {
+        "name": "ygr99"
+      },
+      "license": "MIT",
+      "zipUrl": "/apps/ugly-avatar-1.0.0.zip",
+      "stars": 0,
+      "updatedAt": "2026-10-07"
     }
   ]
 }

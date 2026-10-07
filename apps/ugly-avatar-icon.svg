@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <title>丑丑头像</title>
+  <defs>
+    <filter id="ugly-icon-blur" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+  </defs>
+  <!-- 底座满画布 -->
+  <rect width="512" height="512" rx="112" fill="#FFD37E"/>
+  <!-- 底部同色光晕 -->
+  <ellipse cx="256" cy="462" rx="176" ry="66" fill="#FFB35C" opacity="0.6" filter="url(#ugly-icon-blur)"/>
+  <!-- 蛋形脸 -->
+  <path d="M 130 250 C 130 140 190 95 256 95 C 322 95 382 140 382 250 C 382 360 330 430 256 430 C 182 430 130 360 130 250 Z"
+        fill="#FFC9A9" stroke="#2B2B2B" stroke-width="10" stroke-linejoin="round"/>
+  <!-- 头发三撮 -->
+  <path d="M 200 112 C 190 62 160 47 135 42" fill="none" stroke="#2B2B2B" stroke-width="13" stroke-linecap="round"/>
+  <path d="M 256 94 C 256 57 240 32 226 20" fill="none" stroke="#2B2B2B" stroke-width="13" stroke-linecap="round"/>
+  <path d="M 310 106 C 330 62 355 47 384 40" fill="none" stroke="#2B2B2B" stroke-width="13" stroke-linecap="round"/>
+  <!-- 眉毛一高一低 -->
+  <path d="M 168 216 C 190 200 216 200 233 212" fill="none" stroke="#2B2B2B" stroke-width="10" stroke-linecap="round"/>
+  <path d="M 289 203 C 307 216 330 220 349 210" fill="none" stroke="#2B2B2B" stroke-width="10" stroke-linecap="round"/>
+  <!-- 左眼大（瞳孔偏上） -->
+  <ellipse cx="200" cy="266" rx="35" ry="27" fill="#FFFFFF" stroke="#2B2B2B" stroke-width="8"/>
+  <circle cx="211" cy="260" r="12.5" fill="#2B2B2B"/>
+  <circle cx="215" cy="255" r="4" fill="#FFFFFF"/>
+  <!-- 右眼小（下垂眯眼） -->
+  <path d="M 298 264 C 314 250 336 250 352 264" fill="none" stroke="#2B2B2B" stroke-width="10" stroke-linecap="round"/>
+  <!-- 鼻子两点 -->
+  <circle cx="245" cy="316" r="5.5" fill="#2B2B2B"/>
+  <circle cx="271" cy="321" r="5.5" fill="#2B2B2B"/>
+  <!-- 腮红 -->
+  <circle cx="164" cy="312" r="16" fill="#F89BA4" opacity="0.55"/>
+  <circle cx="352" cy="301" r="15" fill="#F89BA4" opacity="0.55"/>
+  <!-- 歪斜大笑嘴 -->
+  <path d="M 170 350 Q 255 448 345 338 Q 322 408 252 412 Q 190 408 170 350 Z"
+        fill="#D77F8C" stroke="#2B2B2B" stroke-width="9" stroke-linejoin="round"/>
+</svg>
