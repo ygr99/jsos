@@ -3,3 +3,6 @@ node_modules/
 *.beauty.css
 dist/
 .wrangler/
+
+# 重建前的产物备份，不入库
+tools/.backup/

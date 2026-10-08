@@ -15479,7 +15479,20 @@ function Xz({
     if (!n) {
       return null;
     }
-    const jsBase = `${n}${e.widget.url}`;
+    // [jsos-wid] 小组件实例 id 以 __jsos_wid 透传给应用。
+    // 这段补丁原先只存在于构建产物里、分片没有 —— 重建就会把它抹掉，
+    // 故已回填到分片，此后重建不再丢。
+    const jsBase = (() => {
+      const widUrl = `${n}${e.widget.url}`;
+      try {
+        if (!e.id) return widUrl;
+        const widU = new URL(widUrl);
+        widU.searchParams.set("__jsos_wid", String(e.id));
+        return widU.toString();
+      } catch {
+        return widUrl;
+      }
+    })();
     let jsWipeT = null;
     try {
       const jsWipeMap = JSON.parse(localStorage.getItem("__jsos_data_wipe") || "{}");
@@ -23183,6 +23196,74 @@ function _Component113() {
     }));
     Ue(null);
   }, []);
+  /* [jsos-widget-recover] 小组件后台自愈
+     ---------------------------------------------------------------
+     为什么需要：小组件的后台一旦掉线，平台自己完全不知情 —— 全仓库没有
+     process.on("exit")，serverUrl 写入后就永不清空。原先唯一的恢复入口是
+     JSOS.openApp，但它必定弹窗口，违背了「桌面小组件不开应用也能用」这个前提。
+
+     做法：小组件持续探活失败后 postMessage 过来 → 这里先探活确认后台真的死了
+     （避免一次网络抖动就杀掉好好运行的进程），再静默重启：
+       - 用 H(...) 启动，**不调 w(Ct)** —— 少掉的那一步正是弹窗的来源
+       - 重启成功后 qs(widgetId) 自增 refreshKey，iframe 随 key 变化整体重建，
+         新的 serverUrl 才会被重新加载，占位页才会被真正的页面顶掉
+
+     边界：只处理 type==="gui"；同一小组件 60s 内最多重启一次，防抖动。 */
+  const widgetRecoverAt = E.useRef({});
+  const recoverWidget = E.useCallback(async (appId, widgetId) => {
+    if (!appId || !widgetId || !n) return;
+    const app = de.get(appId);
+    if (!app || app.type === "cli") return;
+
+    // 防抖：同一小组件 60s 只重启一次
+    const now = Date.now();
+    const last = widgetRecoverAt.current[widgetId] || 0;
+    if (now - last < 60e3) return;
+    widgetRecoverAt.current[widgetId] = now;
+
+    const winKey = `widget-${widgetId}`;
+    // 先探活：后台其实活着就别重启（网络抖动 ≠ 进程死亡）
+    const cur = se(appId);
+    if (cur && cur.serverUrl) {
+      try {
+        const ac = new AbortController();
+        const timer = setTimeout(() => ac.abort(), 3000);
+        const probe = await fetch(`${cur.serverUrl.replace(/\/$/, "")}/api/ping`, {
+          method: "GET",
+          signal: ac.signal
+        });
+        clearTimeout(timer);
+        if (probe.ok) {
+          // 后台活着，只是通道闪断 —— 重建 iframe 让小组件自己刷一次即可
+          qs(widgetId);
+          return;
+        }
+      } catch {}
+    }
+
+    try {
+      await H(app, winKey, {
+        onStatusChange: () => {},
+        onTerminalOutput: () => {}
+      }, app.type);
+    } catch {}
+
+    // 无论成败都重建 iframe：成功则换上真页面，失败则至少脱离占位页等待下一轮心跳
+    setTimeout(() => qs(widgetId), 1200);
+  }, [n, de, se, H, qs]);
+
+  // 接收小组件的上报（iframe → 主页面）
+  E.useEffect(() => {
+    const onMsg = ev => {
+      const d = ev && ev.data;
+      if (!d || d.type !== "__jsos_widget_recover") return;
+      recoverWidget(d.appId, d.widgetId);
+    };
+    window.addEventListener("message", onMsg);
+    return () => window.removeEventListener("message", onMsg);
+  }, [recoverWidget]);
+  /* [/jsos-widget-recover] */
+
   const qa = E.useCallback(fe => {
     kt(fe);
     Ue(null);
