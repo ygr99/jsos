@@ -23223,6 +23223,9 @@ function _Component113() {
 
     const winKey = `widget-${widgetId}`;
     // 先探活：后台其实活着就别重启（网络抖动 ≠ 进程死亡）
+    // ⚠️ 绝不能只看 probe.ok：预览 SW 的 no-server 占位页回的是 200 + text/html，
+    // ok 恒为 true，会把「后台早死了」判成「活着」→ 永远不重启，自愈形同虚设。
+    // 必须核对 content-type 是 JSON、正文不是占位页、且 ok===true 才算真活着。
     const cur = se(appId);
     if (cur && cur.serverUrl) {
       try {
@@ -23233,7 +23236,14 @@ function _Component113() {
           signal: ac.signal
         });
         clearTimeout(timer);
-        if (probe.ok) {
+        const ct = probe.headers.get("content-type") || "";
+        const body = probe.ok && ct.includes("application/json") ? await probe.text() : "";
+        const reallyAlive = Boolean(body)
+          && !/\.localservice@no-server|no-server\.[a-z0-9]+\.html/i.test(body)
+          && (() => {
+            try { return JSON.parse(body).ok === true; } catch { return false; }
+          })();
+        if (reallyAlive) {
           // 后台活着，只是通道闪断 —— 重建 iframe 让小组件自己刷一次即可
           qs(widgetId);
           return;
