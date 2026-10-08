@@ -1,6 +1,6 @@
 {
-  "appCount": 49,
-  "updatedAt": "2026-10-08",
+  "appCount": 50,
+  "updatedAt": "2026-10-09",
   "apps": [
     {
       "id": "random-box",
@@ -1305,6 +1305,36 @@
       "zipUrl": "/apps/ugly-avatar-1.0.1.zip",
       "stars": 0,
       "updatedAt": "2026-10-08"
+    },
+    {
+      "id": "howtocook",
+      "name": {
+        "en": "HowToCook",
+        "zh-CN": "HowToCook"
+      },
+      "description": {
+        "en": "352 step-by-step home recipes, written for people who have never cooked.",
+        "zh-CN": "352 道家常菜，一步一步教你做出来。内容取自开源项目「程序员做饭指南」。"
+      },
+      "version": "1.0.0",
+      "icon": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJhc2UiIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMmI5ZGZmIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzBmNmVkNSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxyYWRpYWxHcmFkaWVudCBpZD0iZ2xvdyIgY3g9IjI1NiIgY3k9IjQ3NCIgcj0iMjM2IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzhjY2JmZiIgc3RvcC1vcGFjaXR5PSIuNDAiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjOGNjYmZmIiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiByeD0iMTEyIiBmaWxsPSJ1cmwoI2Jhc2UpIi8+CiAgPHJlY3Qgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHJ4PSIxMTIiIGZpbGw9InVybCgjZ2xvdykiLz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg4OCAxMDMpIHNjYWxlKDE0KSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjEuNTUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+CiAgICA8cGF0aCBkPSJNMy41IDExLjVoMTciPjwvcGF0aD4KICAgIDxwYXRoIGQ9Ik02IDExLjV2Mi4yYTYgNS42IDAgMCAwIDEyIDB2LTIuMiI+PC9wYXRoPgogICAgPHBhdGggZD0iTTguNiA3LjljMS41LTEuNCAwLTIuNiAwLTQiPjwvcGF0aD4KICAgIDxwYXRoIGQ9Ik0xMiA3LjljMS41LTEuNCAwLTIuNiAwLTQiPjwvcGF0aD4KICAgIDxwYXRoIGQ9Ik0xNS40IDcuOWMxLjUtMS40IDAtMi42IDAtNCI+PC9wYXRoPgogIDwvZz4KPC9zdmc+Cg==",
+      "category": "lifestyle",
+      "tags": [
+        "菜谱",
+        "做饭",
+        "家常菜",
+        "烹饪",
+        "程序员做饭指南",
+        "recipe",
+        "cooking"
+      ],
+      "author": {
+        "name": "ygr99"
+      },
+      "license": "Unlicense",
+      "zipUrl": "/apps/howtocook-1.0.0.zip",
+      "stars": 0,
+      "updatedAt": "2026-10-09"
     }
   ]
 }
